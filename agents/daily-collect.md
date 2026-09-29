@@ -61,7 +61,7 @@ GitHub は `pushed_at` / `created_at` が直近のもので、スターが多い
 ### コミュニティ
 | ソース | URL |
 |---|---|
-| Hacker News | `https://hn.algolia.com/api/v1/search_by_date?query=game%20LLM&tags=story&hitsPerPage=30`（`query` を `game AI`, `game generative` に替えて計3回） |
+| Hacker News | `https://hn.algolia.com/api/v1/search_by_date?query=game%20LLM&tags=story&hitsPerPage=30`（`query` を `game AI`, `game generative`, `vibe coding game`, `one prompt game` に替えて計5回） |
 | Zenn（gamedev） | `https://zenn.dev/topics/gamedev/feed` |
 | Zenn（生成AI） | `https://zenn.dev/topics/生成ai/feed`（URLエンコードして取得） |
 | Qiita（gamedev） | `https://qiita.com/tags/gamedev/feed` |
@@ -72,7 +72,7 @@ GitHub は `pushed_at` / `created_at` が直近のもので、スターが多い
 
 ## 4. 選定基準
 
-- **対象**: 個人ゲーム制作者の制作・販売・収益化に影響するもの。新ツール、既存ツールの大きな更新、料金・規約・ポリシーの変更、注目の制作事例、実用的なノウハウ記事、重要な論文。
+- **対象**: 個人ゲーム制作者の制作・販売・収益化に影響するもの。特に、**コーディングエージェントでゲームを作った事例**（どのモデルに、どんなプロンプトで、何ができたか。公開された作品、リポジトリ、ポストモーテム）は重要度を高くつける。新ツール、既存ツールの大きな更新、料金・規約・ポリシーの変更、注目の制作事例、実用的なノウハウ記事、重要な論文。
 - **対象外**: ゲーム制作と無関係なAIニュース、単なる噂やリーク、出典が確認できない情報、宣伝だけの記事。
 - **重複**: 過去14日のログにある URL やトピックは除く（続報で新しい事実がある場合のみ「続報」として記録）。
 - 1日あたり5〜15件を目安にする。
@@ -94,7 +94,7 @@ items: 件数
 - URL: https://...
 - 公開日: YYYY-MM-DD
 - ソース: 公式 / GitHub / 論文 / コミュニティ
-- カテゴリ: genres / design / dev-env / trailer / monetization / legal（複数可）
+- カテゴリ: genres / design / dev-env / agent-dev / cases / trailer / monetization / legal（複数可）。コーディングエージェントでゲームを作った話は agent-dev、実在の作品・ポストモーテムは cases
 - 要約: 日本語2〜3行。何が起きたか、個人ゲーム制作者にとって何が変わるか。
 - 反映候補: /dev-env/ai-coding-tools/（既存記事の「最新情報」欄に追記すべき場合の記事パス。なければ「なし」）
 

@@ -58,6 +58,8 @@ export default defineConfig({
 				{ label: 'ゲームジャンル', items: [{ autogenerate: { directory: 'genres' } }] },
 				{ label: 'ゲームデザイン', items: [{ autogenerate: { directory: 'design' } }] },
 				{ label: '開発環境', items: [{ autogenerate: { directory: 'dev-env' } }] },
+				{ label: 'エージェント開発', items: [{ autogenerate: { directory: 'agent-dev' } }] },
+				{ label: '事例・ポストモーテム', items: [{ autogenerate: { directory: 'cases' } }] },
 				{ label: 'PV作成', items: [{ autogenerate: { directory: 'trailer' } }] },
 				{ label: 'マネタイズ', items: [{ autogenerate: { directory: 'monetization' } }] },
 				{ label: '権利・規約', items: [{ autogenerate: { directory: 'legal' } }] },
