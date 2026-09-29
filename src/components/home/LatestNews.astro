@@ -11,7 +11,7 @@ const reports = (await getCollection('docs', (e) => e.id.startsWith('news/')))
 
 <div class="news not-content">
 	<div class="head">
-		<span class="badge"><TablerIcon name="sparkles" size="1.1em" /> 毎週月曜に自動更新</span>
+		<span class="badge"><TablerIcon name="sparkles" size="1.1em" /> 毎週月曜に更新</span>
 		<a class="all" href={withBase('/news/')}>レポート一覧 <TablerIcon name="arrow-right" size="1em" /></a>
 	</div>
 	{
@@ -29,7 +29,7 @@ const reports = (await getCollection('docs', (e) => e.id.startsWith('news/')))
 		) : (
 			<p class="empty">
 				<TablerIcon name="calendar" size="1.25em" />
-				最初の週次レポートは 2026年10月5日（月）に公開予定です。情報収集エージェントが毎日ニュースを集めています。
+				最初の週次レポートは 2026年10月5日（月）に公開予定です。
 			</p>
 		)
 	}

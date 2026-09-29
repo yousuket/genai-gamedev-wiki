@@ -99,7 +99,7 @@ export const categories: Category[] = [
 	{
 		id: 'news',
 		label: '最新動向',
-		description: 'エージェントが毎週まとめる、AI×ゲーム制作のニュース。',
+		description: 'AI×ゲーム制作の最新ニュースを、毎週まとめています。',
 		icon: 'sparkles',
 		color: '#ff5fa2',
 		ink: '#ffffff',
