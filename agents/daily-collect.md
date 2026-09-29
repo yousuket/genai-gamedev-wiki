@@ -54,6 +54,8 @@
 | GitHub（ゲーム × LLM） | `https://api.github.com/search/repositories?q=game+llm+in:name,description&sort=updated&per_page=20` |
 | arXiv | `https://export.arxiv.org/api/query?search_query=all:%22large+language+model%22+AND+all:game&sortBy=submittedDate&sortOrder=descending&max_results=20` |
 
+GitHub の API を curl で取得して HTTP 403 になったときは、認証済みの `gh` コマンドで同じ URL を取得する（例: `gh api "search/repositories?q=game+mcp+in:name,description&sort=updated&per_page=20"`）。
+
 GitHub は `pushed_at` / `created_at` が直近のもので、スターが多い（目安 50 以上）か、公式・著名な組織のものだけを対象にする。
 
 ### コミュニティ
