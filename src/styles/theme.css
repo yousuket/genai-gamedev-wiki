@@ -1,0 +1,228 @@
+/* カラフルポップテーマ（F案）: BIZ UDPゴシック、あたたかいクリーム色の背景、カテゴリごとの色分け */
+
+/* ---------- 色（ダークモード: Starlight の既定） ---------- */
+:root {
+	--sl-font: 'BIZ UDPGothic', system-ui, -apple-system, 'Hiragino Sans', sans-serif;
+
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #f3eef6;
+	--sl-color-gray-2: #d6cfdd;
+	--sl-color-gray-3: #a198ac;
+	--sl-color-gray-4: #6a6275;
+	--sl-color-gray-5: #3f3848;
+	--sl-color-gray-6: #2b2533;
+	--sl-color-black: #1e1a24;
+
+	--sl-color-accent-low: #4d1f25;
+	--sl-color-accent: #ff6b70;
+	--sl-color-accent-high: #ffc4c6;
+
+	--sl-color-bg-nav: #1e1a24;
+	--sl-color-bg-sidebar: #231e2a;
+
+	--pop-radius: 20px;
+	--pop-radius-sm: 12px;
+	--cat: var(--sl-color-accent);
+	--cat-ink: #ffffff;
+}
+
+/* ---------- 色（ライトモード） ---------- */
+:root[data-theme='light'] {
+	--sl-color-white: #2d2a32;
+	--sl-color-gray-1: #3b3641;
+	--sl-color-gray-2: #57505f;
+	--sl-color-gray-3: #857d8f;
+	--sl-color-gray-4: #b8b0c0;
+	--sl-color-gray-5: #eadfce;
+	--sl-color-gray-6: #fff1dc;
+	--sl-color-gray-7: #fff8ec;
+	--sl-color-black: #fff8ec;
+
+	--sl-color-accent-low: #ffe1df;
+	--sl-color-accent: #ff5a5f;
+	--sl-color-accent-high: #c42a31;
+
+	--sl-color-bg: #fff8ec;
+	--sl-color-bg-nav: #fff8ec;
+	--sl-color-bg-sidebar: #fff3e2;
+	--sl-color-bg-inline-code: #f8e9d4;
+	--sl-color-hairline: #f0e3cf;
+	--sl-color-hairline-light: #f3e8d8;
+}
+
+/* ---------- 文字 ---------- */
+body {
+	font-weight: 400;
+	letter-spacing: 0.02em;
+}
+.sl-markdown-content {
+	line-height: 1.9;
+}
+h1,
+h2,
+h3,
+.sl-markdown-content :is(h2, h3, h4) {
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+/* ---------- ヘッダー ---------- */
+.site-title {
+	font-weight: 700;
+	color: var(--sl-color-accent) !important;
+	gap: 0.5rem;
+}
+header.header {
+	border-bottom: 3px dashed var(--sl-color-gray-5);
+}
+site-search button[data-open-modal] {
+	border-radius: 999px;
+}
+
+/* ---------- サイドバー: カテゴリごとに色の丸を付ける ---------- */
+.sidebar-content .top-level > li > details > summary .group-label .large {
+	font-weight: 700;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+}
+.sidebar-content .top-level > li > details > summary .group-label .large::before {
+	content: '';
+	width: 0.75em;
+	height: 0.75em;
+	border-radius: 50%;
+	background: var(--dot);
+	flex-shrink: 0;
+}
+.sidebar-content .top-level > li:nth-child(1) { --dot: #ff8a3d; }
+.sidebar-content .top-level > li:nth-child(2) { --dot: #ff5a5f; }
+.sidebar-content .top-level > li:nth-child(3) { --dot: #ffb400; }
+.sidebar-content .top-level > li:nth-child(4) { --dot: #00a699; }
+.sidebar-content .top-level > li:nth-child(5) { --dot: #7b61ff; }
+.sidebar-content .top-level > li:nth-child(6) { --dot: #3d9bff; }
+.sidebar-content .top-level > li:nth-child(7) { --dot: #5c6bc0; }
+.sidebar-content .top-level > li:nth-child(8) { --dot: #ff5fa2; }
+.sidebar-content a {
+	border-radius: 999px;
+}
+.sidebar-content a[aria-current='page'] {
+	background: var(--dot, var(--sl-color-accent));
+	color: #ffffff;
+	font-weight: 700;
+}
+.sidebar-content .top-level > li:nth-child(3) a[aria-current='page'] {
+	color: #3d2a00;
+}
+
+/* ---------- 本文 ---------- */
+.sl-markdown-content h2::before {
+	content: '';
+	display: inline-block;
+	width: 0.45em;
+	height: 1.1em;
+	margin-inline-end: 0.5em;
+	border-radius: 999px;
+	background: var(--cat);
+	vertical-align: -0.15em;
+}
+.sl-markdown-content h3::before {
+	content: '● ';
+	color: var(--cat);
+	font-size: 0.7em;
+	vertical-align: 0.15em;
+}
+.sl-markdown-content a:not(:where(.not-content *)) {
+	color: var(--sl-color-text-accent);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 0.2em;
+	text-decoration-color: color-mix(in srgb, var(--sl-color-accent) 45%, transparent);
+}
+.sl-markdown-content a:not(:where(.not-content *)):hover {
+	text-decoration-color: var(--sl-color-accent);
+}
+.sl-markdown-content strong {
+	background: linear-gradient(transparent 62%, color-mix(in srgb, var(--cat) 28%, transparent) 62%);
+}
+.sl-markdown-content :not(pre) > code {
+	border-radius: 6px;
+	padding: 0.1em 0.4em;
+}
+
+/* 表: 角丸・カテゴリ色のヘッダー */
+.sl-markdown-content table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 2px solid color-mix(in srgb, var(--cat) 35%, transparent);
+	border-radius: var(--pop-radius-sm);
+	overflow: hidden;
+}
+.sl-markdown-content table {
+	font-size: var(--sl-text-sm);
+	line-height: 1.7;
+}
+.sl-markdown-content :is(th, td),
+.sl-markdown-content :is(th, td):first-child,
+.sl-markdown-content :is(th, td):last-child {
+	padding: 0.65rem 0.9rem;
+}
+.sl-markdown-content th {
+	background: var(--cat);
+	color: var(--cat-ink);
+	font-weight: 700;
+	border: none;
+}
+.sl-markdown-content td {
+	border-left: none;
+	border-right: none;
+	border-color: color-mix(in srgb, var(--cat) 18%, transparent);
+}
+.sl-markdown-content tr:nth-child(even) td {
+	background: color-mix(in srgb, var(--cat) 6%, transparent);
+}
+
+/* 注意書き（aside） */
+.starlight-aside {
+	border-radius: var(--pop-radius-sm);
+	border-inline-start-width: 6px;
+}
+.starlight-aside__title {
+	font-weight: 700;
+}
+
+/* 目次 */
+starlight-toc a[aria-current='true'] {
+	color: var(--cat);
+	font-weight: 700;
+}
+
+/* 前後の記事リンク */
+.pagination-links a {
+	border-radius: var(--pop-radius);
+	border-width: 2px;
+}
+.pagination-links a:hover {
+	border-color: var(--cat);
+}
+
+/* ---------- トップページ（splash） ---------- */
+.hero {
+	padding-block: 2.5rem 1rem;
+}
+.hero h1 {
+	font-weight: 700;
+	line-height: 1.25;
+}
+.hero .tagline {
+	font-weight: 700;
+	color: var(--sl-color-gray-2);
+}
+.sl-link-button {
+	border-radius: 999px !important;
+	font-weight: 700 !important;
+	border-width: 2px !important;
+}
+.sl-link-button.primary {
+	background: var(--sl-color-accent) !important;
+	border-color: var(--sl-color-accent) !important;
+	color: #ffffff !important;
+}

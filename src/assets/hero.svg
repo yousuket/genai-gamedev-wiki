@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340" width="440" height="340" role="img" aria-label="AIの吹き出しとゲームコントローラーのイラスト">
+  <circle cx="230" cy="190" r="140" fill="#ffb400" opacity="0.18"/>
+  <circle cx="92" cy="92" r="22" fill="#00a699" opacity="0.9"/>
+  <circle cx="380" cy="280" r="16" fill="#7b61ff" opacity="0.9"/>
+  <rect x="352" y="64" width="26" height="26" rx="7" fill="#3d9bff" transform="rotate(18 365 77)"/>
+  <rect x="44" y="250" width="22" height="22" rx="6" fill="#ff5fa2" transform="rotate(-14 55 261)"/>
+
+  <!-- コントローラー -->
+  <path d="M130 170 C 130 140, 150 128, 180 128 L 280 128 C 310 128, 330 140, 330 170 L 352 262 C 358 290, 330 304, 310 286 L 276 250 L 184 250 L 150 286 C 130 304, 102 290, 108 262 Z" fill="#ff5a5f"/>
+  <path d="M130 170 C 130 140, 150 128, 180 128 L 280 128 C 310 128, 330 140, 330 170 L 334 186 L 126 186 Z" fill="#ff7a7e"/>
+  <!-- 十字キー -->
+  <rect x="160" y="178" width="18" height="54" rx="5" fill="#ffffff"/>
+  <rect x="142" y="196" width="54" height="18" rx="5" fill="#ffffff"/>
+  <!-- ボタン -->
+  <circle cx="290" cy="184" r="12" fill="#ffb400"/>
+  <circle cx="314" cy="208" r="12" fill="#00a699"/>
+  <circle cx="266" cy="208" r="12" fill="#3d9bff"/>
+  <circle cx="290" cy="232" r="12" fill="#7b61ff"/>
+  <rect x="210" y="200" width="16" height="8" rx="4" fill="#ffd6d7"/>
+  <rect x="234" y="200" width="16" height="8" rx="4" fill="#ffd6d7"/>
+
+  <!-- AI の吹き出し -->
+  <path d="M232 26 L 332 26 C 348 26, 358 36, 358 52 L 358 82 C 358 98, 348 108, 332 108 L 290 108 L 270 128 L 272 108 L 232 108 C 216 108, 206 98, 206 82 L 206 52 C 206 36, 216 26, 232 26 Z" fill="#2d2a32"/>
+  <text x="282" y="80" text-anchor="middle" font-family="'BIZ UDPGothic', sans-serif" font-weight="700" font-size="34" fill="#ffffff">AI</text>
+  <!-- きらきら -->
+  <path d="M188 40 l 5 13 l 13 5 l -13 5 l -5 13 l -5 -13 l -13 -5 l 13 -5 Z" fill="#ffb400"/>
+  <path d="M376 128 l 4 9 l 9 4 l -9 4 l -4 9 l -4 -9 l -9 -4 l 9 -4 Z" fill="#ff5fa2"/>
+  <path d="M80 170 l 3 8 l 8 3 l -8 3 l -3 8 l -3 -8 l -8 -3 l 8 -3 Z" fill="#7b61ff"/>
+</svg>

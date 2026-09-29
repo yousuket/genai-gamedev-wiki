@@ -1,0 +1,110 @@
+---
+// トップページ: 最新の週次レポート（まだなければ公開予定を表示）
+import { getCollection } from 'astro:content';
+import TablerIcon from '../TablerIcon.astro';
+import { withBase } from '../../data/categories';
+
+const reports = (await getCollection('docs', (e) => e.id.startsWith('news/')))
+	.sort((a, b) => b.id.localeCompare(a.id))
+	.slice(0, 3);
+---
+
+<div class="news not-content">
+	<div class="head">
+		<span class="badge"><TablerIcon name="sparkles" size="1.1em" /> 毎週月曜に自動更新</span>
+		<a class="all" href={withBase('/news/')}>レポート一覧 <TablerIcon name="arrow-right" size="1em" /></a>
+	</div>
+	{
+		reports.length > 0 ? (
+			<ul>
+				{reports.map((r) => (
+					<li>
+						<a href={withBase(`/${r.id}/`)}>
+							<span class="title">{r.data.title}</span>
+							<span class="desc">{r.data.description}</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		) : (
+			<p class="empty">
+				<TablerIcon name="calendar" size="1.25em" />
+				最初の週次レポートは 2026年10月5日（月）に公開予定です。情報収集エージェントが毎日ニュースを集めています。
+			</p>
+		)
+	}
+</div>
+
+<style>
+	.news {
+		padding: 1.25rem;
+		border-radius: 24px;
+		background: color-mix(in srgb, #ff5fa2 12%, var(--sl-color-bg));
+		border: 2px dashed color-mix(in srgb, #ff5fa2 55%, transparent);
+	}
+	.head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+	.badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35em;
+		padding: 0.25em 0.8em;
+		border-radius: 999px;
+		background: #ff5fa2;
+		color: #fff;
+		font-size: var(--sl-text-sm);
+		font-weight: 700;
+	}
+	.all {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25em;
+		color: var(--sl-color-white);
+		font-weight: 700;
+		font-size: var(--sl-text-sm);
+	}
+	ul {
+		display: grid;
+		gap: 0.5rem;
+		margin: 1rem 0 0;
+		padding: 0;
+		list-style: none;
+	}
+	li a {
+		display: flex;
+		flex-direction: column;
+		padding: 0.75rem 1rem;
+		border-radius: 16px;
+		background: var(--sl-color-bg);
+		color: var(--sl-color-white);
+		text-decoration: none;
+	}
+	li a:hover {
+		outline: 2px solid #ff5fa2;
+	}
+	.title {
+		font-weight: 700;
+	}
+	.desc {
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+	}
+	.empty {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.5em;
+		margin: 1rem 0 0;
+		color: var(--sl-color-gray-2);
+		font-weight: 700;
+	}
+	.empty :global(svg) {
+		flex-shrink: 0;
+		margin-top: 0.2em;
+		color: #ff5fa2;
+	}
+</style>

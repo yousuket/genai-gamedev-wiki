@@ -1,0 +1,92 @@
+---
+// トップページ: はじめての人向けの読む順番
+import { getEntry } from 'astro:content';
+import TablerIcon from '../TablerIcon.astro';
+import { withBase } from '../../data/categories';
+
+const steps = [
+	{ id: 'getting-started/about', color: '#ff8a3d' },
+	{ id: 'getting-started/roadmap', color: '#ff5a5f' },
+	{ id: 'getting-started/scope', color: '#ffb400' },
+	{ id: 'genres/ai-friendly', color: '#00a699' },
+];
+const entries = await Promise.all(steps.map(async (s) => ({ ...s, entry: await getEntry('docs', s.id) })));
+---
+
+<ol class="steps not-content">
+	{
+		entries.map(({ id, color, entry }, i) => (
+			<li style={`--c:${color}`}>
+				<a href={withBase(`/${id}/`)}>
+					<span class="num">{i + 1}</span>
+					<span class="body">
+						<span class="title">{entry?.data.title}</span>
+						<span class="desc">{entry?.data.description}</span>
+					</span>
+					<TablerIcon name="arrow-right" size="1.25rem" />
+				</a>
+			</li>
+		))
+	}
+</ol>
+
+<style>
+	.steps {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 0.75rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: none;
+	}
+	.steps a {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.9rem 1.1rem;
+		border-radius: 20px;
+		border: 2px solid color-mix(in srgb, var(--c) 45%, transparent);
+		background: color-mix(in srgb, var(--c) 8%, var(--sl-color-bg));
+		color: var(--sl-color-white);
+		text-decoration: none;
+		transition: transform 0.15s ease, border-color 0.15s ease;
+	}
+	.steps a:hover {
+		transform: translateX(4px);
+		border-color: var(--c);
+	}
+	.num {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: 50%;
+		background: var(--c);
+		color: #fff;
+		font-size: var(--sl-text-lg);
+		font-weight: 700;
+	}
+	.body {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		min-width: 0;
+	}
+	.title {
+		font-weight: 700;
+	}
+	.desc {
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.steps :global(svg) {
+		flex-shrink: 0;
+		color: var(--c);
+	}
+</style>

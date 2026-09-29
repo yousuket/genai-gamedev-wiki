@@ -1,0 +1,23 @@
+{
+  "name": "genai-gamedev-wiki",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "check": "node scripts/check-content.mjs",
+    "check:dist": "node scripts/check-dist.mjs",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/markdown-satteri": "^0.4.2",
+    "@astrojs/starlight": "^0.42.4",
+    "@fontsource/biz-udpgothic": "^5.3.0",
+    "@tabler/icons": "^3.48.0",
+    "astro": "^7.2.10",
+    "sharp": "^0.35.3"
+  }
+}

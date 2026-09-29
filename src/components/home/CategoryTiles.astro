@@ -1,0 +1,94 @@
+---
+// トップページ: カテゴリのタイル（色・アイコン・記事数）
+import { getCollection } from 'astro:content';
+import TablerIcon from '../TablerIcon.astro';
+import { categories, categoryOf, withBase } from '../../data/categories';
+
+const docs = await getCollection('docs');
+const count = (id: string) => docs.filter((e) => categoryOf(e.id)?.id === id && e.id !== id).length;
+const tiles = categories.filter((c) => c.id !== 'getting-started' && c.id !== 'news');
+---
+
+<ul class="tiles not-content">
+	{
+		tiles.map((c) => (
+			<li>
+				<a href={withBase(c.href)} style={`--c:${c.color};--ink:${c.ink}`}>
+					<span class="icon">
+						<TablerIcon name={c.icon} size="1.75rem" />
+					</span>
+					<span class="label">{c.label}</span>
+					<span class="desc">{c.description}</span>
+					<span class="count">{count(c.id)} 記事</span>
+				</a>
+			</li>
+		))
+	}
+</ul>
+
+<style>
+	.tiles {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.tiles a {
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+		height: 100%;
+		padding: 1.25rem;
+		border-radius: 24px;
+		background: var(--c);
+		color: var(--ink);
+		text-decoration: none;
+		transition: transform 0.15s ease, box-shadow 0.15s ease;
+		box-shadow: 0 5px 0 color-mix(in srgb, var(--c) 70%, #000);
+	}
+	.tiles a:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 0 color-mix(in srgb, var(--c) 70%, #000);
+	}
+	.tiles a:active {
+		transform: translateY(3px);
+		box-shadow: 0 2px 0 color-mix(in srgb, var(--c) 70%, #000);
+	}
+	.icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 16px;
+		background: color-mix(in srgb, #fff 25%, transparent);
+	}
+	.label {
+		margin-top: 0.4rem;
+		font-size: var(--sl-text-xl);
+		font-weight: 700;
+	}
+	.desc {
+		font-size: var(--sl-text-sm);
+		line-height: 1.6;
+		opacity: 0.92;
+	}
+	.count {
+		margin-top: auto;
+		padding-top: 0.5rem;
+		font-size: var(--sl-text-xs);
+		font-weight: 700;
+	}
+	@media (max-width: 60rem) {
+		.tiles {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+	@media (max-width: 36rem) {
+		.tiles {
+			grid-template-columns: minmax(0, 1fr);
+		}
+	}
+</style>

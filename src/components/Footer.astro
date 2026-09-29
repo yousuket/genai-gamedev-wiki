@@ -1,0 +1,89 @@
+---
+// 記事の末尾に「同じカテゴリの記事」を表示してから、Starlight 標準のフッターを出す
+import { getCollection } from 'astro:content';
+import DefaultFooter from '@astrojs/starlight/components/Footer.astro';
+import TablerIcon from './TablerIcon.astro';
+import { categoryOf, withBase } from '../data/categories';
+
+const { id, entry } = Astro.locals.starlightRoute;
+const category = categoryOf(id);
+const isSplash = entry.data.template === 'splash';
+
+const related =
+	category && !isSplash
+		? (await getCollection('docs', (e) => e.id !== id && categoryOf(e.id)?.id === category.id))
+				.sort((a, b) => (a.data.sidebar.order ?? 0) - (b.data.sidebar.order ?? 0))
+				.slice(0, 6)
+		: [];
+---
+
+{
+	related.length > 0 && category && (
+		<section class="related">
+			<h2>
+				<TablerIcon name={category.icon} size="1.1em" />
+				{category.label}の記事
+			</h2>
+			<ul>
+				{related.map((e) => (
+					<li>
+						<a href={withBase(`/${e.id}/`)}>
+							<span class="title">{e.data.title}</span>
+							<TablerIcon name="arrow-right" size="1.1em" />
+						</a>
+					</li>
+				))}
+			</ul>
+		</section>
+	)
+}
+<DefaultFooter />
+
+<style>
+	.related {
+		margin-top: 3rem;
+		padding: 1.25rem;
+		border-radius: 24px;
+		background: color-mix(in srgb, var(--cat) 12%, var(--sl-color-bg));
+	}
+	.related h2 {
+		display: flex;
+		align-items: center;
+		gap: 0.4em;
+		margin: 0 0 0.75rem;
+		font-size: var(--sl-text-lg);
+		font-weight: 700;
+		color: var(--sl-color-white);
+	}
+	.related ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+		gap: 0.6rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.related a {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+		height: 100%;
+		padding: 0.75rem 1rem;
+		border-radius: 16px;
+		background: var(--sl-color-bg);
+		color: var(--sl-color-white);
+		font-weight: 700;
+		text-decoration: none;
+		border: 2px solid transparent;
+		transition: transform 0.15s, border-color 0.15s;
+	}
+	.related a:hover {
+		border-color: var(--cat);
+		transform: translateY(-2px);
+	}
+	.related a :global(svg) {
+		flex-shrink: 0;
+		color: var(--cat);
+	}
+</style>

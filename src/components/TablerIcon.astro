@@ -1,0 +1,23 @@
+---
+// Tabler Icons（outline）の SVG をビルド時にインライン展開する
+import { readFileSync } from 'node:fs';
+import { createRequire } from 'node:module';
+
+interface Props {
+	name: string;
+	size?: string;
+	class?: string;
+}
+
+const { name, size = '1.5em', class: className } = Astro.props;
+const require = createRequire(import.meta.url);
+const path = require.resolve(`@tabler/icons/outline/${name}.svg`);
+const svg = readFileSync(path, 'utf8')
+	.replace(/<!--[\s\S]*?-->/g, '')
+	.replace(/width="24"/, `width="${size}"`)
+	.replace(/height="24"/, `height="${size}"`)
+	.replace('class="', `class="${className ?? ''} `)
+	.replace('<svg', '<svg aria-hidden="true"');
+---
+
+<Fragment set:html={svg} />

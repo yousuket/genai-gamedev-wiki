@@ -1,0 +1,77 @@
+---
+// 記事タイトルの上にカテゴリのバッジ、下に読了時間を表示する（Starlight の PageTitle を上書き）
+import TablerIcon from './TablerIcon.astro';
+import { categoryOf, readingMinutes, withBase } from '../data/categories';
+
+// Starlight の PAGE_TITLE_ID と同じ値（目次の「概要」リンクがこのIDを参照する）
+const PAGE_TITLE_ID = '_top';
+
+const { entry, id } = Astro.locals.starlightRoute;
+const category = categoryOf(id);
+const minutes = readingMinutes(entry.body);
+const catVars = category ? `:root{--cat:${category.color};--cat-ink:${category.ink};}` : '';
+---
+
+{catVars && <style is:inline set:html={catVars} />}
+<div class="page-title">
+	{
+		category && (
+			<a class="cat-badge" href={withBase(category.href)}>
+				<TablerIcon name={category.icon} size="1.1em" />
+				{category.label}
+			</a>
+		)
+	}
+	<h1 id={PAGE_TITLE_ID}>{entry.data.title}</h1>
+	{entry.data.description && <p class="lead">{entry.data.description}</p>}
+	<p class="meta">
+		<TablerIcon name="clock" size="1.1em" />
+		約{minutes}分で読めます
+	</p>
+</div>
+
+<style>
+	.page-title {
+		margin-top: 1rem;
+	}
+	.cat-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35em;
+		padding: 0.3em 0.9em;
+		border-radius: 999px;
+		background: var(--cat);
+		color: var(--cat-ink);
+		font-size: var(--sl-text-sm);
+		font-weight: 700;
+		text-decoration: none;
+	}
+	.cat-badge:hover {
+		filter: brightness(1.05);
+		transform: translateY(-1px);
+	}
+	h1 {
+		margin-top: 0.6rem;
+		font-size: var(--sl-text-h1);
+		line-height: var(--sl-line-height-headings);
+		font-weight: 700;
+		color: var(--sl-color-white);
+	}
+	.lead {
+		margin-top: 0.75rem;
+		font-size: var(--sl-text-lg);
+		color: var(--sl-color-gray-2);
+	}
+	.meta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35em;
+		margin-top: 0.75rem;
+		padding: 0.2em 0.8em;
+		border-radius: 999px;
+		background: color-mix(in srgb, var(--cat, var(--sl-color-accent)) 14%, transparent);
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-xs);
+		font-weight: 700;
+	}
+</style>
