@@ -175,7 +175,12 @@ site-search button[data-open-modal] {
 .sl-markdown-content :is(th, td):last-child {
 	padding: 0.65rem 0.9rem;
 }
-/* 最後の列が、1文字ずつ折り返されるほど細くならないようにする（足りない幅は横スクロールで読める） */
+/* どの列も、3文字ごとに折り返されるほど細くならないようにする（足りない幅は横スクロールで読める） */
+.sl-markdown-content :is(th, td) {
+	min-width: 6em;
+	/* 文節の区切りで折り返す（未対応のブラウザでは無視される） */
+	word-break: auto-phrase;
+}
 .sl-markdown-content :is(th, td):last-child {
 	min-width: 7.5em;
 }
