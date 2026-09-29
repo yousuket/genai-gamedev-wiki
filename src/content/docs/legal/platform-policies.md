@@ -6,10 +6,6 @@ sidebar:
 lastUpdated: 2026-09-29
 ---
 
-:::caution[法的助言ではありません]
-この記事は一般的な情報提供を目的としたもので、法的助言ではありません。各プラットフォームのポリシーは予告なく変わります。申請前に必ず最新の公式ドキュメントを確認し、重要な判断は専門家に相談してください。
-:::
-
 ## 概要
 
 生成AIを使ったゲームを販売するときは、ツールの規約（[AIツールの商用利用条件](/legal/tool-terms/)）に加えて、**販売プラットフォームのルール**も守る必要があります。
@@ -38,7 +34,7 @@ AIの使い方は次の2つに分けて申告します。
 
 同じドキュメントには、次のように書かれています。最近のゲーム開発環境にはAIツールが組み込まれていることが多いが、それによる効率化はこのセクションの対象ではない。対象は、ゲームに同梱されてプレイヤーが消費するコンテンツ（アートワーク、サウンド、ナラティブ、ローカライズなど）である。
 
-この書き方は2026年1月の更新で明確になったと報じられています（[PC Gamer](https://www.pcgamer.com/software/ai/steam-updates-ai-disclosure-form-to-specify-that-its-focused-on-ai-generated-content-that-is-consumed-by-players-not-efficiency-tools-used-behind-the-scenes/)）。たとえば、コード補完ツールを使っただけなら、この開示の対象になるとは読めません。一方で、プレイヤーが見聞きする素材をAIで作ったなら申告します。判断に迷う場合は、ドキュメントの原文を確認してください。
+この書き方は2026年1月の更新で明確になったと報じられています（[PC Gamer](https://www.pcgamer.com/software/ai/steam-updates-ai-disclosure-form-to-specify-that-its-focused-on-ai-generated-content-that-is-consumed-by-players-not-efficiency-tools-used-behind-the-scenes/)）。たとえば、コード補完ツールを使っただけなら、この開示の対象になるとは読めません。一方で、プレイヤーが見聞きする素材をAIで作ったなら申告します。
 
 ### ストアページでの表示とプレイヤーからの報告
 
@@ -79,7 +75,7 @@ AIの使い方は次の2つに分けて申告します。
 ## コンソール・その他のストア
 
 - PlayStation、Xbox、Nintendo の開発者向けルールは、主に秘密保持契約（NDA）のもとで提供されます。2026年9月時点で、Steamのような**公開されたAI開示ルールは確認できませんでした**。報道でも、Steam以外の主要ストアには明確な開示ルールがないと指摘されています（[The Conversation](https://theconversation.com/are-video-game-developers-using-ai-players-want-to-know-but-the-rules-are-patchy-274850)、2026年2月）。
-- コンソールで出す場合は、各社の開発者ポータルで最新の要件を確認してください。パブリッシャー経由なら、パブリッシャーにも確認します。
+- コンソールの最新の要件は、各社の開発者ポータルで案内されます。
 - EUでは、AI法（AI Act）の透明性ルールが2026年8月から適用されると欧州委員会が説明しています。チャットボットと話していることを利用者が分かるようにする、といった内容です（[欧州委員会](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)）。EU向けにライブ生成のゲームを配信するなら、自分のゲームが対象になるかを確認してください。
 
 ## ライブ生成する場合のガードレール
@@ -96,19 +92,15 @@ AIの使い方は次の2つに分けて申告します。
 | AIであることの表示 | 生成されたセリフや画像がAIによるものだと、プレイヤーに分かるようにする | Steam のストア表示、EU AI法 |
 | ログと改善 | 報告された出力や、ブロックした件数を記録し、フィルターを改善する | Google Play |
 
-**使うLLM APIの規約**も確認してください。たとえば、[Gemini API の追加利用規約](https://ai.google.dev/gemini-api/terms)は、18歳未満向け、または18歳未満が利用する可能性が高いアプリでの利用を禁じています（2026年9月時点）。Anthropicも、未成年が使う製品にAPIを組み込む組織に追加の安全対策を求めています（[Claudeヘルプセンター](https://support.claude.com/en/articles/9307344-responsible-use-of-anthropic-s-models-guidelines-for-organizations-serving-minors)）。
+**使うLLM APIの規約**にも制限があります。たとえば、[Gemini API の追加利用規約](https://ai.google.dev/gemini-api/terms)は、18歳未満向け、または18歳未満が利用する可能性が高いアプリでの利用を禁じています（2026年9月時点）。Anthropicも、未成年が使う製品にAPIを組み込む組織に追加の安全対策を求めています（[Claudeヘルプセンター](https://support.claude.com/en/articles/9307344-responsible-use-of-anthropic-s-models-guidelines-for-organizations-serving-minors)）。
 
 ## AIの活用ポイント
 
-- **申告文の下書き**: 素材台帳（どの素材をどのツールで作り、どう加工したか）をLLMに渡すと、Steamのコンテンツ調査に書く説明文を下書きできます。最終的な内容は、自分で事実を確認してから提出します。
+- **申告文の下書き**: 素材台帳（どの素材をどのツールで作り、どう加工したか）をLLMに渡すと、Steamのコンテンツ調査に書く説明文を下書きできます。
 - **レッドチーミング（安全性の攻撃テスト）**: ライブ生成のNPCに対して、わざと不適切な発言を引き出す入力を別のLLMに大量に作らせ、フィルターが働くかを自動テストできます。
 - **注意点**: ガードレールは完全には防げません。報告を受け付ける窓口と、問題が起きたときに生成機能を止められる仕組み（サーバー側のフラグなど）を用意しておきます。関連: [AIコーディングツール](/dev-env/ai-coding-tools/)
 
 ## 最新情報
-
-:::note[自動更新]
-この欄は情報収集エージェントが毎週更新しています。
-:::
 
 <!-- AUTO-UPDATE:START -->
 - **2026-09-29**: 初版作成。

@@ -59,7 +59,7 @@ LLM（大規模言語モデル）を開発の道具として使うだけでな�
 
 例として、キャラクター設定や会話履歴を含めて入力2,000トークン、返答200トークンの会話を、1プレイヤーが合計500回行うとします。
 仮に単価が「入力100万トークンあたり1ドル、出力100万トークンあたり5ドル」のモデルなら、1回あたり0.003ドル、1プレイヤーあたり1.5ドルです。
-単価はモデルによって大きく異なるため、実際の数字は各社の料金ページ（[Anthropic](https://www.anthropic.com/pricing)、[OpenAI](https://openai.com/api/pricing/)、[Google Gemini API](https://ai.google.dev/gemini-api/docs/pricing)）で確認してください。
+単価はモデルによって大きく異なります（各社の料金ページ: [Anthropic](https://www.anthropic.com/pricing)、[OpenAI](https://openai.com/api/pricing/)、[Google Gemini API](https://ai.google.dev/gemini-api/docs/pricing)）。
 
 ### コストを抑える設計
 
@@ -102,7 +102,7 @@ LLMの返答には、通常のゲームの処理と比べて長い待ち時間�
 - **Apple Foundation Models フレームワーク**: iOS 26 / iPadOS 26 / macOS 26 などで、Apple Intelligence が使う約30億パラメータのオンデバイスモデルを呼び出せます。推論は無料で、オフラインでも動きます。Apple Intelligence に対応し、有効にしている端末が対象です（[Apple Developer](https://developer.apple.com/documentation/foundationmodels)、[Apple Machine Learning Research](https://machinelearning.apple.com/research/apple-foundation-models-2025-updates)）。
 - **NVIDIA ACE**: ゲームキャラクター向けのAI技術群で、inZOIではGeForce RTX上で動く小型言語モデルが使われています（[NVIDIA ACE for Games](https://developer.nvidia.com/ace-for-games)）。
 - **Unity の推論パッケージ（Sentis）**: ONNX形式のモデルをUnityに取り込み、端末のCPU・GPUで実行できます（[Unity Sentis ドキュメント](https://docs.unity3d.com/Packages/com.unity.ai.inference@2.6/manual/index.html)）。
-- **llama.cpp などのオープンソース実行環境**: オープンなモデルをPCで動かす実行環境です（[llama.cpp](https://github.com/ggml-org/llama.cpp)）。使うモデルのライセンスが商用利用やゲームへの同梱を認めているか、必ず確認してください。
+- **llama.cpp などのオープンソース実行環境**: オープンなモデルをPCで動かす実行環境です（[llama.cpp](https://github.com/ggml-org/llama.cpp)）。
 
 小さなモデルは、長い会話の一貫性や複雑な推論が苦手です。オンデバイスを選ぶ場合は、LLMに任せる範囲を「短い台詞の言い換え」など狭く絞るのが現実的です。
 
@@ -150,10 +150,6 @@ OWASPは、振る舞いの制約、出力形式の定義、入出力のフィル
 開発ツールとしてのAIの使い方は[AI駆動の開発ワークフロー](/dev-env/ai-workflow/)で扱います。
 
 ## 最新情報
-
-:::note[自動更新]
-この欄は情報収集エージェントが毎週更新しています。
-:::
 
 <!-- AUTO-UPDATE:START -->
 - **2026-09-29**: 初版作成。
