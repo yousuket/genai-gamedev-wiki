@@ -19,7 +19,7 @@ AIコーディングツールは、コードの補完だけでなく、ファイ
 | Cursor | AIエディタ、CLI、クラウドエージェント | Hobby（無料、利用制限あり）、Individual は月20ドルから（上位に Pro+ / Ultra）。Teams は月40ドル/ユーザー | `.cursor/rules`、`AGENTS.md`、`CLAUDE.md` | 対応 |
 | GitHub Copilot | VS Code などのIDE、Copilot CLI、クラウドエージェント | Free（無料、制限あり）、Pro 月10ドル、Pro+ 月39ドル、Max 月100ドル。チャットやエージェントの利用は「GitHub AI Credits」（1クレジット=0.01ドル）を消費 | `.github/copilot-instructions.md`、`AGENTS.md` など | 対応 |
 | OpenAI Codex | CLI、IDE拡張、Web（クラウド）、デスクトップアプリ | ChatGPT の全プラン（Free、Go 月8ドル、Plus 月20ドル、Pro 月100ドルから）に含まれる。使える形態はプランで異なる | `AGENTS.md` | 対応（`codex mcp`） |
-| Antigravity CLI / IDE（Google） | CLI、IDE | Individual は無料（利用制限あり）。Google AI Pro / Ultra で上限が上がる | 公式情報では確認できず（Gemini CLI の Skills、Hooks、Subagents、Extensions は引き継ぐ） | 対応（Phaser などがMCPの接続先として案内） |
+| Antigravity CLI / IDE（Google） | CLI、IDE | Individual は無料（利用制限あり）。Google AI Pro / Ultra で上限が上がる | `AGENTS.md`、`GEMINI.md`、`.agents/rules/`（[Antigravity Rules](https://antigravity.google/docs/rules)。Gemini CLI の Skills、Hooks、Subagents、Extensions は引き継ぐ） | 対応（Phaser などがMCPの接続先として案内） |
 
 :::caution[Gemini CLI は個人向けの提供が終了]
 Google は2026年5月19日に Antigravity CLI を公開し、2026年6月18日に無料ユーザーと Google AI Pro / Ultra 利用者向けの Gemini CLI の提供を終了しました。Gemini Code Assist Standard / Enterprise など企業向けライセンスの利用者は、引き続き Gemini CLI を使えます（2026年9月時点）。古い記事の「Gemini CLI は無料で1日1,000リクエスト」という情報は、個人には当てはまりません。

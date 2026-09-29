@@ -5,12 +5,12 @@ import TablerIcon from '../TablerIcon.astro';
 import { categoryOf, readingMinutes, withBase } from '../../data/categories';
 
 const ids = [
-	'dev-env/engines',
-	'design/core-loop',
+	'agent-dev/differentiation',
+	'cases/claude-of-duty',
+	'agent-dev/from-one-shot-to-product',
+	'cases/lessons',
 	'genres/llm-native',
-	'legal/copyright',
 	'monetization/wishlists',
-	'trailer/steam-trailer',
 ];
 const picks = (await Promise.all(ids.map((id) => getEntry('docs', id)))).filter((e) => e !== undefined);
 ---

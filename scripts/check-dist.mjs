@@ -18,9 +18,11 @@ for (const file of walk('dist')) {
 		.replace(/<script[\s\S]*?<\/script>/g, '')
 		.replace(/<style[\s\S]*?<\/style>/g, '')
 		.replace(/<pre[\s\S]*?<\/pre>/g, '')
-		.replace(/<code[\s\S]*?<\/code>/g, '');
+		.replace(/<code[\s\S]*?<\/code>/g, '')
+		// タグは属性ごと取り除く（コードのコピー用の data-code 属性に ** や /** が入るため）
+		.replace(/<\/?[a-zA-Z](?:"[^"]*"|'[^']*'|[^>"'])*>/g, '');
 	for (const m of html.matchAll(/.{0,20}\*\*.{0,20}/g)) {
-		errors.push(`${file}: 「${m[0].replace(/<[^>]*>/g, '')}」 — 太字にならず ** が表示されています。元の記事で <strong>…</strong> を使ってください`);
+		errors.push(`${file}: 「${m[0]}」 — 太字にならず ** が表示されています。元の記事で <strong>…</strong> を使ってください`);
 	}
 }
 

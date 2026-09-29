@@ -67,6 +67,8 @@ lastUpdated: 2026-09-29
 - [ゲームエンジンの比較](/dev-env/engines/)
 - [AIコーディングツール](/dev-env/ai-coding-tools/)
 - [AI駆動の開発ワークフロー](/dev-env/ai-workflow/)
+- [コーディングエージェントでゲームを作る：全体像](/agent-dev/overview/)
+- [『ポン出し』でどこまで作れるか](/agent-dev/one-shot/)
 - [プレイテスト](/design/playtesting/)
 
 :::tip
@@ -107,6 +109,7 @@ AIツールを使い始めるこの段階で、[AIツールの商用利用条件
 - [バランス調整](/design/balancing/)
 - [プレイテスト](/design/playtesting/)
 - [AI駆動の開発ワークフロー](/dev-env/ai-workflow/)
+- [ポン出しから製品まで：開発を進める手順](/agent-dev/from-one-shot-to-product/)
 - [アセット生成](/dev-env/asset-generation/)
 
 ## 5. PV/ストアページ
