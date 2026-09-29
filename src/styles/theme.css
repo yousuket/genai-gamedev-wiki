@@ -100,10 +100,11 @@ site-search button[data-open-modal] {
 .sidebar-content .top-level > li:nth-child(4) { --dot: #00a699; }
 .sidebar-content .top-level > li:nth-child(5) { --dot: #2e9e5b; }
 .sidebar-content .top-level > li:nth-child(6) { --dot: #8bc34a; }
-.sidebar-content .top-level > li:nth-child(7) { --dot: #7b61ff; }
-.sidebar-content .top-level > li:nth-child(8) { --dot: #3d9bff; }
-.sidebar-content .top-level > li:nth-child(9) { --dot: #5c6bc0; }
-.sidebar-content .top-level > li:nth-child(10) { --dot: #ff5fa2; }
+.sidebar-content .top-level > li:nth-child(7) { --dot: #1487ad; }
+.sidebar-content .top-level > li:nth-child(8) { --dot: #7b61ff; }
+.sidebar-content .top-level > li:nth-child(9) { --dot: #3d9bff; }
+.sidebar-content .top-level > li:nth-child(10) { --dot: #5c6bc0; }
+.sidebar-content .top-level > li:nth-child(11) { --dot: #ff5fa2; }
 .sidebar-content a {
 	border-radius: 999px;
 }

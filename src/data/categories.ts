@@ -70,6 +70,15 @@ export const categories: Category[] = [
 		href: '/cases/',
 	},
 	{
+		id: 'publish',
+		label: '公開・イベント',
+		description: 'どこで公開するか。Webゲームの公開先、itch.io、ゲームジャムとコンテスト。',
+		icon: 'rocket',
+		color: '#1487ad',
+		ink: '#ffffff',
+		href: '/publish/overview/',
+	},
+	{
 		id: 'trailer',
 		label: 'PV作成',
 		description: 'PVの構成、キャプチャと編集、Steamトレーラー。',

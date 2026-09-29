@@ -67,6 +67,16 @@ GitHub は `pushed_at` / `created_at` が直近のもので、スターが多い
 | Qiita（gamedev） | `https://qiita.com/tags/gamedev/feed` |
 | Reddit | `https://www.reddit.com/r/gamedev/new/.rss`、`https://www.reddit.com/r/aigamedev/new/.rss`、`https://www.reddit.com/r/IndieDev/new/.rss`、`https://www.reddit.com/r/godot/new/.rss`（HTTP 429 になることが多い。失敗したら記録して次へ） |
 
+### ゲームジャム・コンテスト（公開・イベント）
+| ソース | URL |
+|---|---|
+| itch.io ジャム一覧（開催予定） | `https://itch.io/jams/upcoming`（HTML。ジャム名、開始日、参加者数を、ページから取り出す） |
+| itch.io ジャム一覧（開催中） | `https://itch.io/jams/in-progress` |
+| Cursor Vibe Jam | `https://vibej.am/` |
+| unityroom（Unity1週間ゲームジャム） | `https://unityroom.com/unity1weeks` |
+
+新しく告知されたコンテストや、日程・ルールが変わったコンテストを探す。次のものを優先して記録する: AI・バイブコーディング系、個人が参加できる大きなもの（参加者が多い、賞金がある、歴史がある）、締め切りが2か月以内のもの。ジャム名、期間、AIの利用ルール、公式URLを書き、「反映候補」は `/publish/events-calendar/` にする。
+
 ### 補助: ウェブ検索
 上のフィードに載らない話題を拾うために、WebSearch を使ってもよい（例: 「Steam AI 開示 ポリシー 変更」「Google Play 手数料 日本 2026」）。ただし、検索結果は**公開日をページを開いて確認できたものだけ**を記録する。
 
@@ -94,7 +104,7 @@ items: 件数
 - URL: https://...
 - 公開日: YYYY-MM-DD
 - ソース: 公式 / GitHub / 論文 / コミュニティ
-- カテゴリ: genres / design / dev-env / agent-dev / cases / trailer / monetization / legal（複数可）。コーディングエージェントでゲームを作った話は agent-dev、実在の作品・ポストモーテムは cases
+- カテゴリ: genres / design / dev-env / agent-dev / cases / publish / trailer / monetization / legal（複数可）。ゲームジャム・コンテスト、Webゲームの公開先（ホスティング、itch.io、アプリ化）は publish。コーディングエージェントでゲームを作った話は agent-dev、実在の作品・ポストモーテムは cases
 - 要約: 日本語2〜3行。何が起きたか、個人ゲーム制作者にとって何が変わるか。
 - 反映候補: /dev-env/ai-coding-tools/（既存記事の「最新情報」欄に追記すべき場合の記事パス。なければ「なし」）
 

@@ -60,6 +60,7 @@ export default defineConfig({
 				{ label: '開発環境', items: [{ autogenerate: { directory: 'dev-env' } }] },
 				{ label: 'エージェント開発', items: [{ autogenerate: { directory: 'agent-dev' } }] },
 				{ label: '事例・ポストモーテム', items: [{ autogenerate: { directory: 'cases' } }] },
+				{ label: '公開・イベント', items: [{ autogenerate: { directory: 'publish' } }] },
 				{ label: 'PV作成', items: [{ autogenerate: { directory: 'trailer' } }] },
 				{ label: 'マネタイズ', items: [{ autogenerate: { directory: 'monetization' } }] },
 				{ label: '権利・規約', items: [{ autogenerate: { directory: 'legal' } }] },
