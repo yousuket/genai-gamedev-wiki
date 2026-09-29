@@ -7,21 +7,21 @@
 ## 1. 準備
 
 1. `agents/STYLE.md` を読む（文体・出典・ファイル形式のルール）。
-2. 今日の日付（JST）と ISO 週番号を確認する: `date +%F`、`date +%G-W%V`。以下、レポートの対象週は**前週**（直前の月〜日）とし、その ISO 週を `YYYY-Www` と書く。
-3. `research/daily/` から対象週の7日分のログを読む。
+2. 今日の日付（JST）を `TZ=Asia/Tokyo date +%F` で確認する。以下 `YYYY-MM-DD` はこの日付。レポートの対象期間は**今日を含む直近7日間**（今日の6日前〜今日。月曜の朝の実行なら、前の火曜〜今日の月曜）。
+3. `research/daily/` から対象期間のログを読む。
 4. `src/content/docs/news/` の直近のレポートを読み、既に取り上げた話題を把握する。
 
 ## 2. 週次レポートを書く
 
-`src/content/docs/news/YYYY-Www.md` を作成する。
+`src/content/docs/news/YYYY-MM-DD.md`（今日の日付）を作成する。
 
 ```markdown
 ---
-title: 週次レポート YYYY-Www（M月D日〜M月D日）
+title: 週次レポート YYYY-MM-DD（M月D日〜M月D日）
 description: この週の主なトピックを1文で
 sidebar:
-  order: -YYYYWW   # 例: 2026年第40週なら -202640（新しい週ほど上に表示）
-  label: YYYY-Www
+  order: -YYYYMMDD   # 例: 2026年10月5日なら -20261005（新しいレポートほど上に表示）
+  label: YYYY-MM-DD
 lastUpdated: YYYY-MM-DD
 ---
 
@@ -30,6 +30,7 @@ lastUpdated: YYYY-MM-DD
 
 ## カテゴリ別まとめ
 ### 開発環境
+### エージェント開発・事例
 ### PV作成
 ### マネタイズ
 ### 権利・規約
@@ -52,8 +53,8 @@ lastUpdated: YYYY-MM-DD
 - 本文の記述が古くなった場合（例: 料金が変わった）は、本文を書き換えずに最新情報欄に「本文の○○は△△に変更されました」と書き、Issue の「要確認」に記載する。
 - 追記した記事の frontmatter の `lastUpdated` を今日の日付にする。
 - 1記事の最新情報欄が15件を超えたら、古いものから削除してよい（週次レポートに残っているため）。
-- **新しい記事の作成、既存記事の本文の書き換え、記事の削除はしない。** 新しい記事が必要だと思ったら Issue の「提案」に書く。
-- `src/content/docs/news/index.md` の週次レポート一覧（AUTO-UPDATE 欄）の一番上に `- [YYYY-Www（M月D日〜M月D日）](/news/yyyy-www/) — 1行の概要` を追加する（リンクのパスは小文字）。初回は「最初のレポートは…公開予定です」の行を削除する。
+- **新しい記事の作成、既存記事の本文の書き換え、記事の削除はしない。** 新しい記事が必要だと思ったら Issue の「提案」に書く。特に、収集ログに、コーディングエージェントで作られたゲームの新しい事例（どのモデルに、どんなプロンプトで、何ができたか）があれば、事例集（`/cases/`）に追加する候補として、URLと要点を「提案」に書く。
+- `src/content/docs/news/index.md` の週次レポート一覧（AUTO-UPDATE 欄）の一番上に `- [YYYY-MM-DD（M月D日〜M月D日）](/news/yyyy-mm-dd/) — 1行の概要` を追加する（リンクのパスは小文字）。初回は「最初のレポートは…公開予定です」の行を削除する。
 
 ## 4. 検証する
 
@@ -71,7 +72,7 @@ npm run check:dist   # 太字（**）が変換されずに残っていないか�
 
 ```bash
 git add src/content/docs
-git commit -m "news: weekly update YYYY-Www"
+git commit -m "news: weekly update YYYY-MM-DD"
 git push origin main
 ```
 
@@ -83,11 +84,11 @@ push が競合したら `git pull --rebase origin main` してから再度 push 
 
 ```bash
 gh label create weekly-update --color 1D76DB --description "週次自動更新の報告" 2>/dev/null || true
-gh issue create --title "週次更新 YYYY-Www" --label weekly-update --body-file /tmp/issue.md
+gh issue create --title "週次更新 YYYY-MM-DD" --label weekly-update --body-file /tmp/issue.md
 ```
 
 
-- タイトル: `週次更新 YYYY-Www`
+- タイトル: `週次更新 YYYY-MM-DD`
 - 本文:
   - 結果: 成功 / 失敗
   - 週次レポートへのリンク（公開URL）
