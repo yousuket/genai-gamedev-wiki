@@ -20,7 +20,7 @@ lastUpdated: 2026-09-29
 
 | モデル | 仕組み | 向いている場所 |
 |---|---|---|
-| 買い切り | 1回払って全部遊べる | Steam、itch.io、家庭用ゲーム機 |
+| 買い切り | 1回払って全部遊べる | [Steam](https://store.steampowered.com/)、[itch.io](https://itch.io/)、家庭用ゲーム機 |
 | 広告 | 無料で遊ばせ、広告表示で稼ぐ | スマホ、ブラウザ（Steamは不可） |
 | アプリ内課金 | 無料で遊ばせ、アイテムや追加要素を売る | スマホ、Steamの基本無料ゲーム |
 | サブスクリプション | 月額などの定期課金 | 継続的にサーバー費用がかかるゲーム |
@@ -45,15 +45,15 @@ AdMobなどの広告SDK（アプリに組み込むライブラリ）を使いま
 
 ### ブラウザ
 
-- **ポータルに載せる**: PokiやCrazyGamesは専用SDKを通じて広告を表示し、収益を分け合います。自分で広告契約をする必要はありません（[Working with Poki](https://developers.poki.com/guide/working-with-poki)、[CrazyGames FAQ](https://docs.crazygames.com/faq/)）。CrazyGamesは、収益化するゲームに外部広告や他ポータルのロゴを入れないことを求めています（同FAQ）。
+- **ポータルに載せる**: [Poki](https://poki.com/)や[CrazyGames](https://www.crazygames.com/)は専用SDKを通じて広告を表示し、収益を分け合います。自分で広告契約をする必要はありません（[Working with Poki](https://developers.poki.com/guide/working-with-poki)、[CrazyGames FAQ](https://docs.crazygames.com/faq/)）。CrazyGamesは、収益化するゲームに外部広告や他ポータルのロゴを入れないことを求めています（同FAQ）。
 - **自分のサイトで配信する**: GoogleのAdSense H5 Games Adsは、HTML5ゲームの合間の広告やリワード広告を出せる仕組みで、申請制です（[Sign up for AdSense H5 Games Ads](https://support.google.com/adsense/answer/1705831?hl=en)）。
 
 ## アプリ内課金
 
 ### ストアの決済を使う義務
 
-- **App Store**: 機能やコンテンツのロック解除（サブスク、ゲーム内通貨、追加ステージなど）にはAppleのアプリ内課金を使う必要があります。例外は地域ごとに定められており、米国のストアフロントでは外部の購入手段へのリンクが認められています（[App Review Guidelines 3.1](https://developer.apple.com/app-store/review/guidelines/)、2026年9月時点）。日本では外部決済も選べるようになりました（[Payment options on the App Store in Japan](https://developer.apple.com/support/payment-options-on-the-app-store-in-japan/)）。
-- **Google Play**: 地域によって代替決済や外部リンクの選択肢があり、手数料体系も移行中です（[Understanding Google Play's lower service fees](https://support.google.com/googleplay/android-developer/answer/16954621?hl=en)）。
+- **[App Store](https://developer.apple.com/app-store/)**: 機能やコンテンツのロック解除（サブスク、ゲーム内通貨、追加ステージなど）にはAppleのアプリ内課金を使う必要があります。例外は地域ごとに定められており、米国のストアフロントでは外部の購入手段へのリンクが認められています（[App Review Guidelines 3.1](https://developer.apple.com/app-store/review/guidelines/)、2026年9月時点）。日本では外部決済も選べるようになりました（[Payment options on the App Store in Japan](https://developer.apple.com/support/payment-options-on-the-app-store-in-japan/)）。
+- **[Google Play](https://play.google.com/console/about/)**: 地域によって代替決済や外部リンクの選択肢があり、手数料体系も移行中です（[Understanding Google Play's lower service fees](https://support.google.com/googleplay/android-developer/answer/16954621?hl=en)）。
 
 ### ガチャ（ランダム型アイテム）の注意点
 
@@ -93,7 +93,7 @@ AI NPCとの会話1回あたり、入力3,000トークン（うち2,000トーク
 
 - Anthropicのプロンプトキャッシュは、キャッシュから読む分が通常の入力の0.1倍（Haiku 4.5の場合）です。書き込み時は1.25倍（5分間）または2倍（1時間）かかります（[Anthropic Pricing](https://platform.claude.com/docs/en/about-claude/pricing)）。
 - 非同期の一括処理（Batch API）は50%引きですが、会話のようにすぐ応答が必要な処理には向きません（同上）。事前に大量のテキストを生成しておく用途なら使えます。
-- 10ドルで売ってSteamの取り分30%を引くと、手元に残るのは約7ドル（税金は別）です。上の試算で**10倍遊ぶヘビーユーザー**がいると、モデルによっては売上を超えます。
+- 10ドルで売って[Steam](https://store.steampowered.com/)の取り分30%を引くと、手元に残るのは約7ドル（税金は別）です。上の試算で**10倍遊ぶヘビーユーザー**がいると、モデルによっては売上を超えます。
 
 ### 収益モデルの選択肢
 

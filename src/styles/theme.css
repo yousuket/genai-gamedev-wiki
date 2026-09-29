@@ -154,19 +154,26 @@ site-search button[data-open-modal] {
 	padding: 0.1em 0.4em;
 }
 
-/* 表: 角丸・カテゴリ色のヘッダー */
-.sl-markdown-content table {
-	border-collapse: separate;
-	border-spacing: 0;
+/* 表: 角丸・カテゴリ色のヘッダー。
+   plugins/satteri-table-wrap.mjs が、すべての表を .table-wrap で包む。
+   枠（.table-wrap）が角丸・枠線・横スクロールを持ち、表は通常の表（横幅いっぱい）にする。 */
+.table-wrap {
+	margin: 1.25rem 0;
 	border: 2px solid color-mix(in srgb, var(--cat) 35%, transparent);
 	border-radius: var(--pop-radius-sm);
-	/* 幅を超える表は横にスクロールできるようにする（hidden だと右の列が切れて読めない） */
+	/* 幅を超える表は、枠の中で横にスクロールできる */
 	overflow-x: auto;
 	overscroll-behavior-x: contain;
 	scrollbar-width: thin;
 	scrollbar-color: color-mix(in srgb, var(--cat) 60%, transparent) transparent;
 }
-.sl-markdown-content table {
+.table-wrap > table {
+	display: table;
+	width: 100%;
+	margin: 0;
+	border: 0;
+	border-collapse: collapse;
+	overflow: visible;
 	font-size: var(--sl-text-sm);
 	line-height: 1.7;
 }
@@ -174,6 +181,9 @@ site-search button[data-open-modal] {
 .sl-markdown-content :is(th, td):first-child,
 .sl-markdown-content :is(th, td):last-child {
 	padding: 0.65rem 0.9rem;
+}
+.table-wrap tr:last-child td {
+	border-bottom: 0;
 }
 /* どの列も、3文字ごとに折り返されるほど細くならないようにする（足りない幅は横スクロールで読める） */
 .sl-markdown-content :is(th, td) {

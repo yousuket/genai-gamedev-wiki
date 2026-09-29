@@ -10,9 +10,9 @@ lastUpdated: 2026-09-29
 
 生成AIを使ったゲームを販売するときは、ツールの規約（[AIツールの商用利用条件](/legal/tool-terms/)）に加えて、**販売プラットフォームのルール**も守る必要があります。
 
-- **Steam** は、AI生成コンテンツの開示を申請時に求めています。開示の内容はストアページにも載ります。
-- **itch.io** は、アセット（素材）ページでAI使用の開示を事実上必須にしています。
-- **App Store / Google Play** には、AIに関する個別の規定があります。
+- **[Steam](https://store.steampowered.com/)** は、AI生成コンテンツの開示を申請時に求めています。開示の内容はストアページにも載ります。
+- **[itch.io](https://itch.io/)** は、アセット（素材）ページでAI使用の開示を事実上必須にしています。
+- **[App Store](https://developer.apple.com/app-store/) / [Google Play](https://play.google.com/console/about/)** には、AIに関する個別の規定があります。
 - **ゲーム中にLLMで文章や画像を生成する**（ライブ生成）場合は、どのプラットフォームでも追加の安全対策（ガードレール）が必要です。
 
 販売先の選び方は[販売プラットフォーム](/monetization/platforms/)を参照してください。
@@ -21,7 +21,7 @@ lastUpdated: 2026-09-29
 
 ### 開示の仕組み
 
-Steamでは、ゲームを審査に出す前に「コンテンツ調査（Content Survey）」に回答します。その3番目のセクションが生成AIについての質問です（[Steamworksドキュメント](https://partner.steamgames.com/doc/gettingstarted/contentsurvey)、2026年9月時点）。
+[Steam](https://store.steampowered.com/)では、ゲームを審査に出す前に「コンテンツ調査（Content Survey）」に回答します。その3番目のセクションが生成AIについての質問です（[Steamworksドキュメント](https://partner.steamgames.com/doc/gettingstarted/contentsurvey)、2026年9月時点）。
 
 AIの使い方は次の2つに分けて申告します。
 
@@ -74,7 +74,7 @@ AIの使い方は次の2つに分けて申告します。
 
 ## コンソール・その他のストア
 
-- PlayStation、Xbox、Nintendo の開発者向けルールは、主に秘密保持契約（NDA）のもとで提供されます。2026年9月時点で、Steamのような**公開されたAI開示ルールは確認できませんでした**。報道でも、Steam以外の主要ストアには明確な開示ルールがないと指摘されています（[The Conversation](https://theconversation.com/are-video-game-developers-using-ai-players-want-to-know-but-the-rules-are-patchy-274850)、2026年2月）。
+- PlayStation、Xbox、Nintendo の開発者向けルールは、主に秘密保持契約（NDA）のもとで提供されます。2026年9月時点で、[Steam](https://store.steampowered.com/)のような**公開されたAI開示ルールは確認できませんでした**。報道でも、Steam以外の主要ストアには明確な開示ルールがないと指摘されています（[The Conversation](https://theconversation.com/are-video-game-developers-using-ai-players-want-to-know-but-the-rules-are-patchy-274850)、2026年2月）。
 - コンソールの最新の要件は、各社の開発者ポータルで案内されます。
 - EUでは、AI法（AI Act）の透明性ルールが2026年8月から適用されると欧州委員会が説明しています。チャットボットと話していることを利用者が分かるようにする、といった内容です（[欧州委員会](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)）。EU向けにライブ生成のゲームを配信するなら、自分のゲームが対象になるかを確認してください。
 
@@ -84,7 +84,7 @@ AIの使い方は次の2つに分けて申告します。
 
 | 対策 | 内容 | 関係するルール |
 |---|---|---|
-| 入力と出力のフィルタリング | プレイヤーの入力とAIの出力の両方を、モデレーションAPIやNGワードで検査する | Steam（ガードレールの申告）、Google Play、App Store 1.2 |
+| 入力と出力のフィルタリング | プレイヤーの入力とAIの出力の両方を、モデレーションAPIやNGワードで検査する | [Steam](https://store.steampowered.com/)（ガードレールの申告）、[Google Play](https://play.google.com/console/about/)、[App Store](https://developer.apple.com/app-store/) 1.2 |
 | システムプロンプトでの制限 | 世界観の外の話題、性的・暴力的な内容、実在の人物についての話題を断るよう指示する | Steam（違法コンテンツの防止） |
 | ゲーム内の報告ボタン | ゲームを離れずに報告できるようにする。Steamのオーバーレイ報告とは別に、自前でも用意する | Google Play（必須）、App Store 1.2 |
 | レーティングとの整合 | 生成される内容が、申告したレーティングや成人向けの設定を超えないようにする | Steam のコンテンツ調査 |
@@ -96,7 +96,7 @@ AIの使い方は次の2つに分けて申告します。
 
 ## AIの活用ポイント
 
-- **申告文の下書き**: 素材台帳（どの素材をどのツールで作り、どう加工したか）をLLMに渡すと、Steamのコンテンツ調査に書く説明文を下書きできます。
+- **申告文の下書き**: 素材台帳（どの素材をどのツールで作り、どう加工したか）をLLMに渡すと、[Steam](https://store.steampowered.com/)のコンテンツ調査に書く説明文を下書きできます。
 - **レッドチーミング（安全性の攻撃テスト）**: ライブ生成のNPCに対して、わざと不適切な発言を引き出す入力を別のLLMに大量に作らせ、フィルターが働くかを自動テストできます。
 - **注意点**: ガードレールは完全には防げません。報告を受け付ける窓口と、問題が起きたときに生成機能を止められる仕組み（サーバー側のフラグなど）を用意しておきます。関連: [AIコーディングツール](/dev-env/ai-coding-tools/)
 

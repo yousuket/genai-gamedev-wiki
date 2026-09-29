@@ -11,7 +11,7 @@ lastUpdated: 2026-09-29
 「いくらで売るか」は、作ったあとで悩みがちですが、実は企画段階から意識しておくべきテーマです。この記事では次のことが分かります。
 
 - 個人開発ゲームの価格を決める手順（似たゲームとの比較）
-- Steamの地域別価格とセールのルール（2026年9月時点）
+- [Steam](https://store.steampowered.com/)の地域別価格とセールのルール（2026年9月時点）
 - 早期アクセスと無料体験版（デモ）をどう使うか
 
 プラットフォームごとの手数料は [販売プラットフォーム](/monetization/platforms/) を参照してください。
@@ -24,7 +24,7 @@ lastUpdated: 2026-09-29
 
 1. 過去3年以内に出た、ジャンルと規模が近いゲームを10本ほど選ぶ（売れなかったものも含める）。
 2. 価格、自作との品質の比較、レビューの反応を表にまとめる。
-3. SteamDB（Steamの価格履歴を見られる外部サイト）で、それぞれのゲームがどのくらいの頻度で何%割引しているかを見る。
+3. SteamDB（[Steam](https://store.steampowered.com/)の価格履歴を見られる外部サイト）で、それぞれのゲームがどのくらいの頻度で何%割引しているかを見る。
 
 同氏は「ほとんどの人はセール時に買う」ことを前提に、割引を見込んで少し高めに設定することも勧めています。これは一つの考え方なので、比較調査の結果と合わせて判断してください。
 
@@ -47,9 +47,9 @@ Steamの取り分は基本30%です（[Valveの発表](https://steamcommunity.co
 
 ## 地域別価格（Steam）
 
-Steamでは、価格を37の通貨と4つの地域グループで設定します（[Pricing](https://partner.steamgames.com/doc/store/pricing)、2026年9月時点）。
+[Steam](https://store.steampowered.com/)では、価格を37の通貨と4つの地域グループで設定します（[Pricing](https://partner.steamgames.com/doc/store/pricing)、2026年9月時点）。
 
-- 基準のUSD価格を決めると、Steamworksの変換ツールで各通貨の価格を自動生成できます。変換方法は「為替レートのみ」「購買力を考慮」「複数要素（購買力・同種の娯楽の価格・為替）を考慮」の3種類です（同上）。
+- 基準のUSD価格を決めると、[Steamworks](https://partner.steamgames.com/)の変換ツールで各通貨の価格を自動生成できます。変換方法は「為替レートのみ」「購買力を考慮」「複数要素（購買力・同種の娯楽の価格・為替）を考慮」の3種類です（同上）。
 - **通貨ごとに価格が入っていないと、その通貨の国では購入できません。** たとえば日本円の価格がないと日本のユーザーは買えません（同上）。
 - 最低価格は「0.99ドル相当」の水準で決まっています（同上）。
 - 価格の設定や変更はValveが確認し、通常1〜2営業日で反映されます（同上）。
@@ -60,7 +60,7 @@ Steamでは、価格を37の通貨と4つの地域グループで設定します
 
 ## セール（Steam）
 
-Steamの割引には細かいルールがあります（[Discounting](https://partner.steamgames.com/doc/marketing/discounts)、2026年9月時点）。
+[Steam](https://store.steampowered.com/)の割引には細かいルールがあります（[Discounting](https://partner.steamgames.com/doc/marketing/discounts)、2026年9月時点）。
 
 | ルール | 内容 |
 |---|---|
@@ -76,7 +76,7 @@ Steamの割引には細かいルールがあります（[Discounting](https://pa
 
 ## 早期アクセス
 
-早期アクセス（Early Access）は、未完成のゲームを販売しながらプレイヤーの意見を聞いて開発を続ける仕組みです。Steamは次のような考え方を示しています（[Early Access](https://partner.steamgames.com/doc/store/earlyaccess)、2026年9月時点）。
+早期アクセス（Early Access）は、未完成のゲームを販売しながらプレイヤーの意見を聞いて開発を続ける仕組みです。[Steam](https://store.steampowered.com/)は次のような考え方を示しています（[Early Access](https://partner.steamgames.com/doc/store/earlyaccess)、2026年9月時点）。
 
 - **開発資金を集めるための手段ではない。** 「一定本数売れないと完成できない」なら、計画を見直すべきとしています。
 - **予約販売ではない。** 購入時点で遊べるゲームを提供する必要があります。
@@ -89,7 +89,7 @@ Steamの割引には細かいルールがあります（[Discounting](https://pa
 
 デモは、ゲームの一部を無料で遊べるようにしたものです。ウィッシュリスト（「欲しいものリスト」。発売時やセール時に通知が届く）を増やす手段として重要です。
 
-- Steamでは、デモを本編に付属させる形でも、独立したストアページを持たせる形でも公開できます。独立ページではデモ自体にレビューが付きます（[Demos](https://partner.steamgames.com/doc/store/application/demos)、2026年9月時点）。
+- [Steam](https://store.steampowered.com/)では、デモを本編に付属させる形でも、独立したストアページを持たせる形でも公開できます。独立ページではデモ自体にレビューが付きます（[Demos](https://partner.steamgames.com/doc/store/application/demos)、2026年9月時点）。
 - デモを初めて公開したとき、**本編をウィッシュリストに入れている人へ一度だけ通知**を送れます。公開から14日以内に自分で操作する必要があります（同上）。
 - Steam Next Fest（年3回のデモイベント）への参加にもデモが必要です。詳しくは [ウィッシュリストの集め方](/monetization/wishlists/) を参照してください。
 
@@ -97,7 +97,7 @@ Steamの割引には細かいルールがあります（[Discounting](https://pa
 
 ## その他のプラットフォームの価格
 
-- **itch.io**: 最低価格を0にして、支払いたい額をプレイヤーに決めてもらう形にもできます（[FAQ](https://itch.io/docs/creators/faq)）。決済手数料（おおむね0.30ドル＋2.9%）があるため、itch.ioは2ドル以上での販売を勧めています（[Payments](https://itch.io/docs/creators/payments)）。
+- **[itch.io](https://itch.io/)**: 最低価格を0にして、支払いたい額をプレイヤーに決めてもらう形にもできます（[FAQ](https://itch.io/docs/creators/faq)）。決済手数料（おおむね0.30ドル＋2.9%）があるため、itch.ioは2ドル以上での販売を勧めています（[Payments](https://itch.io/docs/creators/payments)）。
 - **スマホ・ブラウザ**: 買い切りよりも無料＋広告・課金が中心です。詳しくは [広告・アプリ内課金](/monetization/ads-and-iap/) を参照してください。
 
 ## AIの活用ポイント

@@ -8,12 +8,12 @@ lastUpdated: 2026-09-29
 
 ## 概要
 
-itch.io は、個人や少人数のインディーゲームを公開・販売するサイトです。登録も公開も無料で、承認を待つ必要がありません。ブラウザゲームを最短で世に出す場所として、最初の候補になります。
+[itch.io](https://itch.io/) は、個人や少人数のインディーゲームを公開・販売するサイトです。登録も公開も無料で、承認を待つ必要がありません。ブラウザゲームを最短で世に出す場所として、最初の候補になります。
 
 - HTML5 ゲームは、`index.html` を含む zip を1つ上げるだけで公開できます。手元で zip を作って、構成を確かめた結果を載せています。
 - 売上の分け前は自分で決められます（初期値10%）。HTML5 ゲームは、そのままでは「投げ銭」しか受け取れません。
 - 日本から使うときは、米国の税務インタビューが必要です。詳細は [販売プラットフォーム](/monetization/platforms/) にあり、ここでは要点だけを書きます。
-- 公開後は、devlog（開発日誌）、タグ、ジャムで見つけてもらい、必要なら Steam に進みます。
+- 公開後は、devlog（開発日誌）、タグ、ジャムで見つけてもらい、必要なら [Steam](https://store.steampowered.com/) に進みます。
 
 数字はすべて公式ドキュメントで確認したものです（2026年9月時点）。
 
@@ -35,14 +35,14 @@ itch.io は、個人や少人数のインディーゲームを公開・販売す
 
 ### 1. 相対パスでビルドする
 
-ビルドや技術選定は [ブラウザゲームの技術選定](/agent-dev/web-game-stack/) にあります。itch.io で最初につまずくのは、ファイルの参照の仕方です（[HTML5 games](https://itch.io/docs/creators/html5)）。
+ビルドや技術選定は [ブラウザゲームの技術選定](/agent-dev/web-game-stack/) にあります。[itch.io](https://itch.io/) で最初につまずくのは、ファイルの参照の仕方です（[HTML5 games](https://itch.io/docs/creators/html5)）。
 
 - ゲームは HTML 用 CDN のサブディレクトリに置かれます。`/assets/…` のような**絶対パス**は、プロジェクトの外を見にいって失敗します。
 - サーバーは大文字小文字を区別します。Mac や Windows で動いていた `Hello.png` を `hello.png` と書いていると、アップロード後に 403 になります。
 - フォルダ（`/` で終わるパス）を読みにいくと、404 ではなく 403 が返ります。
 - 外部の API やファイルは HTTPS で読みます。
 
-Vite なら、`vite.config.js` に `base: './'` を指定します。手元でビルドして比べると、指定した場合の `dist/index.html` はスクリプトを `./assets/index-…js` で参照し、指定しない場合（初期値）は `/assets/index-…js` で参照しました。
+[Vite](https://vite.dev/) なら、`vite.config.js` に `base: './'` を指定します。手元でビルドして比べると、指定した場合の `dist/index.html` はスクリプトを `./assets/index-…js` で参照し、指定しない場合（初期値）は `/assets/index-…js` で参照しました。
 
 ```js
 import { defineConfig } from 'vite';
@@ -123,7 +123,7 @@ process.exit(problems.length ? 1 : 0);
 | Embed in page | ページの中に、指定した幅と高さで埋め込む |
 | Click to launch in fullscreen | 「Launch game」を押すと画面いっぱいに広がる。サイズの指定は不要だが、ゲームが画面サイズに合わせて描画できる必要がある |
 | Click to Play | 初期状態でオン。軽いゲームならオフにでき、ページを開くと始まる。音が出ないブラウザがある |
-| Fullscreen Button | ゲームに全画面ボタンがないとき、itch.io が自動で付ける。「Embed in page」では右下に重なる |
+| Fullscreen Button | ゲームに全画面ボタンがないとき、[itch.io](https://itch.io/) が自動で付ける。「Embed in page」では右下に重なる |
 | Scrollbars | 初期状態ではオフ。表示領域より大きいゲームで、スクロールを許可する |
 | Mobile Friendly | スマホのブラウザで動くと確認できたらオンにする |
 
@@ -186,7 +186,7 @@ butler push dist your-name/your-game:html5
 
 ## 売上の分け前と手数料
 
-itch.io は「オープン収益分配」という方式です。itch.io に渡す割合を、売り手が **0% から 100% の範囲で自分で決めます**。初期値は10%で、アカウント設定の Seller settings で変えます（[Payments](https://itch.io/docs/creators/payments)）。
+[itch.io](https://itch.io/) は「オープン収益分配」という方式です。itch.io に渡す割合を、売り手が **0% から 100% の範囲で自分で決めます**。初期値は10%で、アカウント設定の Seller settings で変えます（[Payments](https://itch.io/docs/creators/payments)）。
 
 これとは別に、PayPal と Stripe の決済手数料が、取引ごとに「0.30ドル＋2.9%」ほどかかります。公式の計算式に、いくつかの価格を当てはめました（分け前は初期値の10%。10ドルの行は公式の例と同じ）。
 
@@ -206,7 +206,7 @@ itch.io は「オープン収益分配」という方式です。itch.io に渡�
 | | Direct to you（直接受け取り） | Collected by itch.io（集金） |
 |---|---|---|
 | 設定 | PayPal と Stripe を自分で接続し、税の情報も各社に出す | 税務インタビューを1回受け、売り手の規約に同意する |
-| 入金 | 取引ごとに、決済会社の残高へ入る | itch.io に集められ、あとで払い出しを申請する（PayPal か Payoneer） |
+| 入金 | 取引ごとに、決済会社の残高へ入る | [itch.io](https://itch.io/) に集められ、あとで払い出しを申請する（PayPal か Payoneer） |
 | 販売者 | 自分 | itch.io |
 | 通貨 | 自分で選ぶ | ドル |
 | チャージバック | 自分が負う | itch.io が負う |
@@ -247,13 +247,13 @@ itch.io は「オープン収益分配」という方式です。itch.io に渡�
 
 ## ジャム
 
-itch.io は、ゲームジャムの開催と参加の場にもなっています。無料のアカウントがあれば誰でもジャムを開けます。ランク付けありのジャムでは、期間中に作品を提出し、投票の期間を経て順位が出ます（[Hosting a game jam](https://itch.io/docs/creators/game-jams)）。参加する側は、作ったブラウザゲームをジャムのページから提出します。選び方と参加の手順は [ゲームジャム](/publish/game-jams/) に、開催予定は [イベントカレンダー](/publish/events-calendar/) にあります。
+[itch.io](https://itch.io/) は、ゲームジャムの開催と参加の場にもなっています。無料のアカウントがあれば誰でもジャムを開けます。ランク付けありのジャムでは、期間中に作品を提出し、投票の期間を経て順位が出ます（[Hosting a game jam](https://itch.io/docs/creators/game-jams)）。参加する側は、作ったブラウザゲームをジャムのページから提出します。選び方と参加の手順は [ゲームジャム](/publish/game-jams/) に、開催予定は [イベントカレンダー](/publish/events-calendar/) にあります。
 
 ## itch.io app
 
-itch.io app は、Windows、macOS、Linux 向けのデスクトップアプリです。ゲームのインストール、更新、起動を行います。HTML5 ゲームも、全プラットフォームでダウンロードして遊べます。ウェブサイトを置き換えるのではなく、補うものです（[itch.io app FAQ](https://itch.io/docs/app/faq)）。
+[itch.io](https://itch.io/) app は、Windows、macOS、Linux 向けのデスクトップアプリです。ゲームのインストール、更新、起動を行います。HTML5 ゲームも、全プラットフォームでダウンロードして遊べます。ウェブサイトを置き換えるのではなく、補うものです（[itch.io app FAQ](https://itch.io/docs/app/faq)）。
 
-作り手にとっては、ダウンロード版を配るときに意味があります。app が実行ファイルを探して起動し、複数の起動方法や API 連携が要るときは `app manifest` を同梱します。ブラウザ版をデスクトップ向けにも配りたいときは、Electron などで包む方法を [Webゲームをアプリにする](/publish/web-to-app/) で扱います。
+作り手にとっては、ダウンロード版を配るときに意味があります。app が実行ファイルを探して起動し、複数の起動方法や API 連携が要るときは `app manifest` を同梱します。ブラウザ版をデスクトップ向けにも配りたいときは、[Electron](https://www.electronjs.org/) などで包む方法を [Webゲームをアプリにする](/publish/web-to-app/) で扱います。
 
 ## 公開後の育て方
 
@@ -261,7 +261,7 @@ itch.io app は、Windows、macOS、Linux 向けのデスクトップアプリ�
 2. **更新のたびに devlog を書く**: 何が変わったかを、スクリーンショットや短い動画とともに載せます。動画は [ショート動画](/trailer/social-shorts/) の作り方に沿います。
 3. **フィードバックを読む**: コメントか掲示板を有効にし、遊んだ人の反応でゲームを直します。テストの進め方は [プレイテスト](/design/playtesting/) を参照してください。
 4. **自分の場所から人を呼ぶ**: 公式は、実際の人がページを訪れて反応することが、一覧での順位を上げると説明しています。フォローされることと、コレクションに追加されることも、リーチを高めるとされています。
-5. **Steam に進む**: 反応が良ければ Steam に移ります。購入に外部キー（Steam キーなど）を付けて配る機能が、編集画面の Distribute タブにあります（[Getting started](https://itch.io/docs/creators/getting-started)）。Steam の登録費と審査は [販売プラットフォーム](/monetization/platforms/)、ウィッシュリストは [ウィッシュリスト](/monetization/wishlists/) を参照してください。アプリストアに出すなら [Webゲームをアプリにする](/publish/web-to-app/) です。
+5. **[Steam](https://store.steampowered.com/) に進む**: 反応が良ければ Steam に移ります。購入に外部キー（Steam キーなど）を付けて配る機能が、編集画面の Distribute タブにあります（[Getting started](https://itch.io/docs/creators/getting-started)）。Steam の登録費と審査は [販売プラットフォーム](/monetization/platforms/)、ウィッシュリストは [ウィッシュリスト](/monetization/wishlists/) を参照してください。アプリストアに出すなら [Webゲームをアプリにする](/publish/web-to-app/) です。
 
 公開先の全体像は [公開・イベントの概要](/publish/overview/) にまとめています。
 

@@ -9,7 +9,7 @@ lastUpdated: 2026-09-29
 ## 概要
 
 ブラウザゲームは、コーディングエージェントで作るのに向いた形式です。コードがすべてテキストで、ビルドが軽く、画面をスクリプトで撮って確かめられるからです。
-この記事では、ブラウザ向けの主な選択肢（Three.js、Babylon.js、PlayCanvas、Phaser、PixiJS、素のCanvas／WebGL、Godot と Unity の Web 出力）を、エージェントとの相性で比べます。あわせて、TypeScript か JavaScript か、Vite によるビルド、公開先（itch.io、GitHub Pages、Cloudflare Pages）、性能の見方を説明します。
+この記事では、ブラウザ向けの主な選択肢（Three.js、Babylon.js、PlayCanvas、Phaser、PixiJS、素のCanvas／WebGL、Godot と Unity の Web 出力）を、エージェントとの相性で比べます。あわせて、TypeScript か JavaScript か、[Vite](https://vite.dev/) によるビルド、公開先（[itch.io](https://itch.io/)、[GitHub Pages](https://pages.github.com/)、[Cloudflare Pages](https://pages.cloudflare.com/)）、性能の見方を説明します。
 Claude of Duty は、Three.js r180 と WebGL2 を使い、実行時の依存は `three` だけ、ビルドは Vite、画面の確認は Playwright です（[GitHub](https://github.com/mshumer/Claude-of-Duty)）。この構成を、自分のゲームに合わせて選び直すための記事です。エンジン全般の比較は [ゲームエンジンの比較](/dev-env/engines/) を参照してください。
 
 ## 選択肢の比較
@@ -36,7 +36,7 @@ Claude of Duty は、Three.js r180 と WebGL2 を使い、実行時の依存は 
 | 観点 | Three.js など、コードだけの選択肢 | Godot、Unity の Web 出力 |
 |---|---|---|
 | テキストで完結するか | すべてがコード。エージェントが読み、書き、差分で確認できる | シーンはテキスト形式だが、エディタでの作業や、公式・コミュニティ製の連携（MCP）に頼る部分がある（[エンジンの比較](/dev-env/engines/)） |
-| ビルドが軽いか | Vite の開発サーバーで、保存すると即座に反映される | 書き出しの工程が要る（筆者の推測。エンジンの書き出しを経由するため） |
+| ビルドが軽いか | [Vite](https://vite.dev/) の開発サーバーで、保存すると即座に反映される | 書き出しの工程が要る（筆者の推測。エンジンの書き出しを経由するため） |
 | ドキュメントと学習データが多いか | 下の表のとおり、Three.js が突出して多い | エンジン固有の言語（GDScript など）が中心 |
 | ヘッドレスで検証しやすいか | Playwright でブラウザを操作し、スクリーンショットとエラーを取れる | 最終の Web 出力を、同じようにブラウザで検証する |
 
@@ -63,11 +63,11 @@ Vite には、エージェントとの相性を意識した機能があります
 
 Claude Code の公式ドキュメントには、型のある言語の「コードインテリジェンス」のプラグインを入れると、編集のたびに型エラーが自動で報告され、コンパイラを実行せずに誤りを見つけられるという説明があります（[Manage costs effectively](https://code.claude.com/docs/en/costs)）。
 
-筆者のおすすめは、新しく始めるなら TypeScript です。ただし、Vite は TypeScript を JavaScript に変換するだけで、型の検査はしません。検査は `tsc --noEmit` で別に行うと、公式のドキュメントにあります（[Features（Vite）](https://vite.dev/guide/features)）。このコマンドをビルドの前に入れておきます。
+筆者のおすすめは、新しく始めるなら TypeScript です。ただし、[Vite](https://vite.dev/) は TypeScript を JavaScript に変換するだけで、型の検査はしません。検査は `tsc --noEmit` で別に行うと、公式のドキュメントにあります（[Features（Vite）](https://vite.dev/guide/features)）。このコマンドをビルドの前に入れておきます。
 
 ## Vite でのビルド
 
-Vite の最新版は 8.3.1 で、Rolldown を使ってビルドします。Node.js は 20.19 以上、または 22.12 以上が必要です（[Getting Started](https://vite.dev/guide/)）。
+[Vite](https://vite.dev/) の最新版は 8.3.1 で、Rolldown を使ってビルドします。Node.js は 20.19 以上、または 22.12 以上が必要です（[Getting Started](https://vite.dev/guide/)）。
 
 ```bash
 npm create vite@latest my-game -- --template vanilla-ts
@@ -93,7 +93,7 @@ npm install -D @types/three playwright
 
 指示ファイルには、「変更後は `npm run build` と `npm test` を実行し、結果を報告する」と書きます（[プロジェクト指示ファイル](/agent-dev/project-instructions/)）。
 
-itch.io は相対パスを要求し、GitHub Pages のプロジェクトサイトは `/リポジトリ名/` の下で配信されます。どちらでも動くように、`vite.config.ts` の `base` を相対にします。
+[itch.io](https://itch.io/) は相対パスを要求し、[GitHub Pages](https://pages.github.com/) のプロジェクトサイトは `/リポジトリ名/` の下で配信されます。どちらでも動くように、`vite.config.ts` の `base` を相対にします。
 
 ```ts
 import { defineConfig } from 'vite';
@@ -137,11 +137,11 @@ Claude of Duty の撮影ツールは、GPU を使うヘッドレスの Chromium 
 
 | 公開先 | 制限（2026年9月時点） | 向く用途 |
 |---|---|---|
-| itch.io の HTML5 | ZIP に `index.html` が必要。展開後に1,000ファイルまで、合計500MBまで、1ファイル200MBまで。相対パスが必須 | ゲームの公開、ゲームジャムの提出 |
-| GitHub Pages | サイトは1GBまで。帯域は月100GBの目安（ソフトな制限）。オンラインで事業を営むための無料ホスティングとしての利用は認められていない | プロトタイプ、デモ、ポートフォリオ |
-| Cloudflare Pages | 無料プランで1サイト20,000ファイルまで、1ファイル25MiBまで、ビルドは月500回まで | 自分のドメインでの公開 |
+| [itch.io](https://itch.io/) の HTML5 | ZIP に `index.html` が必要。展開後に1,000ファイルまで、合計500MBまで、1ファイル200MBまで。相対パスが必須 | ゲームの公開、ゲームジャムの提出 |
+| [GitHub Pages](https://pages.github.com/) | サイトは1GBまで。帯域は月100GBの目安（ソフトな制限）。オンラインで事業を営むための無料ホスティングとしての利用は認められていない | プロトタイプ、デモ、ポートフォリオ |
+| [Cloudflare Pages](https://pages.cloudflare.com/) | 無料プランで1サイト20,000ファイルまで、1ファイル25MiBまで、ビルドは月500回まで | 自分のドメインでの公開 |
 
-出典: [itch.io の HTML5 のドキュメント](https://itch.io/docs/creators/html5)、[GitHub Pages の制限](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)、[Cloudflare Pages の制限](https://developers.cloudflare.com/pages/platform/limits/)。Vite は、GitHub Pages と Cloudflare Pages への公開手順を用意しています（[Deploying a Static Site](https://vite.dev/guide/static-deploy)）。
+出典: [itch.io の HTML5 のドキュメント](https://itch.io/docs/creators/html5)、[GitHub Pages の制限](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)、[Cloudflare Pages の制限](https://developers.cloudflare.com/pages/platform/limits/)。[Vite](https://vite.dev/) は、GitHub Pages と Cloudflare Pages への公開手順を用意しています（[Deploying a Static Site](https://vite.dev/guide/static-deploy)）。
 
 Godot の Web 出力は、スレッドを有効にする場合、サーバーが `Cross-Origin-Opener-Policy: same-origin` と `Cross-Origin-Embedder-Policy: require-corp` のヘッダーを返す必要があります。ヘッダーを指定できない公開先では、Progressive Web App の設定（サービスワーカーによる回避策）を使う方法があります（[Godot の Web 出力](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html)）。
 
@@ -175,7 +175,7 @@ Claude of Duty の README には、実測が載っています（Apple silicon �
 
 | 事例 | 構成 |
 |---|---|
-| Claude of Duty（Matt Shumer 氏） | Three.js r180、WebGL2、Vite、JavaScript |
+| Claude of Duty（Matt Shumer 氏） | Three.js r180、WebGL2、[Vite](https://vite.dev/)、JavaScript |
 | Homeworld 風のRTS（@mikeluan123） | Three.js（作者の説明。TypeScript との報告もある） |
 | 砂漠の探索ゲーム | Babylon.js と WebGPU。約14時間、約500万トークンと報告されている |
 
@@ -188,7 +188,7 @@ Claude of Duty の README には、実測が載っています（Apple silicon �
 | 一人称や三人称の3Dゲーム、ポン出しの実験 | Three.js。情報が多く、Claude of Duty も同じ。物理などは自分で足す |
 | 3Dで、エディタとエンジンの機能もほしい | PlayCanvas か Babylon.js |
 | 2Dアクション、パズル | Phaser（ゲームの枠組みつき）。描画だけでよければ PixiJS |
-| 小さな2Dの実験、ゲームジャム | 素の Canvas 2D と Vite |
+| 小さな2Dの実験、ゲームジャム | 素の Canvas 2D と [Vite](https://vite.dev/) |
 | 既存のエディタの作業を活かしたい | Godot か Unity。ただし Web 出力の制限を確認する |
 
 ジャンルごとの向き不向きは [AIと相性のよいジャンル](/genres/ai-friendly/) を参照してください。

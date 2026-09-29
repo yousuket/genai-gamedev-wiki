@@ -47,7 +47,7 @@ lastUpdated: 2026-09-29
 | Balatro | 個人開発者 LocalThunk による作品。2025年1月に500万本を突破 | [PC Gamer](https://www.pcgamer.com/i-dont-play-poker-at-all-says-solo-developer-who-made-the-poker-roguelike-i-cant-stop-playing/)、[Playstack](https://www.playstack.com/news/balatro-5-million-copies-sold/) |
 | Vampire Survivors | 個人開発で始まり、初期はオープンソースのHTML5エンジン Phaser で作られた | [Game Developer](https://www.gamedeveloper.com/design/vampire-survivors-development-sounds-like-an-open-source-fueled-fever-dream) |
 | Stardew Valley | 約4年かけて1人で開発 | [公式プレスキット](https://www.stardewvalley.net/press/) |
-| Schedule I | 個人開発者による作品で、2025年のSteamで大きなヒットになった | [80.lv](https://80.lv/articles/walter-white-simulator-schedule-i-becomes-steam-s-most-popular-indie-game-of-2025) |
+| Schedule I | 個人開発者による作品で、2025年の[Steam](https://store.steampowered.com/)で大きなヒットになった | [80.lv](https://80.lv/articles/walter-white-simulator-schedule-i-becomes-steam-s-most-popular-indie-game-of-2025) |
 
 ここから次のような傾向が読み取れます。
 
@@ -88,7 +88,7 @@ lastUpdated: 2026-09-29
 - **アセット量の多いジャンルほどAIの効果は大きいが、統一感の手直しも増える**: ノベルの背景やデッキ構築のカード絵は枚数が多く、生成AIで試作を速められます。一方で画風をそろえる作業は残ります。詳しくは[生成AIと相性の良いジャンル](/genres/ai-friendly/)で扱います。
 - **類似作品の分析に使う**: 候補ジャンルの代表作について、コアループ・プレイ時間・課金形態をAIに整理させ、比較表の叩き台にできます。
 - **LLMそのものを遊びにする選択肢もある**: 会話や推理にLLMを使う新しいジャンルもあります。APIコストや安全性の設計が必要になるため、[LLMをゲームの中で使うジャンル](/genres/llm-native/)を読んでから検討してください。
-- **AIの利用は開示が必要になる場合がある**: Steamでは、開発中にAIで作ったコンテンツとゲーム実行中にAIが生成するコンテンツの申告が求められます（[Steamworks: コンテンツアンケート](https://partner.steamgames.com/doc/gettingstarted/contentsurvey)、2026年9月時点）。詳しくは[プラットフォームのAIポリシー](/legal/platform-policies/)を参照してください。
+- **AIの利用は開示が必要になる場合がある**: [Steam](https://store.steampowered.com/)では、開発中にAIで作ったコンテンツとゲーム実行中にAIが生成するコンテンツの申告が求められます（[Steamworks: コンテンツアンケート](https://partner.steamgames.com/doc/gettingstarted/contentsurvey)、2026年9月時点）。詳しくは[プラットフォームのAIポリシー](/legal/platform-policies/)を参照してください。
 
 ## 最新情報
 

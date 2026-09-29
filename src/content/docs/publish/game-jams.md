@@ -26,7 +26,7 @@ lastUpdated: 2026-09-29
 | 締め切りがある | 範囲を絞らざるを得ず、完成まで進む | Capybara の作者はゲーム制作が初めてで、約2週間で提出まで到達した（[事例](/cases/browser-capybara/)） |
 | フィードバックが来る | プレイした人の指摘で、説明不足や不具合が見つかる | Plug & Prosper は公開後に、結果画面の表示の不具合と説明文のずれを指摘され、修正版を出した（[事例](/cases/browser-plug-prosper/)） |
 | 客観的な位置が分かる | 部門別の順位で、自分の作品の強みと弱みが見える | Plug & Prosper は総合1位でも「楽しさ」は11位だった |
-| 発信の機会になる | 受賞や結果が、作品と作者を知ってもらうきっかけになる | Capybara は Vibe Jam 2026 で945作品の中から1位（賞金25,000ドル）になった |
+| 発信の機会になる | 受賞や結果が、作品と作者を知ってもらうきっかけになる | Capybara は [Vibe Jam](https://vibej.am/) 2026 で945作品の中から1位（賞金25,000ドル）になった |
 | 実験の場になる | 新しいモデルやエージェントを、期限つきで試せる | AI Browser Game Jam 4 は「AIを使った開発を試す」ことを目的に掲げている（[itch.io](https://itch.io/jam/ai-jam-4)、2026年9月時点） |
 
 事例の共通点は、締め切りが「小さく作って最後まで出す」ことを後押ししている点です。Plug & Prosper の作者は、ジャム初日にテーマを4通りに解釈した試作を並べ、遊びを比べてから絞りました。4本すべてを提出しています。
@@ -38,16 +38,16 @@ lastUpdated: 2026-09-29
 | 期間 | イベントの例（2026年9月時点） |
 |---|---|
 | 3時間 | Trijam。毎週末に開催され、3時間で作るのが目標。時間を超えた提出も受け付けるが、1位の対象は3時間以内の作品（[Trijam #388](https://itch.io/jam/trijam-388)） |
-| 48時間 | Micro Jam（[Micro Jam 064](https://itch.io/jam/micro-jam-064)）。Global Game Jam は48時間で作る世界最大のイベントで、2027年は1月25〜31日の週に開催される（[About](https://globalgamejam.org/about)） |
+| 48時間 | Micro Jam（[Micro Jam 064](https://itch.io/jam/micro-jam-064)）。[Global Game Jam](https://globalgamejam.org/) は48時間で作る世界最大のイベントで、2027年は1月25〜31日の週に開催される（[About](https://globalgamejam.org/about)） |
 | 72時間 | Mini Jam（[Mini Jam 219](https://itch.io/jam/mini-jam-219-nocturne)）、AI 専用の Ultimate AI-Powered Game Jam（[#3](https://itch.io/jam/ultimate-ai-powered-game-jam-3)）、All Tools Allowed（[#2](https://itch.io/jam/all-tools-allowed-2)） |
 | 1週間 | Unity 1週間ゲームジャム。日曜20時にお題が出て、翌週の日曜20時までに投稿する（[unityroom](https://unityroom.com/unity1weeks)） |
 | 2〜3週間 | AI Browser Game Jam 4（2026年8月1〜18日、126本）（[itch.io](https://itch.io/jam/ai-jam-4)） |
-| 1か月 | Vibe Jam 2026（2026年4月1日〜5月1日 13:37 UTC）（[公式](https://vibejam.com/)） |
+| 1か月 | [Vibe Jam](https://vibej.am/) 2026（2026年4月1日〜5月1日 13:37 UTC）（[公式](https://vibejam.com/)） |
 
 ### テーマと審査
 
 - お題は、開始時に発表されるのが一般的です。AI Browser Game Jam 4 のように「テーマは提案で、無視してもよい」ものもあれば、Mini Jam のように、テーマとは別に必ず満たす「制限」を出すものもあります
-- 審査は、参加者どうしの相互評価が中心です。Unity 1週間ゲームジャムは、投稿後の1週間が相互評価の期間で、結果はランキングではなく、評価の高かった作品のまとめとして掲載されます（unityroom）
+- 審査は、参加者どうしの相互評価が中心です。Unity 1週間ゲームジャムは、投稿後の1週間が相互評価の期間で、結果はランキングではなく、評価の高かった作品のまとめとして掲載されます（[unityroom](https://unityroom.com/)）
 - Vibe Jam 2026 は審査員が選ぶ方式で、賞金は金・銀・銅と、12の特別賞です（[公式](https://vibejam.com/)）
 - Global Game Jam は競争ではなく、参加そのものが目的のイベントです（[About](https://globalgamejam.org/about)）
 
@@ -61,7 +61,7 @@ AIへの姿勢は、イベントによって正反対です。
 | AIが前提 | 開発が強くAIに支援され、ゲームの大半がAI生成であること | AI Browser Game Jam 4（[itch.io](https://itch.io/jam/ai-jam-4)） |
 | 全ツール可、開示が条件 | 使ったツールを提出ページに書く。書かなければ参加できない。一発のプロンプトだけの投稿は削除されうる | All Tools Allowed #2（[itch.io](https://itch.io/jam/all-tools-allowed-2)） |
 | 制限なし | 著作権などの既存の規則に沿えば、生成AIも含めて制限しない | Global Game Jam（[AI Policy](https://globalgamejam.org/news/global-game-jam-artificial-intelligence-policy)） |
-| 使えるが、審査から外れる項目がある | AIが大半を作った部門は、自分で審査対象から外す（90%が目安） | Ludum Dare（[FAQ](https://ludumdare.com/resources/questions/can-i-use-ai/)） |
+| 使えるが、審査から外れる項目がある | AIが大半を作った部門は、自分で審査対象から外す（90%が目安） | [Ludum Dare](https://ldjam.com/)（[FAQ](https://ludumdare.com/resources/questions/can-i-use-ai/)） |
 | 一部の使用が失格 | 画像と音の生成AIは禁止で、失格になる | GMTK Game Jam 2026（[itch.io](https://itch.io/jam/gmtk-jam-2026)） |
 | 賞金の対象外 | 生成AIを使った作品は賞金の対象外 | Trijam #388（[itch.io](https://itch.io/jam/trijam-388)） |
 | 全面禁止 | コード、画像、音、文章、サムネイルまで生成AIを使えず、見つかれば失格 | Godot Wild Jam（[ポリシー](https://godotwildjam.com/news/godot-wild-jams-policy-on-generative-ai/)） |
@@ -85,8 +85,8 @@ AIへの姿勢は、イベントによって正反対です。
 ### 応募前に、AIの利用条件を読み取る手順
 
 1. ジャムのページで「AI」「generative」「assets」「disqualif」をページ内検索して、該当の段落をすべて読む
-2. 対象の範囲を切り分ける。コード、画像、音、文章のどれが対象か。ゲーム本体だけでなく、ゲームのページやサムネイルまで含むか（GMTK は itch.io のページも対象、Godot Wild Jam はサムネイルも対象）
-3. 制限の種類を見分ける。失格、賞金の対象外、審査部門からの除外、開示の義務、割合の条件（Vibe Jam のコード90%以上、Ludum Dare の90%）のどれか
+2. 対象の範囲を切り分ける。コード、画像、音、文章のどれが対象か。ゲーム本体だけでなく、ゲームのページやサムネイルまで含むか（GMTK は [itch.io](https://itch.io/) のページも対象、Godot Wild Jam はサムネイルも対象）
+3. 制限の種類を見分ける。失格、賞金の対象外、審査部門からの除外、開示の義務、割合の条件（[Vibe Jam](https://vibej.am/) のコード90%以上、[Ludum Dare](https://ldjam.com/) の90%）のどれか
 4. 割合が条件なら、数える方法を決める。コミットの履歴、プロンプトの記録、使ったツールの一覧を残す。Capybara の作者は、ジャムの規約を `.claude/rules` に入れて、失格を避けたと書いている（[事例](/cases/browser-capybara/)）
 5. 事前に作ってよいものの範囲を読む。Vibe Jam は2026年4月1日より前に存在したゲームは提出できない。GMTK は、ジャム専用の素材を事前に作ることを認めず、空のプロジェクトや itch.io のプロフィールは事前に用意してよい
 6. 開示の書式を読む。itch.io は、生成AIの利用を、プロジェクトの編集ページの AI Disclosure で正確に付けるよう求めている（[品質ガイドライン](https://itch.io/docs/creators/quality-guidelines)）。All Tools Allowed は、提出ページへのツール名の記載を参加の条件にしている
@@ -111,14 +111,14 @@ Plug & Prosper の作者は、同じジャムの4本のうち、最も規模の�
 
 ### 技術の選び方
 
-ジャムの多くは、URLを開いてすぐ遊べる形を求めます。AI Browser Game Jam 4 は、ダウンロード不要でブラウザで遊べることが参加の条件です。Vibe Jam 2026 は、ログイン不要、無料、読み込み画面なしで、ほぼ即座にゲームに入れることを条件にしています。GMTK は、Windows PC で動くことを求めます。
+ジャムの多くは、URLを開いてすぐ遊べる形を求めます。AI Browser Game Jam 4 は、ダウンロード不要でブラウザで遊べることが参加の条件です。[Vibe Jam](https://vibej.am/) 2026 は、ログイン不要、無料、読み込み画面なしで、ほぼ即座にゲームに入れることを条件にしています。GMTK は、Windows PC で動くことを求めます。
 エンジンと構成の選び方は [Webゲームの技術スタック](/agent-dev/web-game-stack/) にまとめています。Vibe Jam の公式は Three.js を勧めており、Capybara も Three.js 製です。
 
 ### 事前にやっておくこと
 
 - ひな形のリポジトリを作る。ビルド、ローカルの確認、公開までを、空のゲームで通しておく（GMTK は、空のプロジェクトの事前作成を認めている）
 - 公開の手順を、空のゲームで一度通す。公開先ごとの手順は [Webゲームの公開先](/publish/web-hosting/) と [itch.io に出す](/publish/itch-io/) にあります
-- itch.io に出すなら、ZIP の最初に `index.html` を置き、相対パスで参照し、ファイル名の大文字と小文字をそろえる。大文字と小文字は、自分のPCでは動いても、公開後に読み込めなくなる原因になる（[HTML5 games](https://itch.io/docs/creators/html5)、2026年9月時点）
+- [itch.io](https://itch.io/) に出すなら、ZIP の最初に `index.html` を置き、相対パスで参照し、ファイル名の大文字と小文字をそろえる。大文字と小文字は、自分のPCでは動いても、公開後に読み込めなくなる原因になる（[HTML5 games](https://itch.io/docs/creators/html5)、2026年9月時点）
 - エージェントの指示ファイルに、ジャムのルール、締め切り、作らないものを書く
 - 使うツールとモデル、プロンプトの記録の置き場所を決める。AI利用の開示と、AIの割合の説明に使える
 
@@ -138,14 +138,14 @@ Plug & Prosper の作者は、同じジャムの4本のうち、最も規模の�
 ## 出品のチェックリスト
 
 - [ ] URLを開いて、すぐ遊べる。ログインや登録がない
-- [ ] 初回の起動と読み込みが速い。読み込み画面が長くない（Vibe Jam 2026 は読み込み画面と重いダウンロードを避けるよう求めている）
+- [ ] 初回の起動と読み込みが速い。読み込み画面が長くない（[Vibe Jam](https://vibej.am/) 2026 は読み込み画面と重いダウンロードを避けるよう求めている）
 - [ ] シークレットウィンドウと、キャッシュなしの状態で開く
 - [ ] スマホとPCの両方で表示と操作を試す。片方しか対応しないなら、ページにそう書く
 - [ ] 音が出る。ブラウザは、ユーザーの操作の前の音の再生を止める。Web Audio API の AudioContext は、操作の前に作ると suspended になり、クリックなどのあとに `resume()` を呼ぶ（[Chrome の自動再生ポリシー](https://developer.chrome.com/blog/autoplay)、[MDN](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Autoplay)、2026年9月時点）。タイトル画面の「はじめる」ボタンで音を始めるのが確実
-- [ ] itch.io に出すなら、埋め込みの設定を選ぶ。Click to play をオフにして自動で始めると、ブラウザによって音が消される
+- [ ] [itch.io](https://itch.io/) に出すなら、埋め込みの設定を選ぶ。Click to play をオフにして自動で始めると、ブラウザによって音が消される
 - [ ] 操作の説明が、ゲーム内かページの最初にある
 - [ ] スクリーンショット、GIF、説明文がある。動画の作り方は [ショート動画](/trailer/social-shorts/) を参照
-- [ ] 素材とライブラリのライセンスと、クレジットを書く（[ライセンス](/legal/licenses/)）。AI Browser Game Jam 4 は、サードパーティの素材とツールのクレジットを求めている。Global Game Jam は、提出したゲームのデータを CC BY-NC-SA 4.0 で共有する前提のイベント（[AI Policy](https://globalgamejam.org/news/global-game-jam-artificial-intelligence-policy)）
+- [ ] 素材とライブラリのライセンスと、クレジットを書く（[ライセンス](/legal/licenses/)）。AI Browser Game Jam 4 は、サードパーティの素材とツールのクレジットを求めている。[Global Game Jam](https://globalgamejam.org/) は、提出したゲームのデータを CC BY-NC-SA 4.0 で共有する前提のイベント（[AI Policy](https://globalgamejam.org/news/global-game-jam-artificial-intelligence-policy)）
 - [ ] AI利用の開示を、規約どおりに書く。どのツールを何に使ったかを、コード、画像、音、文章に分けて書く
 - [ ] 提出フォームの必須項目を埋める。Vibe Jam 2026 は、公式のウィジェットのスクリプトがない作品を失格にするとしている
 - [ ] 締め切りの時刻とタイムゾーンを確認する。Vibe Jam 2026 は 2026年5月1日の 13:37 UTC。日本時間では 22:37。Unity 1週間ゲームジャムは日曜20時
@@ -156,7 +156,7 @@ Plug & Prosper の作者は、同じジャムの4本のうち、最も規模の�
 
 ### 事例に見る評価
 
-- **Vibe Jam 2026**: 審査員の一人、Tim Soret 氏は「質が昨年よりずっと高く、本物のゲームに近づいているものもある」と評しました（[levelsio のブログ](https://levels.io/vibe-jam-2026-winners-quality)、2026年6月17日）。賞は、金・銀・銅のほかに、Most Original、Best Art Direction、Most Played などの特別賞があります。公式のルールには、採点の観点の記載はありません（[公式](https://vibejam.com/)、2026年9月時点）。Capybara は、手触りを人が決め、マップを手で作り込み、小ネタを積んだ作品です（[事例](/cases/browser-capybara/)）
+- **[Vibe Jam](https://vibej.am/) 2026**: 審査員の一人、Tim Soret 氏は「質が昨年よりずっと高く、本物のゲームに近づいているものもある」と評しました（[levelsio のブログ](https://levels.io/vibe-jam-2026-winners-quality)、2026年6月17日）。賞は、金・銀・銅のほかに、Most Original、Best Art Direction、Most Played などの特別賞があります。公式のルールには、採点の観点の記載はありません（[公式](https://vibejam.com/)、2026年9月時点）。Capybara は、手触りを人が決め、マップを手で作り込み、小ネタを積んだ作品です（[事例](/cases/browser-capybara/)）
 - **AI Browser Game Jam 4**: 部門は Overall、Fun、Graphics、Audio、Theme、AI Usage の6つです。Plug & Prosper は Overall 4.1、Fun 3.6（11位）、Theme 4.9、Audio 4.6、Graphics 4.5、AI Usage 4.4 で、Fun 以外の部門は1位でした（[結果ページ](https://itch.io/jam/ai-jam-4/results)）
 
 ### 「楽しさ」と総合は別物
@@ -175,9 +175,9 @@ Plug & Prosper は、4本のうち最も規模が小さく、1位になりまし
 ## 出したあと
 
 - **フィードバックの受け止め方**: コメントは、事実（起きたこと）と、好み（こうしてほしい）に分けます。事実の指摘は、修正の対象です。Plug & Prosper は、結果画面の表示の不具合と、説明文の食い違いの指摘に、修正版で応えました（[事例](/cases/browser-plug-prosper/)）。評価が少ないときは、順位より、コメントの中身を読みます
-- **更新して公開を続ける**: Plug & Prosper は、ジャムの後も更新を続け、日ごとに進むモード、アップグレード、客の図鑑を加えました。itch.io はプレイ、配布、更新をまとめて扱えます（[itch.io に出す](/publish/itch-io/)）
+- **更新して公開を続ける**: Plug & Prosper は、ジャムの後も更新を続け、日ごとに進むモード、アップグレード、客の図鑑を加えました。[itch.io](https://itch.io/) はプレイ、配布、更新をまとめて扱えます（[itch.io に出す](/publish/itch-io/)）
 - **ブラウザから別の形へ**: ブラウザのゲームをアプリにする方法は [Webゲームをアプリにする](/publish/web-to-app/) にあります
-- **Steam への発展**: 内容の厚さが足りなければ、出さない判断もあります。Capybara の作者は、遊べる時間が5〜10分で、進行の実感と数時間分の内容がないため、Steam では売らないと述べています。発展させるなら、[ストアの選び方](/monetization/platforms/) と [ウィッシュリスト](/monetization/wishlists/) を見ます
+- **[Steam](https://store.steampowered.com/) への発展**: 内容の厚さが足りなければ、出さない判断もあります。Capybara の作者は、遊べる時間が5〜10分で、進行の実感と数時間分の内容がないため、Steam では売らないと述べています。発展させるなら、[ストアの選び方](/monetization/platforms/) と [ウィッシュリスト](/monetization/wishlists/) を見ます
 - **次のイベントを探す**: [イベントカレンダー](/publish/events-calendar/) と、[itch.io のジャム一覧](https://itch.io/jams) を使います。itch.io は、関係のないジャムに、宣伝の目的だけで作品を提出することを、スパムとして扱い、提出の権限を止める場合があります（[品質ガイドライン](https://itch.io/docs/creators/quality-guidelines)、2026年9月時点）。テーマに合う作品を出します
 
 ## コーディングエージェントでジャムに出すコツ

@@ -114,7 +114,7 @@ AIツールを使い始めるこの段階で、[AIツールの商用利用条件
 
 ## 5. PV/ストアページ
 
-ゲームを知ってもらい、ウィッシュリスト（Steamの「欲しいものリスト」）を集める段階です。
+ゲームを知ってもらい、ウィッシュリスト（[Steam](https://store.steampowered.com/)の「欲しいものリスト」）を集める段階です。
 Steamでは、ウィッシュリストに登録したユーザーに発売時にメールで通知が届きます（[Steamworks: 近日登場ページ](https://partner.steamgames.com/doc/store/coming_soon)）。
 
 Steamで押さえておきたい仕組み（2026年9月時点）:
@@ -122,8 +122,8 @@ Steamで押さえておきたい仕組み（2026年9月時点）:
 | 項目 | 内容 | 出典 |
 |---|---|---|
 | 近日登場ページ | 新作は発売の少なくとも2週間前に公開が必要。画風と主要機能が固まってから公開するよう推奨されている | [Steamworks: 近日登場](https://partner.steamgames.com/doc/store/coming_soon) |
-| Steam Next Fest | 体験版を出す未発売作品のための1週間のイベント。2月・6月・10月の年3回開催で、1作品につき参加は1回のみ | [Steamworks: Steam Next Fest](https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest) |
-| Steam Playtest | 本編とは別のアプリIDで無料のテストを行える機能。テストのレビューは本編に影響しない | [Steamworks: Steam Playtest](https://partner.steamgames.com/doc/features/playtest) |
+| [Steam](https://store.steampowered.com/) Next Fest | 体験版を出す未発売作品のための1週間のイベント。2月・6月・10月の年3回開催で、1作品につき参加は1回のみ | [Steamworks: Steam Next Fest](https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest) |
+| [Steam](https://store.steampowered.com/) Playtest | 本編とは別のアプリIDで無料のテストを行える機能。テストのレビューは本編に影響しない | [Steamworks: Steam Playtest](https://partner.steamgames.com/doc/features/playtest) |
 | AI生成コンテンツの開示 | コンテンツアンケートで、開発時に作ったAI生成物と、ゲーム実行中にAIが生成するものを申告する | [Steamworks: コンテンツアンケート](https://partner.steamgames.com/doc/gettingstarted/contentsurvey) |
 
 読む記事:
@@ -141,7 +141,7 @@ Steamで押さえておきたい仕組み（2026年9月時点）:
 
 販売を始める段階です。発売日から逆算して準備します。
 
-Steamの場合、アプリごとに100米ドル（相当額）のSteam Direct手数料がかかり、調整後の総収益が1,000米ドルに達すると回収できます（[Steamworks: Steam Direct手数料](https://partner.steamgames.com/doc/gettingstarted/appfee)、2026年9月時点）。
+[Steam](https://store.steampowered.com/)の場合、アプリごとに100米ドル（相当額）のSteam Direct手数料がかかり、調整後の総収益が1,000米ドルに達すると回収できます（[Steamworks: Steam Direct手数料](https://partner.steamgames.com/doc/gettingstarted/appfee)、2026年9月時点）。
 また、手数料の支払いからリリースまでには待機期間があります。
 公式ページでも記載が分かれており、オンボーディングの文書では21日、Steam Directの案内ページでは30日とされています（[オンボーディング](https://partner.steamgames.com/doc/gettingstarted/onboarding)、[Steam Direct](https://partner.steamgames.com/steamdirect)、2026年9月時点）。
 余裕を持って、発売予定日の1か月以上前に支払いを済ませておくと安全です。
@@ -167,7 +167,7 @@ Steamの場合、アプリごとに100米ドル（相当額）のSteam Direct手
 
 やること:
 
-- 不具合報告を集める窓口（Steamのコミュニティ、Discordなど）を決める
+- 不具合報告を集める窓口（[Steam](https://store.steampowered.com/)のコミュニティ、Discordなど）を決める
 - 修正アップデートと、追加コンテンツの計画を立てる
 - 売上とプレイデータを見て、次回作の企画に生かす
 

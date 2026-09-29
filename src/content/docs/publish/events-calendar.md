@@ -11,9 +11,9 @@ lastUpdated: 2026-09-29
 ゲームジャム（決まった期間で、お題に沿ってゲームを作るイベント）やコンテストへの出品は、締切があり、作った作品を見てもらえる場でもあるので、個人開発のモチベーションになります。この記事は、**どんなイベントが、いつあるのか、あったのか**を一覧にしたものです。
 
 - 2026年9月29日時点で、公式ページに日程が出ているものだけを載せています。日程が出ていないイベントは「未発表」と書き、日付は推測していません。
-- itch.io のジャムの日時は、ジャムのページに表示される UTC です。日本時間は +9 時間です。
+- [itch.io](https://itch.io/) のジャムの日時は、ジャムのページに表示される UTC です。日本時間は +9 時間です。
 - AI や生成AIの扱いは、公式ルールに書かれている内容です。ルールに書かれていないものは「規定なし」としています。
-- AI・バイブコーディング系（Vibe Jam、AI Browser Game Jam）は、「開催済み」の節で詳しく書いています。
+- AI・バイブコーディング系（[Vibe Jam](https://vibej.am/)、AI Browser Game Jam）は、「開催済み」の節で詳しく書いています。
 
 ジャムへの参加の進め方は [ゲームジャムに出す](/publish/game-jams/)、作品の置き場所は [itch.io に公開する](/publish/itch-io/) を見てください。
 
@@ -25,7 +25,7 @@ lastUpdated: 2026-09-29
 |---|---|---|---|---|
 | Slapjam AI #1 | 9月28日〜9月30日（48時間）。結果は10月7日 | テーマは Castles。縦画面のスマホ向け Web ビルド。参加登録291人、投稿32作品 | 必須（AIで作る。エージェントに全部作らせてもよい） | [itch.io](https://itch.io/jam/slapjam-ai-1) |
 | GBJAM 14 | 提出は9月11日〜9月21日。投票は10月5日まで | ゲームボーイ風の画面で作る。2つ目のテーマは OLD GOLD。632作品 | 禁止（AIアート、AIのコード生成、AIツール） | [itch.io](https://itch.io/jam/gbjam-14) |
-| js13kGames 2026 | 8月13日〜9月13日（13:00 CEST）。投票を受付中 | zip で13KB以下の Web ゲーム。テーマは Unicorns and Rainbows。公開作品317本 | 規定なし | [公式サイト](https://js13kgames.com/) |
+| [js13kGames](https://js13kgames.com/) 2026 | 8月13日〜9月13日（13:00 CEST）。投票を受付中 | zip で13KB以下の Web ゲーム。テーマは Unicorns and Rainbows。公開作品317本 | 規定なし | [公式サイト](https://js13kgames.com/) |
 
 Slapjam AI #1 は1位に250ドルと、AIツールの利用権が出ます（[itch.io](https://itch.io/jam/slapjam-ai-1)、2026年9月29日時点）。
 
@@ -35,7 +35,7 @@ Slapjam AI #1 は1位に250ドルと、AIツールの利用権が出ます（[it
 |---|---|---|---|---|
 | Godot Wild Jam #98 | 10月9日〜10月18日 | 毎月開催のジャム。テーマとワイルドカード（任意の追加条件）は Discord で発表 | 禁止（バイブコーディングを含む、AI制作物すべて） | [itch.io](https://itch.io/jam/godot-wild-jam-98) |
 | Mini Jame Gam #60 | 10月16日〜10月18日 | 初心者向けの週末ジャム。テーマと「特別なオブジェクト」を入れる | 規定なし | [itch.io](https://itch.io/jam/mini-jame-gam-60) |
-| Ludum Dare 60 | 10月16日（公式トップの予定表） | 週末に作る老舗のイベント。Jam（72時間）と Compo（1人・48時間） | 許可（生成AIが大半を担った部門はオプトアウト） | [ldjam.com](https://ldjam.com/) |
+| [Ludum Dare](https://ldjam.com/) 60 | 10月16日（公式トップの予定表） | 週末に作る老舗のイベント。Jam（72時間）と Compo（1人・48時間） | 許可（生成AIが大半を担った部門はオプトアウト） | [ldjam.com](https://ldjam.com/) |
 | SCREAM JAM 2026 | 10月16日〜10月23日 | ホラー風のジャム。テーマなし。参加登録592人 | 禁止（生成AI全般） | [itch.io](https://itch.io/jam/scream-jam-2026) |
 | AI Browser Game Jam 5 | 10月17日〜10月31日。投票は11月7日まで | AIで作るブラウザゲーム。テーマは開始時に発表。参加登録42人 | 必須（ゲームの大半をAIが生成） | [itch.io](https://itch.io/jam/ai-jam-5) |
 | Game Off 2026 | 11月1日〜12月1日。投票は2027年1月1日まで | GitHub 主催の1か月ジャム。テーマは11月1日に発表。ソースを GitHub に置く | 規定なし | [itch.io](https://itch.io/jam/game-off-2026) |
@@ -43,9 +43,9 @@ Slapjam AI #1 は1位に250ドルと、AIツールの利用権が出ます（[it
 | GDevelop BIG Game Jam #10 | 11月6日〜11月15日 | GDevelop（ノーコード寄りのゲームエンジン）で作る9日間。上位に賞金 | 規定なし | [itch.io](https://itch.io/jam/gdevelop-big-game-jam-10) |
 | SQUARE ENIX GAME CONTEST 2026 | 応募は2026年12月15日〜2027年3月15日。発表は2027年6月30日 | 日本国内在住が対象。賞金総額10億円。PC・モバイル | 条件付きで許可（使用ツールの開示と権利保証が必須） | [公式サイト](https://gc2026.jp.square-enix.com/) |
 | Pirate Software Game Jam 20 | 2027年1月17日〜1月31日 | 2週間のジャム。テーマは当日、10候補から投票で決定 | 禁止（AI生成物すべて） | [itch.io](https://itch.io/jam/pirate) |
-| Global Game Jam 2027 | 2027年1月25日〜1月31日 | 世界の会場で同じ期間に開くジャム | 制限なし（公式ポリシー） | [公式サイト](https://globalgamejam.org/) |
+| [Global Game Jam](https://globalgamejam.org/) 2027 | 2027年1月25日〜1月31日 | 世界の会場で同じ期間に開くジャム | 制限なし（公式ポリシー） | [公式サイト](https://globalgamejam.org/) |
 | Brackeys Game Jam 2027.1 | 2027年2月14日〜2月21日 | 1週間のジャム。テーマは開始時に発表 | 未公開（2025〜2026年の4回は禁止） | [itch.io](https://itch.io/jam/brackeys-17) |
-| BitSummit 15th | 2027年5月21日〜5月23日 | 京都で開く日本最大級のインディーゲームの展示会 | ― | [公式サイト](https://bitsummit.org/) |
+| [BitSummit](https://bitsummit.org/) 15th | 2027年5月21日〜5月23日 | 京都で開く日本最大級のインディーゲームの展示会 | ― | [公式サイト](https://bitsummit.org/) |
 | GMTK Game Jam 2027 | 2027年8月11日〜8月15日 | 4日間のジャム。テーマは開始時に発表 | 禁止（アートと音声の生成AI） | [itch.io](https://itch.io/jam/gmtk-2027) |
 | GBJAM 15 | 2027年9月10日〜9月20日 | ゲームボーイ風のジャム | 未公開（14は禁止） | [itch.io](https://itch.io/jam/gbjam-15) |
 
@@ -57,7 +57,7 @@ Slapjam AI #1 は1位に250ドルと、AIツールの利用権が出ます（[it
 - Global Game Jam 2027 は、サイトの登録開始が2026年11月1日、参加者の登録開始が2026年12月1日です（[公式サイト](https://globalgamejam.org/)、2026年9月29日時点）。
 - GDevelop BIG Game Jam #10 は、GDevelop で作ること、ブラウザで遊べること、英語のテキストであることが条件です（[itch.io](https://itch.io/jam/gdevelop-big-game-jam-10)、2026年9月29日時点）。
 - 小規模ですが、AIを前提にしたジャムに、Super Free AI Game Jam #1（9月30日〜10月10日、AI全面許可、参加登録52人、[itch.io](https://itch.io/jam/super-free-ai-game-jam-1)）と、All Tools Allowed #3（10月23日〜10月26日の72時間、AIツールの利用を申告する条件、[itch.io](https://itch.io/jam/all-tools-allowed-3)）があります（2026年9月29日時点）。
-- Cursor Vibe Jam の2027年の日程は、未発表です（[vibejam.com](https://vibejam.com/)、2026年9月29日時点）。
+- Cursor [Vibe Jam](https://vibej.am/) の2027年の日程は、未発表です（[vibejam.com](https://vibejam.com/)、2026年9月29日時点）。
 
 ## 例年の定例イベント（月ごとの時期）
 
@@ -65,30 +65,30 @@ Slapjam AI #1 は1位に250ドルと、AIツールの利用権が出ます（[it
 
 | 時期 | イベント | 直近の開催 | 次回の日程 | 公式ページ |
 |---|---|---|---|---|
-| 1月末〜2月初め | Global Game Jam | 2026年1月26日〜2月1日 | 発表済み：2027年1月25日〜31日 | [公式](https://globalgamejam.org/) |
+| 1月末〜2月初め | [Global Game Jam](https://globalgamejam.org/) | 2026年1月26日〜2月1日 | 発表済み：2027年1月25日〜31日 | [公式](https://globalgamejam.org/) |
 | 1月と7月 | Pirate Software Game Jam | 第17回 2025年7月17日〜31日、第18回 2026年1月17日〜31日、第19回 2026年7月15日〜31日 | 発表済み：第20回 2027年1月17日〜31日 | [itch.io](https://itch.io/jam/pirate) |
 | 2月と8月 | Brackeys Game Jam | 2026年2月15日〜22日、2026年8月23日〜30日 | 発表済み：2027年2月14日〜21日 | [itch.io](https://itch.io/jam/brackeys-17) |
 | 2月から約2か月ごと | AI Browser Game Jam | 第1回 2月20日〜3月10日、第2回 4月11日〜30日、第3回 6月6日〜24日、第4回 8月1日〜18日（いずれも2026年） | 第5回は発表済み：2026年10月17日〜31日。第6回は未発表 | [itch.io](https://itch.io/jam/ai-jam-5) |
-| 4月と10月 | Ludum Dare | 第58回 2025年10月4日〜7日、第59回 2026年4月18日〜21日 | 発表済み：第60回 2026年10月16日。第61回は「2027年4月」と月のみ | [ldjam.com](https://ldjam.com/) |
-| 4月〜5月 | Vibe Jam | 2026年4月1日〜5月1日 | 未発表 | [vibejam.com](https://vibejam.com/) |
-| 5月 | BitSummit | 2026年5月22日〜24日（BitSummit PUNCH） | 発表済み：2027年5月21日〜23日 | [公式](https://bitsummit.org/) |
+| 4月と10月 | [Ludum Dare](https://ldjam.com/) | 第58回 2025年10月4日〜7日、第59回 2026年4月18日〜21日 | 発表済み：第60回 2026年10月16日。第61回は「2027年4月」と月のみ | [ldjam.com](https://ldjam.com/) |
+| 4月〜5月 | [Vibe Jam](https://vibej.am/) | 2026年4月1日〜5月1日 | 未発表 | [vibejam.com](https://vibejam.com/) |
+| 5月 | [BitSummit](https://bitsummit.org/) | 2026年5月22日〜24日（BitSummit PUNCH） | 発表済み：2027年5月21日〜23日 | [公式](https://bitsummit.org/) |
 | 5月と11月 | GDevelop BIG Game Jam | 第9回 2026年5月15日〜24日 | 発表済み：第10回 2026年11月6日〜15日 | [itch.io](https://itch.io/jam/gdevelop-big-game-jam-10) |
 | 5月 | Godot Japan Game Jam | 2026年5月1日〜5日 | 未発表 | [公式](https://godot-japan.com/game-jam/) |
 | 7月 | Kenney Jam | 2026年7月17日〜19日 | 未発表 | [itch.io](https://itch.io/jam/kenney-jam-2026) |
 | 7月末〜8月 | GMTK Game Jam | 2026年7月22日〜26日 | 発表済み：2027年8月11日〜15日 | [itch.io](https://itch.io/jam/gmtk-2027) |
-| 8月 | js13kGames | 2026年8月13日〜9月13日（毎年、同じ期間） | 未発表 | [公式](https://js13kgames.com/) |
+| 8月 | [js13kGames](https://js13kgames.com/) | 2026年8月13日〜9月13日（毎年、同じ期間） | 未発表 | [公式](https://js13kgames.com/) |
 | 8月 | LOWREZJAM | 2025年8月1日〜17日 | 2026年の開催は確認できず | [itch.io](https://itch.io/jam/lowrezjam-2025) |
 | 9月 | GBJAM | GBJAM 14 2026年9月11日〜21日 | 発表済み：GBJAM 15 2027年9月10日〜20日 | [itch.io](https://itch.io/jam/gbjam-15) |
 | 10月 | SCREAM JAM | 2025年10月9日〜17日 | 発表済み：2026年10月16日〜23日 | [itch.io](https://itch.io/jam/scream-jam-2026) |
 | 11月 | Game Off | 2025年11月1日〜12月1日 | 発表済み：2026年11月1日〜12月1日 | [itch.io](https://itch.io/jam/game-off-2026) |
 | 毎月 | Godot Wild Jam | 第95回 2026年7月10日〜19日 | 発表済み：第98回 10月9日〜、第99回 11月13日〜、第100回 12月11日〜 | [itch.io](https://itch.io/jam/godot-wild-jam-98) |
-| 年3〜4回 | Unity 1週間ゲームジャム（unityroom） | 2025年4月13日、8月3日、12月21日、2026年3月15日、7月26日の各日曜20時に開始 | 未定 | [unityroom](https://unityroom.com/unity1weeks) |
+| 年3〜4回 | Unity 1週間ゲームジャム（[unityroom](https://unityroom.com/)） | 2025年4月13日、8月3日、12月21日、2026年3月15日、7月26日の各日曜20時に開始 | 未定 | [unityroom](https://unityroom.com/unity1weeks) |
 
 （2026年9月29日時点）
 
 読み方の補足です。
 
-- Pirate Software Game Jam の第17回〜第19回の日付は、各回の itch.io ページの表示です。
+- Pirate Software Game Jam の第17回〜第19回の日付は、各回の [itch.io](https://itch.io/) ページの表示です。
 - Godot Wild Jam は、毎月第2金曜日に始まり、9日間で提出する形式です（[Godot Wild Jam #95](https://itch.io/jam/godot-wild-jam-95)）。
 - Mini Jam（ZahranW 主催）は、2週間ごとに72時間で開かれます。2026年9月25日〜28日の第220回が直近です（[itch.io](https://itch.io/jam/mini-jam-220-crystal)、2026年9月29日時点）。
 - js13kGames の公式サイトには、2012年から毎年、8月13日13:00 CEST から9月13日13:00 CEST まで開くと書かれています（[公式サイト](https://js13kgames.com/)、2026年9月29日時点）。
@@ -99,11 +99,11 @@ Slapjam AI #1 は1位に250ドルと、AIツールの利用権が出ます（[it
 
 | 区分 | イベント |
 |---|---|
-| 必須 | Cursor Vibe Jam（2026年は、コードの90%以上をAIが書く）、AI Browser Game Jam（大半をAIが生成）、Slapjam AI |
-| 許可（条件付きを含む） | Global Game Jam（制限なし）、Ludum Dare（生成AIが大半を担った部門はオプトアウト）、SQUARE ENIX GAME CONTEST 2026（使用ツールの開示と権利保証が必須）、Godot Japan Game Jam（任意。他者の権利を侵害する素材は禁止） |
+| 必須 | Cursor [Vibe Jam](https://vibej.am/)（2026年は、コードの90%以上をAIが書く）、AI Browser Game Jam（大半をAIが生成）、Slapjam AI |
+| 許可（条件付きを含む） | [Global Game Jam](https://globalgamejam.org/)（制限なし）、[Ludum Dare](https://ldjam.com/)（生成AIが大半を担った部門はオプトアウト）、SQUARE ENIX GAME CONTEST 2026（使用ツールの開示と権利保証が必須）、Godot Japan Game Jam（任意。他者の権利を侵害する素材は禁止） |
 | 制限 | GMTK Game Jam（アートと音声の生成AIは禁止、それ以外も使わないよう求める）、Mini Jam（画像や音声を作る生成AIのほとんどは禁止） |
 | 禁止 | Brackeys Game Jam、Godot Wild Jam（バイブコーディングを含む）、Pirate Software Game Jam、GBJAM（AIのコード生成を含む）、SCREAM JAM、Kenney Jam（AI補助のコードも対象） |
-| 規定なし | js13kGames、Game Off、GDevelop BIG Game Jam、Official Unity Game Jam 2026、Mini Jame Gam、Unity 1週間ゲームジャム |
+| 規定なし | [js13kGames](https://js13kgames.com/)、Game Off、GDevelop BIG Game Jam、Official Unity Game Jam 2026、Mini Jame Gam、Unity 1週間ゲームジャム |
 
 - AIで作った作品を出すなら、「必須」か「許可」の区分から選びます。
 - 「禁止」のジャムでも、Ludum Dare のように部門ごとのルールを持つ場合や、GMTK のように一部だけ禁止する場合があります。
@@ -115,7 +115,7 @@ Slapjam AI #1 は1位に250ドルと、AIツールの利用権が出ます（[it
 
 #### Vibe Jam（levelsio 氏主催）
 
-Vibe Jam は、Pieter Levels（levelsio）氏が開く、AIで書いたゲームのジャムです。2025年と2026年に開かれています。
+[Vibe Jam](https://vibej.am/) は、Pieter Levels（levelsio）氏が開く、AIで書いたゲームのジャムです。2025年と2026年に開かれています。
 
 | 項目 | 2025年 | 2026年 |
 |---|---|---|
@@ -142,7 +142,7 @@ Vibe Jam は、Pieter Levels（levelsio）氏が開く、AIで書いたゲーム
 
 #### AI Browser Game Jam（Focaccai 主催）
 
-itch.io で開かれる、AIで作るブラウザゲームのジャムです。特定のサービスの利用を条件にせず、どのAIをどこに使ってもよい、と主催者が書いています。2026年に4回開かれ、第5回が10月17日から始まります。
+[itch.io](https://itch.io/) で開かれる、AIで作るブラウザゲームのジャムです。特定のサービスの利用を条件にせず、どのAIをどこに使ってもよい、と主催者が書いています。2026年に4回開かれ、第5回が10月17日から始まります。
 
 | 回 | 期間（2026年） | テーマ | 投稿数 / 参加登録数 |
 |---|---|---|---|
@@ -166,18 +166,18 @@ itch.io で開かれる、AIで作るブラウザゲームのジャムです。�
 | GMTK Game Jam 2026 | 2026年7月22日〜26日 | 約10,500作品 | テーマは Count Down。Game Maker's Toolkit 主催の4日間 | 禁止（アート・音声） |
 | GMTK Game Jam 2025 | 2025年7月30日〜8月3日 | 9,515作品 | テーマは Loop | 禁止（アート・音声） |
 | GMTK Game Jam 2024 | 2024年8月16日〜20日 | 7,515作品 | 2024年は Midjourney、ChatGPT、GitHub Copilot も名指しで禁止 | 禁止（素材とコード） |
-| Global Game Jam 2026 | 2026年1月26日〜2月1日 | 39,069人、811会場、94か国、9,874作品 | テーマは Mask。17回目 | 制限なし |
-| Global Game Jam 2025 | 2025年1月（公式の締めの投稿は1月30日付） | 35,371人、795会場、97か国、12,098作品 | テーマは Bubble | 制限なし |
+| [Global Game Jam](https://globalgamejam.org/) 2026 | 2026年1月26日〜2月1日 | 39,069人、811会場、94か国、9,874作品 | テーマは Mask。17回目 | 制限なし |
+| [Global Game Jam](https://globalgamejam.org/) 2025 | 2025年1月（公式の締めの投稿は1月30日付） | 35,371人、795会場、97か国、12,098作品 | テーマは Bubble | 制限なし |
 | Brackeys Game Jam 2026.2 | 2026年8月23日〜30日 | 2,244作品 | テーマは Everybody Lies | 禁止 |
 | Brackeys Game Jam 2026.1 | 2026年2月15日〜22日 | 1,421作品 | テーマは Hypersphere Aurora | 禁止 |
 | Brackeys Game Jam 2025.2 | 2025年8月24日〜31日 | 2,268作品 | テーマは Cooking For The Cookies | 禁止 |
-| Ludum Dare 59 | 2026年4月18日〜21日 | ― | テーマは Signal | 許可（部門でオプトアウト） |
-| Ludum Dare 58 | 2025年10月4日〜7日 | ― | テーマは Collector | 許可（部門でオプトアウト） |
+| [Ludum Dare](https://ldjam.com/) 59 | 2026年4月18日〜21日 | ― | テーマは Signal | 許可（部門でオプトアウト） |
+| [Ludum Dare](https://ldjam.com/) 58 | 2025年10月4日〜7日 | ― | テーマは Collector | 許可（部門でオプトアウト） |
 | Game Off 2025 | 2025年11月1日〜12月1日 | 710作品 | テーマは WAVES。GitHub 主催 | 規定なし |
 | Pirate Software Game Jam 18 | 2026年1月17日〜31日 | 124作品 | 2週間のジャム | 禁止 |
 | Pirate Software Game Jam 17 | 2025年7月17日〜31日 | 412作品 | 同上 | 禁止 |
 | Kenney Jam 2026 | 2026年7月17日〜19日 | 568作品 | Kenney または KayKit の素材だけで作る。テーマは SCALE | 禁止 |
-| js13kGames 2026 | 2026年8月13日〜9月13日 | 公開作品317本 | 13KB制限。賞品は合計で3万ドル超と公式に記載 | 規定なし |
+| [js13kGames](https://js13kgames.com/) 2026 | 2026年8月13日〜9月13日 | 公開作品317本 | 13KB制限。賞品は合計で3万ドル超と公式に記載 | 規定なし |
 | GDevelop BIG Game Jam #9 | 2026年5月15日〜24日 | 394作品 | GDevelop で作る | 規定なし |
 | Godot Wild Jam #95 | 2026年7月10日〜19日 | 253作品 | 毎月開催 | 禁止 |
 | SCREAM JAM 2025 | 2025年10月9日〜17日 | 932作品 | ホラー風、テーマなし | 禁止（承認されたモデルを除く） |
@@ -197,9 +197,9 @@ itch.io で開かれる、AIで作るブラウザゲームのジャムです。�
 
 | イベント | 時期 | 内容 | 次回 |
 |---|---|---|---|
-| [Unity 1週間ゲームジャム](https://unityroom.com/unity1weeks)（unityroom） | 年3〜4回。日曜20時にお題が出て、翌週の日曜20時までに投稿 | 1週間でお題に沿ったゲームを作る。Web ビルドで投稿。Godot など Unity 以外のエンジンでもよい（Godot .NET 版は不可） | 未定（公式ページの表示） |
+| [Unity 1週間ゲームジャム](https://unityroom.com/unity1weeks)（[unityroom](https://unityroom.com/)） | 年3〜4回。日曜20時にお題が出て、翌週の日曜20時までに投稿 | 1週間でお題に沿ったゲームを作る。Web ビルドで投稿。Godot など Unity 以外のエンジンでもよい（Godot .NET 版は不可） | 未定（公式ページの表示） |
 | [Godot Japan Game Jam](https://godot-japan.com/game-jam/) | 2026年5月1日〜5日 | 2つのお題を組み合わせて5日間で作る。Godot Player で投稿。45作品が集まった | 未発表 |
-| [BitSummit](https://bitsummit.org/) | 2026年5月22日〜24日（BitSummit PUNCH）。2027年は5月21日〜23日 | 京都市勧業館みやこめっせで開く展示会 | 2027年5月21日〜23日（発表済み） |
+| [BitSummit](https://bitsummit.org/) | 2026年5月22日〜24日（[BitSummit](https://bitsummit.org/) PUNCH）。2027年は5月21日〜23日 | 京都市勧業館みやこめっせで開く展示会 | 2027年5月21日〜23日（発表済み） |
 | [SQUARE ENIX GAME CONTEST 2026](https://gc2026.jp.square-enix.com/) | 応募は2026年12月15日〜2027年3月15日 | 賞金総額10億円のコンテスト | 2026年の応募が、これから |
 | [Global Game Jam JAPAN](https://ggj.igda.jp/) | 2027年1月25日〜31日（世界の日程） | IGDA日本が、国内の会場の運営を支援 | 2027年1月25日〜31日（発表済み） |
 
@@ -253,11 +253,11 @@ itch.io で開かれる、AIで作るブラウザゲームのジャムです。�
 5. **個別のジャムのページ**に、開始日と終了日、投票の終了日、参加登録数、ルールが載っています。AIの扱いは、ここのルールの欄で確認します。「Join jam」を押すと、参加登録できます。
 6. **過去のジャム**は、[Top Past Jams](https://itch.io/jams/past) で見られます。参加者の数や、勝った作品を調べるのに使えます。
 
-itch.io のジャムページには、ジャムのために作られたゲームが累計603,865本あると書かれています（2026年9月29日時点）。
+[itch.io](https://itch.io/) のジャムページには、ジャムのために作られたゲームが累計603,865本あると書かれています（2026年9月29日時点）。
 
-itch.io 以外では、Ludum Dare は [ldjam.com](https://ldjam.com/)、Global Game Jam は [globalgamejam.org](https://globalgamejam.org/)、js13kGames は [js13kgames.com](https://js13kgames.com/)、Vibe Jam は [vibejam.com](https://vibejam.com/)、Unity 1週間ゲームジャムは [unityroom](https://unityroom.com/unity1weeks) で、それぞれ日程を確認できます。
+itch.io 以外では、[Ludum Dare](https://ldjam.com/) は [ldjam.com](https://ldjam.com/)、[Global Game Jam](https://globalgamejam.org/) は [globalgamejam.org](https://globalgamejam.org/)、[js13kGames](https://js13kgames.com/) は [js13kgames.com](https://js13kgames.com/)、[Vibe Jam](https://vibej.am/) は [vibejam.com](https://vibejam.com/)、Unity 1週間ゲームジャムは [unityroom](https://unityroom.com/unity1weeks) で、それぞれ日程を確認できます。
 
-Steam のデモ公開イベントである Steam Next Fest は、ジャムとは別のイベントです。[ウィッシュリストを増やす](/monetization/wishlists/) に書いています。
+[Steam](https://store.steampowered.com/) のデモ公開イベントである Steam Next Fest は、ジャムとは別のイベントです。[ウィッシュリストを増やす](/monetization/wishlists/) に書いています。
 
 ## 最新情報
 

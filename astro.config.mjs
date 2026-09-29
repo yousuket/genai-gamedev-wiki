@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { satteri } from '@astrojs/markdown-satteri';
 import satteriBaseLinks from './plugins/satteri-base-links.mjs';
+import satteriTableWrap from './plugins/satteri-table-wrap.mjs';
 
 // GitHub Actions のデプロイ時に actions/configure-pages の出力から渡される
 const site = process.env.SITE_URL || 'http://localhost:4321';
@@ -28,7 +29,7 @@ export default defineConfig({
 	site,
 	base,
 	markdown: {
-		processor: satteri({ hastPlugins: [satteriBaseLinks(base)] }),
+		processor: satteri({ hastPlugins: [satteriBaseLinks(base), satteriTableWrap()] }),
 	},
 	integrations: [
 		starlight({

@@ -8,7 +8,7 @@ lastUpdated: 2026-09-29
 
 ## 概要
 
-**ウィッシュリスト**は、Steamのユーザーが「気になるゲーム」を登録するリストです。登録したユーザーには、発売時や割引時に通知が届きます。発売前にどれだけ集められるかが、発売直後の売上を大きく左右します。
+**ウィッシュリスト**は、[Steam](https://store.steampowered.com/)のユーザーが「気になるゲーム」を登録するリストです。登録したユーザーには、発売時や割引時に通知が届きます。発売前にどれだけ集められるかが、発売直後の売上を大きく左右します。
 
 この記事では次のことが分かります。
 
@@ -18,7 +18,7 @@ lastUpdated: 2026-09-29
 
 ## ウィッシュリストの仕組み
 
-Steamがウィッシュリスト登録者に通知を送るのは、主に次のタイミングです（[Wishlists](https://partner.steamgames.com/doc/marketing/wishlist)、2026年9月時点）。
+[Steam](https://store.steampowered.com/)がウィッシュリスト登録者に通知を送るのは、主に次のタイミングです（[Wishlists](https://partner.steamgames.com/doc/marketing/wishlist)、2026年9月時点）。
 
 | タイミング | 条件 |
 |---|---|
@@ -34,7 +34,7 @@ Steamがウィッシュリスト登録者に通知を送るのは、主に次の
 
 ### 1. ストアページを早く公開する
 
-Steamは「準備ができたらできるだけ早くComing Soon（近日登場）ページを公開する」ことを勧めています（[Wishlists](https://partner.steamgames.com/doc/marketing/wishlist)）。初めてのタイトルは、発売前に最低2週間の公開が必須です（[オンボーディング](https://partner.steamgames.com/doc/gettingstarted/onboarding)）。
+[Steam](https://store.steampowered.com/)は「準備ができたらできるだけ早くComing Soon（近日登場）ページを公開する」ことを勧めています（[Wishlists](https://partner.steamgames.com/doc/marketing/wishlist)）。初めてのタイトルは、発売前に最低2週間の公開が必須です（[オンボーディング](https://partner.steamgames.com/doc/gettingstarted/onboarding)）。
 
 - ストアページには、カプセル画像（ストアに並ぶ見出し画像）、スクリーンショット、トレーラー、説明文、タグが必要です。
 - トレーラーの作り方は [Steamトレーラーの要件](/trailer/steam-trailer/) を参照してください。
@@ -76,7 +76,7 @@ Steam Next Festは、発売前のゲームのデモを集めて1週間開催さ�
 
 - 開発中の短い動画（数秒〜数十秒のプレイ映像）は、ゲームの動きが一目で伝わるのでSNS向きの素材です。作り方は [SNS向けショート動画](/trailer/social-shorts/) を参照してください。
 - 投稿には必ずSteamストアページへのリンクを付け、「ウィッシュリストに追加してください」と具体的にお願いします。
-- Steamworksの「トラフィック内訳」で、どこから来た人がウィッシュリストに登録したかを確認できます（[Wishlists](https://partner.steamgames.com/doc/marketing/wishlist)）。効果のあった発信を続けましょう。
+- [Steamworks](https://partner.steamgames.com/)の「トラフィック内訳」で、どこから来た人がウィッシュリストに登録したかを確認できます（[Wishlists](https://partner.steamgames.com/doc/marketing/wishlist)）。効果のあった発信を続けましょう。
 
 ### 5. 配信者・キュレーターに届ける
 
@@ -109,7 +109,7 @@ Steam Next Festは、発売前のゲームのデモを集めて1週間開催さ�
 - **ストアページの文章**: 説明文やキャッチコピーの案をAIに複数出させ、比較するのは効率的です。
 - **SNS投稿の下書き**: 日本語・英語の投稿文をAIで作ると発信の頻度を保ちやすくなります。定型文ばかりにならないよう、開発の具体的な話を入れましょう。
 - **配信者リストの整理**: 候補の配信者の情報を表にまとめる作業に使えます。ただし連絡文は一人ひとりに合わせて自分で調整してください。一斉送信のような連絡は逆効果です。
-- **ストア素材でのAI利用**: カプセル画像やトレーラーに生成AIを使う場合も、Steamへの申告の対象になります。詳しくは [プラットフォームのAIポリシー](/legal/platform-policies/) を参照してください。
+- **ストア素材でのAI利用**: カプセル画像やトレーラーに生成AIを使う場合も、[Steam](https://store.steampowered.com/)への申告の対象になります。詳しくは [プラットフォームのAIポリシー](/legal/platform-policies/) を参照してください。
 - **フィードバックの分析**: デモのレビューやアンケートの自由記述をAIに分類させ、改善点を洗い出せます。プレイテストの進め方は [プレイテスト](/design/playtesting/) を参照してください。
 
 ## 最新情報
