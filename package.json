@@ -9,6 +9,7 @@
     "build": "astro build",
     "check": "node scripts/check-content.mjs",
     "check:dist": "node scripts/check-dist.mjs",
+    "reviews": "node scripts/review-status.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

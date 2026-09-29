@@ -7,6 +7,7 @@
 - `npm run dev` — 開発サーバー（http://localhost:4321）
 - `npm run check` — リンク切れと AUTO-UPDATE マーカーの確認
 - `npm run build` — 本番ビルド（`dist/`）
+- `npm run reviews` — レビュー（`reviews/`）の対応状況の一覧。未対応の項目と、表の記入漏れを確認する
 
 ## ルール
 
@@ -24,3 +25,10 @@
 - 記事タイトル部分（カテゴリバッジ・読了時間）は `src/components/PageTitle.astro`、記事末尾の「同じカテゴリの記事」は `src/components/Footer.astro`。
 - トップページの各ブロックは `src/components/home/`。
 - ビルド後に `npm run check:dist` で、太字の `**` が変換されずに残っていないかを確認する。
+
+## レビューの運用
+
+- 外部のレビュアー（Codex など）の修正提案は `reviews/` に置かれる。手順と表の書き方は [reviews/README.md](reviews/README.md)。
+- 提案は、根拠を確かめてから直す。直したら、コミットメッセージにレビューファイル名を書き、別のコミットで、そのファイルの「対応状況」の表を更新する（状態、対応コミット、対応日、メモ）。表が状態の唯一の記録。
+- レビュアーは、表の状態を書き換えない（すべて「未対応」で作る）。
+- 更新したら `npm run reviews` を実行して、エラーがないことを確かめる。
