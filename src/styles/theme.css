@@ -159,7 +159,11 @@ site-search button[data-open-modal] {
 	border-spacing: 0;
 	border: 2px solid color-mix(in srgb, var(--cat) 35%, transparent);
 	border-radius: var(--pop-radius-sm);
-	overflow: hidden;
+	/* 幅を超える表は横にスクロールできるようにする（hidden だと右の列が切れて読めない） */
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	scrollbar-width: thin;
+	scrollbar-color: color-mix(in srgb, var(--cat) 60%, transparent) transparent;
 }
 .sl-markdown-content table {
 	font-size: var(--sl-text-sm);
@@ -169,6 +173,10 @@ site-search button[data-open-modal] {
 .sl-markdown-content :is(th, td):first-child,
 .sl-markdown-content :is(th, td):last-child {
 	padding: 0.65rem 0.9rem;
+}
+/* 最後の列が、1文字ずつ折り返されるほど細くならないようにする（足りない幅は横スクロールで読める） */
+.sl-markdown-content :is(th, td):last-child {
+	min-width: 7.5em;
 }
 .sl-markdown-content th {
 	background: var(--cat);
