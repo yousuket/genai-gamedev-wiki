@@ -21,7 +21,7 @@ title: 週次レポート YYYY-MM-DD（M月D日〜M月D日）
 description: この週の主なトピックを1文で
 sidebar:
   order: -YYYYMMDD   # 例: 2026年10月5日なら -20261005（新しいレポートほど上に表示）
-  label: YYYY-MM-DD
+  label: 'YYYY-MM-DD'   # 必ず引用符で囲む（引用符がないと YAML の日付型になり、ビルドが失敗する）
 lastUpdated: YYYY-MM-DD
 ---
 
@@ -41,6 +41,7 @@ lastUpdated: YYYY-MM-DD
 （この週に「最新情報」欄を更新した記事へのリンク一覧）
 ```
 
+- 週次レポートには `<!-- AUTO-UPDATE:START -->` などのマーカーは入れない（マーカーは各記事の「最新情報」欄と `news/index.md` の一覧だけに置く）。
 - 収集ログにない事実を足す場合は、自分で WebFetch して出典を確認したものに限る。
 - 重要度1だけの話題はレポートに入れなくてよい。
 

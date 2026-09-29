@@ -5,8 +5,9 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const DOCS = 'src/content/docs';
-// 自動更新欄を持たないページ
+// 自動更新欄を持たないページ（トップ、このWikiについて、週次レポート news/YYYY-MM-DD.md）
 const NO_MARKER = new Set(['index.mdx', 'getting-started/about.md']);
+const isWeeklyReport = (rel) => /^news\/\d{4}-\d{2}-\d{2}\.md$/.test(rel);
 
 /** @param {string} dir @returns {string[]} */
 const walk = (dir) =>
@@ -30,7 +31,7 @@ for (const file of files) {
 
 	if (!/^---\n(?:[\s\S]*?\n)?title:/.test(src)) errors.push(`${rel}: frontmatter に title がありません`);
 
-	if (!NO_MARKER.has(rel)) {
+	if (!NO_MARKER.has(rel) && !isWeeklyReport(rel)) {
 		const start = src.split('<!-- AUTO-UPDATE:START -->').length - 1;
 		const end = src.split('<!-- AUTO-UPDATE:END -->').length - 1;
 		if (start !== 1 || end !== 1 || src.indexOf('AUTO-UPDATE:START') > src.indexOf('AUTO-UPDATE:END'))
