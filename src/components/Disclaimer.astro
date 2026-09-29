@@ -1,0 +1,58 @@
+---
+// 二次情報であることの注意書き。トップページ、権利・規約、マネタイズの記事に表示する。
+// 文言はここだけで管理する（記事の本文には書かない）。
+import TablerIcon from './TablerIcon.astro';
+import { withBase } from '../data/categories';
+
+interface Props {
+	/** 記事の上に置く小さい表示にする */
+	compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+
+<aside class:list={['disclaimer', 'not-content', { compact }]} aria-label="ご利用にあたって">
+	<span class="icon"><TablerIcon name="info-circle" size="1.4em" /></span>
+	<p>
+		<strong>このサイトの情報は二次情報です。</strong>
+		内容に基づいて生じたいかなる問題についても、責任を負いません。
+		実施するときは、一次情報（公式サイト、規約、法令など）を調べ、ご自身の責任で判断してください。
+		<a href={withBase('/getting-started/about/#免責事項')}>免責事項</a>
+	</p>
+</aside>
+
+<style>
+	.disclaimer {
+		display: flex;
+		gap: 0.75rem;
+		align-items: flex-start;
+		margin: 1.5rem 0;
+		padding: 0.9rem 1.1rem;
+		border-radius: 16px;
+		border: 2px dashed color-mix(in srgb, var(--sl-color-gray-3) 55%, transparent);
+		background: color-mix(in srgb, var(--sl-color-gray-3) 10%, transparent);
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-sm);
+		line-height: 1.7;
+	}
+	.icon {
+		flex-shrink: 0;
+		margin-top: 0.15em;
+		color: var(--sl-color-gray-3);
+	}
+	p {
+		margin: 0;
+	}
+	strong {
+		color: var(--sl-color-white);
+	}
+	a {
+		white-space: nowrap;
+		margin-inline-start: 0.4em;
+	}
+	.compact {
+		margin: 1rem 0 0;
+		padding: 0.6rem 0.9rem;
+		font-size: var(--sl-text-xs);
+	}
+</style>

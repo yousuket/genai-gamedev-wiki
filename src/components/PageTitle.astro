@@ -1,6 +1,7 @@
 ---
 // 記事タイトルの上にカテゴリのバッジ、下に読了時間を表示する（Starlight の PageTitle を上書き）
 import TablerIcon from './TablerIcon.astro';
+import Disclaimer from './Disclaimer.astro';
 import { categoryOf, readingMinutes, withBase } from '../data/categories';
 
 // Starlight の PAGE_TITLE_ID と同じ値（目次の「概要」リンクがこのIDを参照する）
@@ -9,6 +10,8 @@ const PAGE_TITLE_ID = '_top';
 const { entry, id } = Astro.locals.starlightRoute;
 const category = categoryOf(id);
 const minutes = readingMinutes(entry.body);
+// 二次情報の注意書きを出すカテゴリ
+const showDisclaimer = category?.id === 'legal' || category?.id === 'monetization';
 const catVars = category ? `:root{--cat:${category.color};--cat-ink:${category.ink};}` : '';
 ---
 
@@ -28,6 +31,7 @@ const catVars = category ? `:root{--cat:${category.color};--cat-ink:${category.i
 		<TablerIcon name="clock" size="1.1em" />
 		約{minutes}分で読めます
 	</p>
+	{showDisclaimer && <Disclaimer compact />}
 </div>
 
 <style>
