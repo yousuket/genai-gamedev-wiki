@@ -16,7 +16,7 @@ if (cfAnalyticsToken) {
 	head.push({
 		tag: 'script',
 		attrs: {
-			defer: true,
+			type: 'module',
 			src: 'https://static.cloudflareinsights.com/beacon.min.js',
 			'data-cf-beacon': JSON.stringify({ token: cfAnalyticsToken }),
 		},
