@@ -28,7 +28,10 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      # 公開の準備ができるまで（リポジトリ変数 PUBLISH_SITE が true になるまで）は、
+      # チェックとビルドだけを行い、GitHub Pages への公開はしない
       - id: pages
+        if: vars.PUBLISH_SITE == 'true'
         uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run check
@@ -39,11 +42,13 @@ jobs:
           REPO_URL: ${{ github.server_url }}/${{ github.repository }}
           CF_ANALYTICS_TOKEN: ${{ vars.CF_ANALYTICS_TOKEN }}
       - run: npm run check:dist
-      - uses: actions/upload-pages-artifact@v4
+      - if: vars.PUBLISH_SITE == 'true'
+        uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
   deploy:
+    if: vars.PUBLISH_SITE == 'true'
     needs: build
     runs-on: ubuntu-latest
     environment:

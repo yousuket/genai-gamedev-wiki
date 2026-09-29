@@ -28,6 +28,14 @@ npm run dev
 
 どちらも Claude Code のクラウド定期実行で動きます。週次更新の結果は `weekly-update` ラベルの Issue で報告されます。
 
+## 公開
+
+公開前（非公開リポジトリ）は、`main` への push でチェックとビルドだけが動き、GitHub Pages には公開されません。公開するときは次の3つを行います。
+
+1. リポジトリを公開に切り替える（Settings → General → Danger Zone → Change visibility）
+2. Settings → Pages で Source を「GitHub Actions」にする
+3. リポジトリ変数 `PUBLISH_SITE` を `true` にする（Settings → Secrets and variables → Actions → Variables）
+
 ## アクセス解析
 
 リポジトリの Settings → Secrets and variables → Actions → Variables に `CF_ANALYTICS_TOKEN`（Cloudflare Web Analytics のトークン）を設定すると、計測用スクリプトが埋め込まれます。
