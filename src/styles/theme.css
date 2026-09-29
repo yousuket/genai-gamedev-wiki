@@ -231,3 +231,20 @@ starlight-toc a[aria-current='true'] {
 	border-color: var(--sl-color-accent) !important;
 	color: #ffffff !important;
 }
+
+/* ---------- 広い画面のレイアウト: 目次を右端に寄せ、記事の領域を広げる ----------
+   Starlight の既定は、目次の領域が「余白の半分」まで広がり、記事の幅は 45rem で頭打ちになる。
+   目次の幅を固定し、余った幅を記事に回す。 */
+@media (min-width: 72rem) {
+	:root {
+		--sl-content-width: 66rem;
+		--toc-width: 17rem;
+	}
+	.right-sidebar-container {
+		width: var(--toc-width);
+	}
+	[data-has-sidebar][data-has-toc] .main-pane {
+		--sl-content-margin-inline: auto;
+		width: calc(100% - var(--toc-width));
+	}
+}
