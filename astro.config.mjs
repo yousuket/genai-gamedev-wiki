@@ -28,6 +28,8 @@ if (cfAnalyticsToken) {
 export default defineConfig({
 	site,
 	base,
+	// 旧URL（まとめ記事を新カテゴリへ移した）
+	redirects: { '/agent-dev/claude-code-blog': '/claude-blog/' },
 	markdown: {
 		processor: satteri({ hastPlugins: [satteriBaseLinks(base), satteriTableWrap()] }),
 	},
@@ -60,6 +62,7 @@ export default defineConfig({
 				{ label: 'ゲームデザイン', items: [{ autogenerate: { directory: 'design' } }] },
 				{ label: '開発環境', items: [{ autogenerate: { directory: 'dev-env' } }] },
 				{ label: 'エージェント開発', items: [{ autogenerate: { directory: 'agent-dev' } }] },
+				{ label: 'Claude Code ブログ', items: [{ autogenerate: { directory: 'claude-blog' } }] },
 				{ label: '事例・ポストモーテム', items: [{ autogenerate: { directory: 'cases' } }] },
 				{ label: '公開・イベント', items: [{ autogenerate: { directory: 'publish' } }] },
 				{ label: 'PV作成', items: [{ autogenerate: { directory: 'trailer' } }] },

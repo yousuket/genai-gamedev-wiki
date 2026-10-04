@@ -6,7 +6,7 @@ import { categories, categoryOf, withBase } from '../../data/categories';
 
 const docs = await getCollection('docs');
 const count = (id: string) => docs.filter((e) => categoryOf(e.id)?.id === id && e.id !== id).length;
-const tiles = categories.filter((c) => c.id !== 'getting-started' && c.id !== 'news');
+const tiles = categories.filter((c) => c.id !== 'getting-started' && c.id !== 'news' && c.id !== 'claude-blog');
 ---
 
 <ul class="tiles not-content">

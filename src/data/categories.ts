@@ -61,6 +61,15 @@ export const categories: Category[] = [
 		href: '/agent-dev/overview/',
 	},
 	{
+		id: 'claude-blog',
+		label: 'Claude Code ブログ',
+		description: 'Claude Code 公式ブログの記事を1本ずつ掘り下げ。ゲーム制作での使いどころつき。',
+		icon: 'book',
+		color: '#b455d6',
+		ink: '#ffffff',
+		href: '/claude-blog/',
+	},
+	{
 		id: 'cases',
 		label: '事例・ポストモーテム',
 		description: 'AIで作られたゲームの実例。どのモデルに、どんなプロンプトで、何ができたか。',

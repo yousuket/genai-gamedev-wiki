@@ -105,7 +105,7 @@ items: 件数
 - URL: https://...
 - 公開日: YYYY-MM-DD
 - ソース: 公式 / GitHub / 論文 / コミュニティ
-- カテゴリ: genres / design / dev-env / agent-dev / cases / publish / trailer / monetization / legal（複数可）。ゲームジャム・コンテスト、Webゲームの公開先（ホスティング、itch.io、アプリ化）は publish。コーディングエージェントでゲームを作った話は agent-dev、実在の作品・ポストモーテムは cases
+- カテゴリ: genres / design / dev-env / agent-dev / claude-blog / cases / publish / trailer / monetization / legal（複数可）。ゲームジャム・コンテスト、Webゲームの公開先（ホスティング、itch.io、アプリ化）は publish。コーディングエージェントでゲームを作った話は agent-dev、実在の作品・ポストモーテムは cases
 - 要約: 日本語2〜3行。何が起きたか、個人ゲーム制作者にとって何が変わるか。
 - 反映候補: /dev-env/ai-coding-tools/（既存記事の「最新情報」欄に追記すべき場合の記事パス。なければ「なし」）
 
@@ -121,7 +121,7 @@ items: 件数
 
 - **重要度**: 3 = 制作や販売に直接影響する（規約・料金・ポリシーの変更、主要ツールの大型リリース）/ 2 = 知っておくと役立つ / 1 = 参考
 - 重要度の高い順に並べる。
-- Claude Code 公式ブログ（`claude.dev/blog`）の新しい記事は、ゲーム制作にコーディングエージェントを使う読者に関係するものを、重要度2以上で記録する。「反映候補」は `/agent-dev/claude-code-blog/`（記事のまとめ）にする。
+- Claude Code 公式ブログ（`claude.dev/blog`）の新しい記事は、ゲーム制作にコーディングエージェントを使う読者に関係するものを、重要度2以上で記録する。カテゴリは `claude-blog`、「反映候補」は `/claude-blog/`（連載の入口。個別の記事は `/claude-blog/<slug>/`）にする。
 - 要約には、出典に書かれていない推測を入れない。
 
 ## 6. コミット

@@ -209,7 +209,7 @@ Claude Code の公式ドキュメントが挙げる主な方法です（[Manage 
 
 ### 3. キャッシュを壊さない
 
-モデルごとにキャッシュがあり、会話の途中でモデルを切り替えると、内容が同じでも全体を再計算します。多くのモデルでは、effort を途中で変えても同様です。公式は、セッションの最初にモデルと effort を選び、`/compact` は作業の区切りまで待つことを勧めています（[How Claude Code uses prompt caching](https://code.claude.com/docs/en/prompt-caching)）。
+モデルごとにキャッシュがあり、会話の途中でモデルを切り替えると、内容が同じでも全体を再計算します。effort は、Opus 5.5 を API キーか Claude のサブスクリプションで使うなら、途中で変えてもキャッシュが保たれます。Amazon Bedrock、Google Cloud の Agent Platform、ゲートウェイ経由では、変えるとキャッシュが消えます（[What a task costs on Opus 5.5](/claude-blog/opus-5-5-cost/)、2026年10月時点）。公式は、セッションの最初にモデルと effort を選び、`/compact` は作業の区切りまで待つことを勧めています（[How Claude Code uses prompt caching](https://code.claude.com/docs/en/prompt-caching)）。
 
 ### 4. 思考の深さを下げる
 
