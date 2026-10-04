@@ -328,6 +328,8 @@ process.exit(changed === 0 ? 0 : 1);
 
 ## 批評役のループ: 参照と見比べて直す
 
+この型は、作者が「Gauntlet Loop」と名付けています。自分のゲームに当てはめる手順とひな形は [Gauntlet Loop](/agent-dev/gauntlet-loop/) にまとめました。
+
 Claude of Duty の元プロンプトは、実際の Call of Duty と見比べて厳しく評価する批評役を置くよう指示していました（[prompt.md](https://github.com/mshumer/Claude-of-Duty/blob/main/prompt.md)）。README によると、11体の独立した批評役が、生成した画面を Call of Duty を基準に採点しています。採点は、1回目が3.59、2回目が4.14、3回目が4.05、最適化の後が5.05（10点満点）でした。目隠しの比較では、すべての批評役が、すべての回で、本物の Call of Duty の画面を選んでいます。
 
 この事例から、ループの作り方を学べます。

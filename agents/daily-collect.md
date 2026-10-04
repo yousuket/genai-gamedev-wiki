@@ -32,6 +32,7 @@
 |---|---|
 | OpenAI ニュース | `https://openai.com/news/rss.xml` |
 | Google AI ブログ | `https://blog.google/technology/ai/rss/` |
+| Claude Code 公式ブログ | `https://claude.dev/blog/`（HTML の一覧。記事ごとに公開日が出る。直近の新しい記事を探す） |
 | Anthropic | `https://www.anthropic.com/sitemap.xml`（`/news/` `/engineering/` のURLのうち新しいもの。日付はページを開いて確認） |
 
 ### ゲームエンジン・プラットフォーム
@@ -120,6 +121,7 @@ items: 件数
 
 - **重要度**: 3 = 制作や販売に直接影響する（規約・料金・ポリシーの変更、主要ツールの大型リリース）/ 2 = 知っておくと役立つ / 1 = 参考
 - 重要度の高い順に並べる。
+- Claude Code 公式ブログ（`claude.dev/blog`）の新しい記事は、ゲーム制作にコーディングエージェントを使う読者に関係するものを、重要度2以上で記録する。「反映候補」は `/agent-dev/claude-code-blog/`（記事のまとめ）にする。
 - 要約には、出典に書かれていない推測を入れない。
 
 ## 6. コミット
