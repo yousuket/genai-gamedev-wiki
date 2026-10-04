@@ -3,7 +3,7 @@ title: ゲームエンジンの比較
 description: Godot・Unity・Unreal・Phaserなど主要ゲームエンジンを、料金・言語・得意ジャンル・AIコーディングとの相性で比較します。
 sidebar:
   order: 1
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-05
 ---
 
 ## 概要
@@ -67,6 +67,7 @@ AIエージェント（Claude Code など、ファイルを読み書きしコマ
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-02**: カプコンが、RE エンジンを段階的に次世代化する「REX」の基盤技術として、.NET 向けの構造化データエンジン「RE:Dox」を Apache-2.0 で公開。同社は RE Engine を長期的に「AI生成ゲームエンジン」へ進化させる方針も説明している（[出典](https://automaton-media.com/articles/newsjp/20261002-471537/)、[IGN](https://www.ign.com/articles/capcom-announces-plans-to-transform-the-re-engine-into-an-ai-generation-game-engine-our-goal-is-a-future-where-we-create-games-together-with-ai)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 

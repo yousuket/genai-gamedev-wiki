@@ -4,7 +4,7 @@ description: LLMを使ったゲーム制作の最新動向を、毎週まとめ�
 sidebar:
   order: -99999999  # 週次レポート（-YYYYWW）より常に上に表示
   label: 週次レポート一覧
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-05
 ---
 
 ## 週次レポート
@@ -12,6 +12,7 @@ lastUpdated: 2026-09-29
 週次レポートは毎週月曜に公開します。
 
 <!-- AUTO-UPDATE:START -->
+- [2026-10-05（9月29日〜10月5日）](/news/2026-10-05/) — Unity が Grok Build 向け公式プラグインを公開、Steam の割引タブはアルゴリズム表示へ
 - [2026-09-29（9月23日〜9月29日）](/news/2026-09-29/) — Claude Sonnet 5.5 が料金据え置きで公開
 <!-- AUTO-UPDATE:END -->
 

@@ -3,7 +3,7 @@ title: 「ポン出し」でどこまで作れるか
 description: 1本のプロンプトから作れるゲームの種類と、作れないもの・弱いものを、Claude of Duty などの公開事例をもとに整理し、ポン出しで足りるかを判断する基準を示します。
 sidebar:
   order: 2
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-05
 ---
 
 ## 概要
@@ -166,6 +166,9 @@ Claude of Duty の事例が示すのは、細かい仕様よりも、「目標�
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-04**: Reddit の投稿者の報告によると、Claude Code（Opus 5.5、Ultracode モード）に「超リアルなAAA級の五輪スピードスケートのゲームを作って」という単一のプロンプトだけを渡し、72分で完成した。成果物の品質は未確認（[出典](https://www.reddit.com/r/aigamedev/comments/1wxlbt2/opus_55_oneshot_an_entire_olympic_speed_skating_game_in_72_min/)）
+- **2026-10-02**: AI製ブラウザゲーム528本のカタログ GamesByAI の集計では、使用モデルは Claude 45%・GPT 20%・Gemini 6%、ツールは Claude Code 38%・Cursor 20%、エンジンは Three.js が58%（[出典](https://gamesbyai.win/stats/)）
+- **2026-09-28**: 「Create a Pac-Man game in a single html page」という単一プロンプトで、モデルとハーネス（Claude Code、Codex、Cursor Cloud など）の出力をスコア・コスト・時間・トークン数で比較するサイト PacBench が公開（[出典](https://jonclegg.github.io/pacman-bakeoff/)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 

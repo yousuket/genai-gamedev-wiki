@@ -3,7 +3,7 @@ title: ウィッシュリストの集め方
 description: Steamのウィッシュリストを増やすための、ストアページの早期公開、Steam Next Fest、デモ、SNS、配信者への告知と、公開データに基づく目安をまとめます。
 sidebar:
   order: 4
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-05
 ---
 
 ## 概要
@@ -115,6 +115,7 @@ Steam Next Festは、発売前のゲームのデモを集めて1週間開催さ�
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-09-29**: Steam の「割引とイベント」タブが、2027年初めに手動キュレーションからユーザーの好みに合わせたアルゴリズム表示へ全面移行すると報じられた。ニッチなインディーの新しい流入源になりうる（[出典](https://www.gamedeveloper.com/pc/steam-s-discounts-and-events-tab-will-soon-be-fully-algorithm-driven)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 

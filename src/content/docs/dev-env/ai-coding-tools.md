@@ -3,7 +3,7 @@ title: AIコーディングツール
 description: Claude Code・Cursor・GitHub Copilot・OpenAI Codex・Gemini CLI/Antigravity CLIの特徴と料金、ゲームエンジンとの連携方法を比較します。
 sidebar:
   order: 2
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-05
 ---
 
 ## 概要
@@ -66,6 +66,7 @@ MCP（Model Context Protocol）は、AIツールと外部のアプリやデー�
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-01**: Unity が Grok Build 向けの公式プラグインを公開。Unity のエンジニアが書いた30以上のスキル（UI Toolkit、Shader Graph、物理、IAP、マルチプレイヤーなど）を含み、Unity 6 以上が対象。Claude Code・Codex に続く3つ目の対応エージェント（[出典](https://unity.com/blog/unity-plugin-grok)）
 - **2026-09-28**: Claude Sonnet 5.5 が公開。Sonnet 5 比で出力30%以上高速、タスク当たりコストは最大30%減。API料金は入力$2／出力$10（100万トークン）で据え置き（[出典](https://www.anthropic.com/claude-sonnet-5-5)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->

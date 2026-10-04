@@ -3,7 +3,7 @@ title: 販売プラットフォーム
 description: Steam、itch.io、App Store / Google Play、ブラウザゲームポータルなどの手数料・登録費・審査・日本からの税務手続きを比較します。
 sidebar:
   order: 1
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-05
 ---
 
 ## 概要
@@ -106,6 +106,7 @@ HTML5（Webブラウザ）のゲームを載せて、広告収益を分け合う
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-02**: GOG.com が日本円決済に対応。例として『Transport Fever 3』は GOG が7,900円、Steam が6,990円と報じられている（[出典](https://automaton-media.com/articles/newsjp/20261002-471335/)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 

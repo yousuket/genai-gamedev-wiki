@@ -3,7 +3,7 @@ title: アセット生成
 description: 2D画像・ピクセルアート・3Dモデル・音楽・効果音・ボイスを生成AIで作るための主要ツールと、品質（スタイル）を揃えるコツをまとめます。
 sidebar:
   order: 3
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-05
 ---
 
 ## 概要
@@ -107,6 +107,7 @@ lastUpdated: 2026-09-29
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-03**: AI が生成したスプライトシートはコマが等間隔に並ばないため、等分割では切り出せない。外周から背景を除去し、不透明ピクセルの分布から各コマの位置を検出して、固定グリッドに詰め直す方法の紹介（[出典](https://zenn.dev/maruhana/articles/ai-sprite-sheet-band-split)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 
