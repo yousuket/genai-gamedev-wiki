@@ -52,6 +52,8 @@ lastUpdated: 2026-10-05
 | Suno | 2026年9月9日に v6 系（v6 / v6-wild / v6-mini）を公開。曲の一部を言葉で編集する機能がある。Free プランには商用利用権がなく、Pro 以上で商用利用権が付く |
 | ElevenLabs Music | Eleven Music v2.5 が最新の音楽モデル。API から利用できる |
 
+ツールごとの商用利用の条件（Stable Audio 3、Suno、ElevenLabs Music、Lyria、ACE-Step など）と、ゲームBGMの作り方は、[ゲームBGM・効果音をAIで作る](/dev-env/ai-music/)で詳しく扱います。ElevenLabs Music は、複数のプラットフォームで収益化するゲームが商用利用の対象外です。
+
 ### 効果音（SE）
 
 | ツール | 特徴 |

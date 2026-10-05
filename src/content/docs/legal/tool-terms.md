@@ -35,8 +35,8 @@ lastUpdated: 2026-09-29
 
 | ツール | 出力の権利 | 商用利用・プランの条件 | 補償 | 規約 |
 |---|---|---|---|---|
-| Suno | 有料プラン（Pro / Premier）で作った曲は、Sunoの権利を利用者に譲渡。無料プランの曲は個人的・非商用の利用に限る | **無料プランで作った曲は、後から有料プランにしても自動的には商用利用できるようにならない** | なし。利用者がSunoを補償する | [Terms of Service](https://suno.com/terms)（2026年9月3日発効）、[ヘルプ：加入前の曲の権利](https://help.suno.com/en/articles/2425729) |
-| ElevenLabs（音声合成・ボイスクローン） | 利用者が出力の権利を保持（ElevenLabsにも利用許諾を与える） | **無料利用は非商用に限る**。有料プランは商用利用できる。クローンする声は、自分の声か、権利や同意を得た声に限る | なし。利用者がElevenLabsを補償する | [Terms of Service](https://elevenlabs.io/terms-of-use)（2026年3月31日更新） |
+| Suno | 有料プラン（Pro / Premier）で作った曲は、Sunoの権利を利用者に譲渡。無料プランの曲は個人的・非商用の利用に限る | **無料プランで作った曲は、後から有料プランにしても自動的には商用利用できるようにならない**。商用で使えるのは、承認された経路でダウンロードした曲だけで、ダウンロードできる数はプランごとに決まっている | なし。利用者がSunoを補償する | [Terms of Service](https://suno.com/terms)（2026年9月3日発効）、[ヘルプ：加入前の曲の権利](https://help.suno.com/en/articles/2425729) |
+| ElevenLabs（音声合成・ボイスクローン） | 利用者が出力の権利を保持（ElevenLabsにも利用許諾を与える） | **無料利用は非商用に限る**。有料プランは商用利用できる。クローンする声は、自分の声か、権利や同意を得た声に限る。音楽生成（Eleven Music）は別の条件があり、セルフサーブの全プランで、映画・テレビ・ラジオと「複数のプラットフォームで提供し収益化するゲーム」は商用利用の対象外（[Music の個別規約](https://elevenlabs.io/eleven-music-model-specific-terms)。詳しくは [ゲームBGMのAI生成](/dev-env/ai-music/)） | なし。利用者がElevenLabsを補償する | [Terms of Service](https://elevenlabs.io/terms-of-use)（2026年3月31日更新） |
 
 :::caution[Udio を使う場合]
 Udioは2025年秋に Universal Music Group と和解しました。その後、楽曲のダウンロードを停止し、作った曲をプラットフォームの中だけで使う方式へ移る方針が報じられています（[New Industry Focus](https://newindustryfocus.com/articles/udio-allows-downloads-for-48-hours-following-umg-deal-outcry)）。

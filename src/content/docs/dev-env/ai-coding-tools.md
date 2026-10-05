@@ -40,7 +40,7 @@ MCP（Model Context Protocol）は、AIツールと外部のアプリやデー�
 
 | エンジン | 連携手段（2026年9月時点） | 概要 |
 |---|---|---|
-| Unity | 公式 Unity MCP | AI Assistant パッケージに同梱。シーン階層、GameObject、コンポーネントの値、コンソールのメッセージなどにアクセスできる。Claude Code、Cursor、Codex などに対応。オープンベータで、Unity AI ツールの試用またはサブスクリプションが必要。MCP自体はクレジットを消費しない |
+| Unity | Unity CLI の MCP モード（`unity mcp`）、公式プラグイン | シーン階層、GameObject、コンポーネントの値、コンソールのメッセージなどにアクセスできる。Claude Code、Cursor、Codex などに対応。CLI は無料で、Unity AI の契約は不要（旧来の AI Assistant パッケージ同梱の MCP サーバーは非推奨で、CLI が置き換える）。公式プラグインは Claude Code、Codex、Grok Build 向け。詳細は [Unityの公式エージェント連携](/dev-env/unity-agent-plugins/) |
 | Unreal Engine | UE 5.8 の実験的MCPプラグイン | ブループリント、アセット、レベル、マテリアルなどへのアクセス機能を持つ。任意のモデルを接続できる |
 | Godot | コミュニティ製MCPサーバー | 例: Godot AI（MIT License）は Claude Code、Codex、Cursor などから起動中のエディタに接続し、シーンやスクリプトを操作できる。公式プロジェクトではない |
 | Phaser | 公式 Phaser Game Agent MCP | Claude Code、Cursor、VS Code、Codex、Antigravity などに対応。クラウド上のサンドボックスで開発し、実行時間は分単位課金、画像・音声の生成はクレジット消費 |
@@ -86,8 +86,8 @@ MCP（Model Context Protocol）は、AIツールと外部のアプリやデー�
 - [Transitioning Gemini CLI to Antigravity CLI](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/) — Gemini CLI から Antigravity CLI への移行（Google Developers Blog）
 - [Gemini CLI: Quotas and pricing](https://geminicli.com/docs/resources/quota-and-pricing/) — 企業向けに残る Gemini CLI の利用枠
 - [Google Antigravity Pricing](https://antigravity.google/pricing) — Antigravity の各プラン
-- [Unity MCP Server: Connect Claude Code, Cursor, and other AI Agents](https://unity.com/blog/unity-ai-mcp-how-to-get-started) — 公式 Unity MCP の導入手順
-- [Unity AI](https://unity.com/features/ai) — Unity AI の料金と、MCP がクレジットを消費しないこと
+- [Replace the in-Editor MCP server with the Unity CLI](https://docs.unity.com/en-us/unity-cli/replace-mcp-server-unity-cli) — 旧 MCP サーバーの非推奨と、CLI への移行
+- [Unity's AI tools](https://unity.com/features/ai) — Unity の AI ツールの位置づけと料金
 - [Unreal Engine 5.8 がリリースされました](https://www.unrealengine.com/news/unreal-engine-5-8-is-now-available) — 実験的MCPプラグインの紹介
 - [Godot AI（GitHub）](https://github.com/hi-godot/godot-ai) — コミュニティ製の Godot 向けMCPサーバー
 - [Phaser Game Agent MCP setup](https://phaser.io/agent/mcp) — Phaser 公式のMCP接続手順

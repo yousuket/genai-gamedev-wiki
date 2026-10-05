@@ -40,7 +40,7 @@ AIエージェント（Claude Code など、ファイルを読み書きしコマ
 | エンジン | シーン・データの形式 | エディタとAIの連携（2026年9月時点） | 注意点 |
 |---|---|---|---|
 | Godot | `.tscn` はテキスト形式。人が読め、差分管理しやすい | 公式MCPはなし。コミュニティ製のMCPサーバーが複数ある（例: Godot AI、MIT、Godot 4.7以降） | AIが旧版（Godot 3）の書き方を混ぜることがある。バージョンを指示ファイルに書く |
-| Unity | シーンやプレハブはYAMLテキスト（新規プロジェクトの既定は Force Text） | 公式の Unity MCP（AI Assistant パッケージに同梱、オープンベータ）。Unity 6.0以降。AIツールβの試用かサブスクリプションが必要 | `.meta` ファイルを必ずコミットする。YAMLは長く、手で読むのは大変 |
+| Unity | シーンやプレハブはYAMLテキスト（新規プロジェクトの既定は Force Text） | Unity CLI（無料）の MCP モード（`unity mcp`）と、公式プラグイン（30以上のスキル）。Unity 6.0以降（2026年10月時点）。詳しくは [Unityの公式エージェント連携](/dev-env/unity-agent-plugins/) | `.meta` ファイルを必ずコミットする。YAMLは長く、手で読むのは大変 |
 | Unreal Engine | 多くのアセットはバイナリ。ブループリントはエディタで編集する前提 | UE 5.8 で実験的なMCPプラグインを搭載。ブループリント、アセット、レベルなどにアクセスできる | C++ のビルドが重い。AIだけで完結させにくい作業が多い |
 | Phaser | すべてコード（JS/TS）。Webの知識がそのまま使える | 公式の Phaser Game Agent MCP（クラウド実行、従量課金）。ビジュアルエディタの Phaser Editor もある | ブラウザで動くので、Playwright などWeb向けのテスト手段が使える |
 | GameMaker | プロジェクトはGameMaker独自の構成 | 公式のMCP連携は確認できず | GMLはGameMaker専用言語 |
@@ -79,8 +79,8 @@ AIエージェント（Claude Code など、ファイルを読み書きしコマ
 - [Godot AI（GitHub）](https://github.com/hi-godot/godot-ai) — コミュニティ製の Godot 向けMCPサーバー
 - [Unity Pricing Changes](https://unity.com/products/pricing-updates) — Unity の各プランと2026年の価格改定
 - [Unity 6 Releases & Support](https://unity.com/releases/unity-6/support) — Unity 6 の LTS とサポート期間
-- [Unity MCP Server: Connect Claude Code, Cursor, and other AI Agents](https://unity.com/blog/unity-ai-mcp-how-to-get-started) — 公式 Unity MCP の導入手順（2026年5月）
-- [Unity AI](https://unity.com/features/ai) — Unity AI の機能と料金、利用条件
+- [Replace the in-Editor MCP server with the Unity CLI](https://docs.unity.com/en-us/unity-cli/replace-mcp-server-unity-cli) — 旧 MCP サーバーの非推奨と、CLI への移行
+- [Unity's AI tools](https://unity.com/features/ai) — エディター内アシスタント、CLI、MCP、公式プラグインの位置づけと料金
 - [Unreal Engine ライセンス](https://www.unrealengine.com/license) — ロイヤリティの条件
 - [リリース通知（Epic Developer Docs）](https://dev.epicgames.com/docs/dev-portal/unreal-engine/release-forms-and-royalties/release-notifications) — Launch Everywhere with Epic の登録方法
 - [Unreal Engine 5.8 がリリースされました](https://www.unrealengine.com/news/unreal-engine-5-8-is-now-available) — UE 5.8 の新機能と実験的MCPプラグイン

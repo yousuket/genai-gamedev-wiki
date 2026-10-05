@@ -115,7 +115,7 @@ Steam Next Festは、発売前のゲームのデモを集めて1週間開催さ�
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
-- **2026-09-29**: Steam の「割引とイベント」タブが、2027年初めに手動キュレーションからユーザーの好みに合わせたアルゴリズム表示へ全面移行すると報じられた。ニッチなインディーの新しい流入源になりうる（[出典](https://www.gamedeveloper.com/pc/steam-s-discounts-and-events-tab-will-soon-be-fully-algorithm-driven)）
+- **2026-09-29**: Steam の「割引とイベント」タブが、2027年初めに手動キュレーションからユーザーの好みに合わせたアルゴリズム表示へ全面移行すると報じられた。ニッチなインディーの新しい流入源になりうる（[出典: Valve の発表](https://steamcommunity.com/groups/steamworks/announcements/detail/676258795703240952)、[Game Developer](https://www.gamedeveloper.com/pc/steam-s-discounts-and-events-tab-will-soon-be-fully-algorithm-driven)。詳しくは [Steamの「発見」の仕組み](/monetization/steam-discovery/)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 

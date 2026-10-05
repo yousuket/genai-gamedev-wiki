@@ -1,10 +1,10 @@
 ---
 title: 事例・ポストモーテム集
-description: コーディングエージェントで作られたゲームの実例12本。どのモデルに、どんなプロンプトで、何ができて、どこで詰まったかを、作者本人の発信などの一次情報から整理しています。
+description: コーディングエージェントで作られたゲームの実例13本。どのモデルに、どんなプロンプトで、何ができて、どこで詰まったかを、作者本人の発信などの一次情報から整理しています。
 sidebar:
   order: 1
   label: 事例集の読み方
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-05
 ---
 
 ## 概要
@@ -41,6 +41,7 @@ lastUpdated: 2026-09-29
 | [CODEX MORTIS](/cases/postmortem-codex-mortis/) | 2025年12月〜 | Claude Code | Steam で「100% AI」と明記して販売。レビューは92件中70件が好評 |
 | [Patent Tycoon](/cases/postmortem-patent-tycoon/) | 2025年9月〜 | ChatGPT、Codex、Claude Code | 特許の経営シムを Steam で無料公開。公開10日後の起動221件、プレイ時間の中央値14分 |
 | [Caldra](/cases/postmortem-caldra/) | 2024年8月〜 | Codex、Cursor | オンライン対戦カードゲームを Steam で無料公開。約1年10か月 |
+| [地域クエスト](/cases/port-cocos2dx-to-ue5/) | 2026年9月 | Claude（Fable 5、Opus 5） | 運営中のスマホRPG3本（各約19万行）を、作り直さず Cocos2d-x から Unreal Engine 5.8 へ移植。着手から公開まで3〜16日 |
 
 ## この事例集の読み方
 
@@ -51,6 +52,7 @@ lastUpdated: 2026-09-29
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-05**: 事例1件を追加（[地域クエスト](/cases/port-cocos2dx-to-ue5/)：Cocos2d-x のスマホRPG3本を Unreal Engine 5.8 へ移植）。
 - **2026-09-29**: 初版作成。12事例を収録。
 <!-- AUTO-UPDATE:END -->
 

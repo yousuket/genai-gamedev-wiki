@@ -12,6 +12,13 @@
 import re, sys, glob
 
 TERMS = [  # 長い名前を先に。ここに無い名前は触らない
+    ("Stable Audio", "https://stability.ai/stable-audio"),
+    ("ElevenLabs", "https://elevenlabs.io/"),
+    ("ACE-Step", "https://ace-step.github.io/"),
+    ("Lyria", "https://deepmind.google/models/lyria/"),
+    ("Suno", "https://suno.com/"),
+    ("Udio", "https://www.udio.com/"),
+    ("AIVA", "https://www.aiva.ai/"),
     ("Apple Developer Program", "https://developer.apple.com/programs/"),
     ("Cloudflare Workers", "https://workers.cloudflare.com/"),
     ("Cloudflare Pages", "https://pages.cloudflare.com/"),

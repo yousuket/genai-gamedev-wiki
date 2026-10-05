@@ -218,7 +218,7 @@ mygame/
 
 <!-- AUTO-UPDATE:START -->
 - **2026-10-04**: 「Crownlands」を100% AIで作る開発者の振り返り。体験を定義する → 端的なルールと例外を先に議論する → 小さな変更を作る → 見た目・動作・マルチプレイを検証する → 修正して公開版を確認する、の繰り返しで進めるという（本人の報告。[出典](https://www.reddit.com/r/gamedev/comments/1wxd42m/building_crownlands_100_with_ai_what_ive_learned_along_the_way/)）
-- **2026-10-01**: Claude（Fable 5 / Opus 5）で、約12万行の Cocos2d-x のスマホRPG3本を、互換レイヤー方式で Unreal Engine 5.8 へ移植。1作目は公開まで16日、2作目5日、3作目3日。自動テストと adb/Appium による端末操作を組み合わせたと記載（[出典](https://zenn.dev/kiarina/articles/2026-10-01-cocos2dx-to-unreal)）
+- **2026-10-01**: Claude（Fable 5 / Opus 5）で、各約19万行（3本とも20万行近く）の Cocos2d-x のスマホRPG3本を、互換レイヤー方式で Unreal Engine 5.8 へ移植。1作目は公開まで16日、2作目5日、3作目3日。自動テストと adb/Appium による端末操作を組み合わせたと記載（[出典](https://zenn.dev/kiarina/articles/2026-10-01-cocos2dx-to-unreal)、[事例の解説](/cases/port-cocos2dx-to-ue5/)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 
