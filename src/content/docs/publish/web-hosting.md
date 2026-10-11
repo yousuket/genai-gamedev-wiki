@@ -3,7 +3,7 @@ title: HTML/CSS/JavaScript のゲームを手軽に公開できるサービス
 description: GitHub Pages、Cloudflare、Netlify、Vercel、Firebase Hosting、GitLab Pages、Renderなどを無料枠と商用利用の規約で比較し、ViteのゲームをGitHub PagesとCloudflareに出す手順を示します。
 sidebar:
   order: 2
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-12
 ---
 
 ## 概要
@@ -292,6 +292,7 @@ Cross-Origin-Embedder-Policy: require-corp
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-07**: Google が、テキストで指示するだけでゲームを作って共有できる実験的プラットフォーム「Playground」を公開。米国の18歳以上が対象で、ゲームは非公開・リンク共有・公開ギャラリーから選べる。Unity Spark との連携はクローズドベータを予告（[出典](https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/)）
 - **2026-10-02**: 同じ `Web/` フォルダを GitHub Actions 経由で Cloudflare Pages に、ZIP で CrazyGames に出す手順の報告。CrazyGames はサブディレクトリ配信のため絶対パス参照が壊れること、読み込み進捗の表示が品質要件になっていることが挙げられている（[出典](https://zenn.dev/acro_tomo/articles/toilettactics-02-static-web)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->

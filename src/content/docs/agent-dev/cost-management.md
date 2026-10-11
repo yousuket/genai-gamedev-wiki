@@ -3,7 +3,7 @@ title: コストと利用枠の管理
 description: コーディングエージェント開発のコスト構造（入力・出力・キャッシュ）、サブスクリプションとAPI従量課金の違い、モデルの使い分け、ポン出しや並列で費用が跳ねる理由と節約の技を、公開された実測とともに解説します。
 sidebar:
   order: 14
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-12
 ---
 
 ## 概要
@@ -230,6 +230,7 @@ Ollama は、ローカルのモデルを Claude Code から使う手順を公開
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-09**: 生成AI搭載NPCの体験版『Teach My Little Sister How to Drive』は、プレイヤー数が1か月で20倍超になり運営費が1日約1,000ドルに。開発チームは銀行融資で維持している。実行時に LLM を呼ぶゲームでは、体験版の配布が費用に直結する（[出典: IGN](https://www.ign.com/articles/ai-driving-game-demo-bank-loan)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 

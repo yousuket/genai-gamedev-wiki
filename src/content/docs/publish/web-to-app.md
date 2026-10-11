@@ -3,7 +3,7 @@ title: "Webゲームをアプリにする：PWA、ラッパー、ストア"
 description: ブラウザで動くゲームをアプリにする道筋を、手間の小さい順（PWA、Capacitor などのラッパー、エンジンの書き出し）に整理し、App Store と Google Play の登録、審査、テスト配信の条件を公式資料で確認します。
 sidebar:
   order: 4
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-12
 ---
 
 ## 概要
@@ -305,6 +305,7 @@ store/ 以下に、App Store 用のスクリーンショットを5枚作って�
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-06**: Apple が、2027年4月以降の App Store 提出で iPhone Duo 用スクリーンショットを必須にすると報じられた。対応ビルドの提出は10月5日から可能。Apple の一次情報は未確認（[出典: Automaton](https://automaton-media.com/articles/newsjp/20261006-472024/)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 

@@ -3,7 +3,7 @@ title: 生成AI素材の著作権
 description: 日本の著作権法と文化庁の「考え方」、米国著作権局の見解をもとに、AI生成素材をゲームで使うときの権利とリスクを整理します。
 sidebar:
   order: 1
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-12
 ---
 
 ## 概要
@@ -120,6 +120,8 @@ AI企業と権利者の訴訟も続いています。たとえば、Disney・Uni
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-06**: AIエージェントで作った既存IPのクローン・再構築が削除された例。Claude Opus 5.5 で作ったブラウザ版「Fallout: New York」は、10月2日に ZeniMax Media から知的財産権侵害の通知を受けて公開停止（商標・関連素材の使用を指摘）。『CoD: MW2』を逆コンパイルして再構築したプロジェクトも、動画が著作権者の申し立てで削除された（[出典: Automaton](https://automaton-media.com/articles/newsjp/20261006-472053/)）
+- **2026-10-07**: VRChat が、実際の内容と異なるワールドのサムネイルを禁止（生成AIの使用有無を問わない）。翻訳・コーディング支援などの補助的な利用は問題ないとし、ワールドやアセット全体の生成AI利用とAI利用の開示義務は検討中（[出典: Automaton](https://automaton-media.com/articles/newsjp/20261007-472238/)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 

@@ -3,7 +3,7 @@ title: ポン出しから製品まで：開発を進める手順
 description: ポン出しの後を、方向決め、縦切り、仕様化、反復、品質、出荷準備、運営に分け、フェーズごとの目的、人とエージェントの仕事、プロンプト例、完了の目安を示します。
 sidebar:
   order: 4
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-12
 ---
 
 ## 概要
@@ -217,6 +217,8 @@ mygame/
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-07**: Unity と Codex で SRPG「Der」を企画から出荷まで作る連載。第2回では、企画・シナリオは ChatGPT Pro、実装・検証は Codex、2D画像の監査・リグ・独立レビューは Claude Code、採用の判断は人間、という役割分担を紹介（[第1回](https://zenn.dev/gamedev_toollab/articles/ce7e964713a12e)、[第2回](https://zenn.dev/gamedev_toollab/articles/6d073a2b0db44a)）
+- **2026-10-06**: Codex に約3か月半、ほぼ毎日任せ（約400プルリクエスト、コードの約99%）、スマホだけで Godot 製ポーカーを開発して Google Play に公開したという報告。差分のレビューとテストは作者が担当。自己申告でストアページは未確認（[出典: Reddit](https://www.reddit.com/r/aigamedev/comments/1wzby1i/built_and_shipped_this_godot_game_100_on_android/)）
 - **2026-10-04**: 「Crownlands」を100% AIで作る開発者の振り返り。体験を定義する → 端的なルールと例外を先に議論する → 小さな変更を作る → 見た目・動作・マルチプレイを検証する → 修正して公開版を確認する、の繰り返しで進めるという（本人の報告。[出典](https://www.reddit.com/r/gamedev/comments/1wxd42m/building_crownlands_100_with_ai_what_ive_learned_along_the_way/)）
 - **2026-10-01**: Claude（Fable 5 / Opus 5）で、各約19万行（3本とも20万行近く）の Cocos2d-x のスマホRPG3本を、互換レイヤー方式で Unreal Engine 5.8 へ移植。1作目は公開まで16日、2作目5日、3作目3日。自動テストと adb/Appium による端末操作を組み合わせたと記載（[出典](https://zenn.dev/kiarina/articles/2026-10-01-cocos2dx-to-unreal)、[事例の解説](/cases/port-cocos2dx-to-ue5/)）
 - **2026-09-29**: 初版作成。

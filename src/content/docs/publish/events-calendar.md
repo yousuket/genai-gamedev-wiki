@@ -3,7 +3,7 @@ title: ゲームジャム・コンテスト一覧：開催済みと、これか�
 description: 2026年9月29日時点で日程を確認できたゲームジャム・コンテストを、開催中・これから・開催済み・例年の時期・AIの扱い・日本のイベントに分けて一覧にします。Vibe Jam、AI Browser Game Jam、GMTK、Global Game Jam、unity1week などを掲載しています。
 sidebar:
   order: 6
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-12
 ---
 
 ## 概要
@@ -262,6 +262,7 @@ itch.io 以外では、[Ludum Dare](https://ldjam.com/) は [ldjam.com](https://
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-10**: ジャムの生成AIルール。GMTK Game Jam 2027（2027年8月11〜15日）はアート・音声（サムネイル含む）の生成AI利用を禁止、Gamedev.js Jam 2027（4月13〜26日）はAI利用を許可・推奨、Pixel Forge MEGA JAM（11月28日〜12月8日）は生成AI全面禁止（[GMTK](https://itch.io/jam/gmtk-2027)、[Gamedev.js](https://itch.io/jam/gamedevjs-2027)、[Pixel Forge](https://itch.io/jam/pixel-forge-mega-jam)）
 - **2026-10-03**: AI Browser Game Jam 5（itch.io）が10月17日から2週間開催。参加者67人。AI利用ルールと賞金は一覧ページから確認できていない（[出典](https://itch.io/jam/ai-jam-5)）
 - **2026-10-02**: GitHub 主催の Game Off 2026 が11月1日（21:37 UTC）から12月1日まで開催。言語・エンジンは自由で、ソースを GitHub の公開リポジトリに置き itch.io で提出する。テーマは11月1日に発表（[出典](https://itch.io/jam/game-off-2026)）
 - **2026-10-02**: itch.io の10月開催予定は、Comfy Jam: Autumn（10/2開始・14日間）、GameDev.tv Halloween Jam 2026（10/2開始・10日間）、Cookie Jam #5（10/3開始・7日間）、Godot Wild Jam #98（10/9開始）など（[出典](https://itch.io/jams/upcoming)）
