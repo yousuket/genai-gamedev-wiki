@@ -10,14 +10,16 @@ const steps = [
 	{ id: 'getting-started/scope', color: '#ffb400' },
 	{ id: 'genres/ai-friendly', color: '#00a699' },
 ];
-const entries = await Promise.all(steps.map(async (s) => ({ ...s, entry: await getEntry('docs', s.id) })));
+const lang = Astro.locals.starlightRoute.lang.startsWith('en') ? 'en' : 'ja';
+const prefix = lang === 'en' ? 'en/' : '';
+const entries = await Promise.all(steps.map(async (s) => ({ ...s, entry: await getEntry('docs', prefix + s.id) })));
 ---
 
 <ol class="steps not-content">
 	{
 		entries.map(({ id, color, entry }, i) => (
 			<li style={`--c:${color}`}>
-				<a href={withBase(`/${id}/`)}>
+				<a href={withBase(`/${prefix}${id}/`)}>
 					<span class="num">{i + 1}</span>
 					<span class="body">
 						<span class="title">{entry?.data.title}</span>

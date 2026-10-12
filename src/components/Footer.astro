@@ -3,15 +3,16 @@
 import { getCollection } from 'astro:content';
 import DefaultFooter from '@astrojs/starlight/components/Footer.astro';
 import TablerIcon from './TablerIcon.astro';
-import { categoryOf, withBase } from '../data/categories';
+import { catText, categoryOf, langOf, withBase } from '../data/categories';
 
 const { id, entry } = Astro.locals.starlightRoute;
+const lang = langOf(id);
 const category = categoryOf(id);
 const isSplash = entry.data.template === 'splash';
 
 const related =
 	category && !isSplash
-		? (await getCollection('docs', (e) => e.id !== id && categoryOf(e.id)?.id === category.id))
+		? (await getCollection('docs', (e) => e.id !== id && categoryOf(e.id)?.id === category.id && langOf(e.id) === lang))
 				.sort((a, b) => (a.data.sidebar.order ?? 0) - (b.data.sidebar.order ?? 0))
 				.slice(0, 6)
 		: [];
@@ -22,7 +23,7 @@ const related =
 		<section class="related">
 			<h2>
 				<TablerIcon name={category.icon} size="1.1em" />
-				{category.label}の記事
+				{lang === 'en' ? `More in ${catText(category, lang).label}` : `${category.label}の記事`}
 			</h2>
 			<ul>
 				{related.map((e) => (

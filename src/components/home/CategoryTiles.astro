@@ -2,24 +2,28 @@
 // トップページ: カテゴリのタイル（色・アイコン・記事数）
 import { getCollection } from 'astro:content';
 import TablerIcon from '../TablerIcon.astro';
-import { categories, categoryOf, withBase } from '../../data/categories';
+import { catText, categories, categoryOf, langOf, localePath, withBase } from '../../data/categories';
 
-const docs = await getCollection('docs');
+const lang = Astro.locals.starlightRoute.lang.startsWith('en') ? 'en' : 'ja';
+const docs = await getCollection('docs', (e) => langOf(e.id) === lang);
 const count = (id: string) => docs.filter((e) => categoryOf(e.id)?.id === id && e.id !== id).length;
-const tiles = categories.filter((c) => c.id !== 'getting-started' && c.id !== 'news' && c.id !== 'claude-blog');
+// 英語版は、訳した記事があるカテゴリだけを出す
+const tiles = categories.filter(
+	(c) => c.id !== 'getting-started' && c.id !== 'news' && c.id !== 'claude-blog' && (lang === 'ja' || count(c.id) > 0),
+);
 ---
 
 <ul class="tiles not-content">
 	{
 		tiles.map((c) => (
 			<li>
-				<a href={withBase(c.href)} style={`--c:${c.color};--ink:${c.ink}`}>
+				<a href={withBase(localePath(c.href, lang))} style={`--c:${c.color};--ink:${c.ink}`}>
 					<span class="icon">
 						<TablerIcon name={c.icon} size="1.75rem" />
 					</span>
-					<span class="label">{c.label}</span>
-					<span class="desc">{c.description}</span>
-					<span class="count">{count(c.id)} 記事</span>
+					<span class="label">{catText(c, lang).label}</span>
+					<span class="desc">{catText(c, lang).description}</span>
+					<span class="count">{lang === 'en' ? `${count(c.id)} articles` : `${count(c.id)} 記事`}</span>
 				</a>
 			</li>
 		))

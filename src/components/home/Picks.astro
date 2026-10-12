@@ -2,7 +2,7 @@
 // トップページ: おすすめ記事（カテゴリの色付きカード）
 import { getEntry } from 'astro:content';
 import TablerIcon from '../TablerIcon.astro';
-import { categoryOf, readingMinutes, withBase } from '../../data/categories';
+import { catText, categoryOf, readingMinutes, withBase } from '../../data/categories';
 
 const ids = [
 	'agent-dev/differentiation',
@@ -12,7 +12,9 @@ const ids = [
 	'genres/llm-native',
 	'monetization/wishlists',
 ];
-const picks = (await Promise.all(ids.map((id) => getEntry('docs', id)))).filter((e) => e !== undefined);
+const lang = Astro.locals.starlightRoute.lang.startsWith('en') ? 'en' : 'ja';
+const prefix = lang === 'en' ? 'en/' : '';
+const picks = (await Promise.all(ids.map((id) => getEntry('docs', prefix + id)))).filter((e) => e !== undefined);
 ---
 
 <ul class="picks not-content">
@@ -26,10 +28,10 @@ const picks = (await Promise.all(ids.map((id) => getEntry('docs', id)))).filter(
 							<TablerIcon name={c.icon} size="2.25rem" />
 						</span>
 						<span class="body">
-							<span class="cat">{c.label}</span>
+							<span class="cat">{catText(c, lang).label}</span>
 							<span class="title">{e.data.title}</span>
 							<span class="time">
-								<TablerIcon name="clock" size="1em" />約{readingMinutes(e.body)}分
+								<TablerIcon name="clock" size="1em" />{lang === 'en' ? `${readingMinutes(e.body, lang)} min` : `約${readingMinutes(e.body)}分`}
 							</span>
 						</span>
 					</a>

@@ -14,6 +14,7 @@
 - 記事は `agents/STYLE.md` に従って書く。変わりうる事実には必ず出典URLを付ける。
 - 記事は `src/content/docs/<カテゴリ>/` に置く。サイドバーはディレクトリから自動生成され、並び順は frontmatter の `sidebar.order` で決まる。
 - Wiki内リンクは `/genres/overview/` のようにルートからの絶対パスで書く（`plugins/satteri-base-links.mjs` が GitHub Pages の base を付ける）。ただしトップページ（`index.mdx`）の hero・カードは相対パスで書く。
+- 英語版は `src/content/docs/en/` に置く（書き方は `agents/STYLE.md` の「英語版」）。カテゴリの英語名は `src/data/categories.ts`、英語版のサイドバーから未訳ページを外す処理は `src/routeData.ts`。**記事を作る・直すときは、日本語版と英語版（`en/`）を同じコミットで更新する。** 自動更新エージェントの手順も同じ（`agents/weekly-update.md`）。
 - `research/` はサイトに公開されない収集ログ。
 - 自動更新エージェントの手順は `agents/daily-collect.md`（日次）と `agents/weekly-update.md`（週次）。
 

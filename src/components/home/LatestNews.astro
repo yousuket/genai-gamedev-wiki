@@ -4,15 +4,17 @@ import { getCollection } from 'astro:content';
 import TablerIcon from '../TablerIcon.astro';
 import { withBase } from '../../data/categories';
 
-const reports = (await getCollection('docs', (e) => e.id.startsWith('news/')))
+const lang = Astro.locals.starlightRoute.lang.startsWith('en') ? 'en' : 'ja';
+const prefix = lang === 'en' ? 'en/news/' : 'news/';
+const reports = (await getCollection('docs', (e) => e.id.startsWith(prefix) && e.id !== `${prefix}index`))
 	.sort((a, b) => b.id.localeCompare(a.id))
 	.slice(0, 3);
 ---
 
 <div class="news not-content">
 	<div class="head">
-		<span class="badge"><TablerIcon name="sparkles" size="1.1em" /> 毎週月曜に更新</span>
-		<a class="all" href={withBase('/news/')}>レポート一覧 <TablerIcon name="arrow-right" size="1em" /></a>
+		<span class="badge"><TablerIcon name="sparkles" size="1.1em" /> {lang === 'en' ? 'Updated every Monday' : '毎週月曜に更新'}</span>
+		<a class="all" href={withBase(lang === 'en' ? '/en/news/' : '/news/')}>{lang === 'en' ? 'All reports' : 'レポート一覧'} <TablerIcon name="arrow-right" size="1em" /></a>
 	</div>
 	{
 		reports.length > 0 ? (
@@ -29,7 +31,7 @@ const reports = (await getCollection('docs', (e) => e.id.startsWith('news/')))
 		) : (
 			<p class="empty">
 				<TablerIcon name="calendar" size="1.25em" />
-				最初の週次レポートは 2026年10月5日（月）に公開予定です。
+				{lang === 'en' ? 'The first weekly report is due on Monday, October 5, 2026.' : '最初の週次レポートは 2026年10月5日（月）に公開予定です。'}
 			</p>
 		)
 	}

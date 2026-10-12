@@ -5,6 +5,8 @@ export interface Category {
 	id: string;
 	label: string;
 	description: string;
+	/** 英語版の表示名と説明 */
+	en: { label: string; description: string };
 	icon: string;
 	/** カテゴリの色 */
 	color: string;
@@ -17,6 +19,7 @@ export interface Category {
 export const categories: Category[] = [
 	{
 		id: 'getting-started',
+		en: { label: 'Getting Started', description: 'How to use this wiki, and the whole path from idea to release.' },
 		label: 'はじめに',
 		description: 'このWikiの歩き方と、企画からリリースまでの全体像。',
 		icon: 'flag',
@@ -26,6 +29,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'genres',
+		en: { label: 'Game Genres', description: 'Genres suited to solo developers, and genres that pair well with AI.' },
 		label: 'ゲームジャンル',
 		description: '個人開発に向いたジャンル、AIと相性の良いジャンル。',
 		icon: 'puzzle',
@@ -35,6 +39,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'design',
+		en: { label: 'Game Design', description: 'Core loops, level design, balancing, and design documents.' },
 		label: 'ゲームデザイン',
 		description: 'コアループ、レベルデザイン、バランス調整、企画書。',
 		icon: 'bulb',
@@ -44,6 +49,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'dev-env',
+		en: { label: 'Dev Environment', description: 'Engine comparisons, AI coding tools, and asset generation.' },
 		label: '開発環境',
 		description: 'エンジン比較、AIコーディングツール、アセット生成。',
 		icon: 'code',
@@ -53,6 +59,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'agent-dev',
+		en: { label: 'Agent Development', description: 'Building games with coding agents such as Claude Code, beyond one-shot prompts.' },
 		label: 'エージェント開発',
 		description: 'Claude Code などのコーディングエージェントでゲームを作る。ポン出しの先の進め方。',
 		icon: 'robot',
@@ -62,6 +69,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'claude-blog',
+		en: { label: 'Claude Code Blog', description: 'Deep dives into the official Claude Code blog posts, with takeaways for game making.' },
 		label: 'Claude Code ブログ',
 		description: 'Claude Code 公式ブログの記事を1本ずつ掘り下げ。ゲーム制作での使いどころつき。',
 		icon: 'book',
@@ -71,6 +79,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'cases',
+		en: { label: 'Case Studies', description: 'Real games built with AI: which model, which prompts, and what came out.' },
 		label: '事例・ポストモーテム',
 		description: 'AIで作られたゲームの実例。どのモデルに、どんなプロンプトで、何ができたか。',
 		icon: 'trophy',
@@ -80,6 +89,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'publish',
+		en: { label: 'Publishing & Events', description: 'Where to publish: web game hosts, itch.io, game jams and contests.' },
 		label: '公開・イベント',
 		description: 'どこで公開するか。Webゲームの公開先、itch.io、ゲームジャムとコンテスト。',
 		icon: 'rocket',
@@ -89,6 +99,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'trailer',
+		en: { label: 'Trailers', description: 'Trailer structure, capture and editing, and Steam trailers.' },
 		label: 'PV作成',
 		description: 'PVの構成、キャプチャと編集、Steamトレーラー。',
 		icon: 'movie',
@@ -98,6 +109,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'monetization',
+		en: { label: 'Monetization', description: 'Sales platforms, pricing, and wishlists.' },
 		label: 'マネタイズ',
 		description: '販売プラットフォーム、価格設定、ウィッシュリスト。',
 		icon: 'coin',
@@ -107,6 +119,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'legal',
+		en: { label: 'Rights & Terms', description: 'Copyright of AI assets, commercial-use terms of tools, and licenses.' },
 		label: '権利・規約',
 		description: 'AI素材の著作権、ツールの商用利用条件、ライセンス。',
 		icon: 'scale',
@@ -116,6 +129,7 @@ export const categories: Category[] = [
 	},
 	{
 		id: 'news',
+		en: { label: 'Latest News', description: 'Weekly roundups of AI x game development news.' },
 		label: '最新動向',
 		description: 'AI×ゲーム制作の最新ニュースを、毎週まとめています。',
 		icon: 'sparkles',
@@ -125,14 +139,39 @@ export const categories: Category[] = [
 	},
 ];
 
-/** 記事ID（例: "dev-env/engines"）からカテゴリを引く */
-export const categoryOf = (id: string) => categories.find((c) => id === c.id || id.startsWith(`${c.id}/`));
+/** 記事IDの言語。英語版は `en/` 配下に置く */
+export const langOf = (id: string): 'ja' | 'en' => (id === 'en' || id.startsWith('en/') ? 'en' : 'ja');
+
+/** 記事IDから言語のプレフィックス（`en/`）を除く */
+export const stripLang = (id: string) => id.replace(/^en(\/|$)/, '');
+
+/** 記事ID（例: "dev-env/engines"、英語版は "en/dev-env/engines"）からカテゴリを引く */
+export const categoryOf = (id: string) => {
+	const bare = stripLang(id);
+	return categories.find((c) => bare === c.id || bare.startsWith(`${c.id}/`));
+};
+
+/** カテゴリの表示名・説明を言語に合わせて返す */
+export const catText = (c: Category, lang: 'ja' | 'en') =>
+	lang === 'en' ? c.en : { label: c.label, description: c.description };
+
+/** 言語に合わせたパス（英語版は /en/ を付ける） */
+export const localePath = (path: string, lang: 'ja' | 'en') => (lang === 'en' ? `/en${path}` : path);
 
 /** サイトルートからのパスに base を付ける */
 export const withBase = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}${path}`;
 
-/** 日本語の本文を1分あたり500字として読了時間（分）を見積もる */
-export const readingMinutes = (body = '') => {
+/** 日本語の本文を1分あたり500字、英語は1分あたり200語として読了時間（分）を見積もる */
+export const readingMinutes = (body = '', lang: 'ja' | 'en' = 'ja') => {
+	if (lang === 'en') {
+		const words = body
+			.replace(/```[\s\S]*?```/g, '')
+			.replace(/<!--[\s\S]*?-->/g, '')
+			.replace(/\]\([^)]*\)/g, ']')
+			.split(/\s+/)
+			.filter((w) => /[A-Za-z0-9]/.test(w)).length;
+		return Math.max(1, Math.round(words / 200));
+	}
 	const text = body
 		.replace(/```[\s\S]*?```/g, '')
 		.replace(/<!--[\s\S]*?-->/g, '')

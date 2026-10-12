@@ -5,19 +5,35 @@ import TablerIcon from './TablerIcon.astro';
 import { withBase } from '../data/categories';
 
 interface Props {
+	/** 表示する言語（省略時は表示中のページの言語） */
+	lang?: 'ja' | 'en';
 	/** 記事の上に置く小さい表示にする */
 	compact?: boolean;
 }
 const { compact = false } = Astro.props;
+const lang = Astro.props.lang ?? (Astro.locals.starlightRoute?.lang?.startsWith('en') ? 'en' : 'ja');
 ---
 
-<aside class:list={['disclaimer', 'not-content', { compact }]} aria-label="ご利用にあたって">
+<aside class:list={['disclaimer', 'not-content', { compact }]} aria-label={lang === 'en' ? 'Before you use this site' : 'ご利用にあたって'}>
 	<span class="icon"><TablerIcon name="info-circle" size="1.4em" /></span>
 	<p>
-		<strong>このサイトの情報は二次情報です。</strong>
-		内容に基づいて生じたいかなる問題についても、責任を負いません。
-		実施するときは、一次情報（公式サイト、規約、法令など）を調べ、ご自身の責任で判断してください。
-		<a href={withBase('/getting-started/about/#免責事項')}>免責事項</a>
+		{
+			lang === 'en' ? (
+				<>
+					<strong>The information on this site is secondary information.</strong>
+					We take no responsibility for any problems arising from its contents. Before you act on it, check the primary
+					sources (official sites, terms of service, laws) and decide at your own risk.
+					<a href={withBase('/en/getting-started/about/#disclaimer')}>Disclaimer</a>
+				</>
+			) : (
+				<>
+					<strong>このサイトの情報は二次情報です。</strong>
+					内容に基づいて生じたいかなる問題についても、責任を負いません。
+					実施するときは、一次情報（公式サイト、規約、法令など）を調べ、ご自身の責任で判断してください。
+					<a href={withBase('/getting-started/about/#免責事項')}>免責事項</a>
+				</>
+			)
+		}
 	</p>
 </aside>
 

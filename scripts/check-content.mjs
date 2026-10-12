@@ -6,8 +6,8 @@ import { join, relative } from 'node:path';
 
 const DOCS = 'src/content/docs';
 // 自動更新欄を持たないページ（トップ、このWikiについて、週次レポート news/YYYY-MM-DD.md）
-const NO_MARKER = new Set(['index.mdx', 'getting-started/about.md']);
-const isWeeklyReport = (rel) => /^news\/\d{4}-\d{2}-\d{2}\.md$/.test(rel);
+const NO_MARKER = new Set(['index.mdx', 'getting-started/about.md', 'en/index.mdx', 'en/getting-started/about.md']);
+const isWeeklyReport = (rel) => /^(?:en\/)?news\/\d{4}-\d{2}-\d{2}\.md$/.test(rel);
 
 /** @param {string} dir @returns {string[]} */
 const walk = (dir) =>
@@ -44,7 +44,9 @@ for (const file of files) {
 		const href = mdHref ?? attrHref;
 		if (!href || href.startsWith('//')) continue;
 		const path = href.endsWith('/') ? href : `${href}/`;
-		if (!routes.has(path)) errors.push(`${rel}: リンク切れ ${href}`);
+		// 英語版（/en/…）に訳がないページは、日本語版が代わりに表示される
+		const fallback = path.startsWith('/en/') ? path.slice(3) : null;
+		if (!routes.has(path) && !(fallback && routes.has(fallback))) errors.push(`${rel}: リンク切れ ${href}`);
 	}
 }
 
