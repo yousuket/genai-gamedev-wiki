@@ -1,0 +1,41 @@
+---
+title: Build what you dream up, with AI
+description: A wiki for solo game makers who use generative AI. It covers choosing a genre, game design, dev environment, trailers, monetization, and rights and terms.
+template: splash
+hero:
+  tagline: A wiki for solo developers who make games with generative AI. It collects what you need from planning to release and monetization.
+  image:
+    file: ../../../assets/hero.svg
+  actions:
+    - text: Start here
+      link: getting-started/about/
+      icon: right-arrow
+    - text: The full roadmap
+      link: getting-started/roadmap/
+      icon: list-format
+      variant: minimal
+---
+
+import CategoryTiles from '../../../components/home/CategoryTiles.astro';
+import StartHere from '../../../components/home/StartHere.astro';
+import LatestNews from '../../../components/home/LatestNews.astro';
+import Picks from '../../../components/home/Picks.astro';
+import Disclaimer from '../../../components/Disclaimer.astro';
+
+## Browse by category
+
+<CategoryTiles />
+
+## New here? Read in this order
+
+<StartHere />
+
+## This week's news
+
+<LatestNews />
+
+## Recommended reads
+
+<Picks />
+
+<Disclaimer />
