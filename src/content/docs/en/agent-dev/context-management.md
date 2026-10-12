@@ -3,7 +3,7 @@ title: Context management for long-term projects
 description: This article explains what happens when context becomes full, how to split sessions, progress files and decision logs, context compaction, file splitting, git checkpoints, and how to use subagents, based on Claude Code's official documentation.
 sidebar:
   order: 8
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-12
 ---
 
 ## Overview
@@ -211,6 +211,7 @@ When you use it, request it like "run verification with a subagent".
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-09**: A record of running agents on decompiling an FPS game for over three months and more than 500 billion tokens. It describes practices such as lowering the compaction threshold from 90% to 42%, having the agent re-read a document of goals and prohibitions via an hourly cron job, and tracking progress with GitHub Issues ([Source](https://momo5502.com/posts/2026-10-09-game-decompilation/)).
 - **2026-09-29**: First version.
 <!-- AUTO-UPDATE:END -->
 

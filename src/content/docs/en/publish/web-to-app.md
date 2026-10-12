@@ -3,7 +3,7 @@ title: "Web Games as Apps: PWA, Wrappers, and Engine Export"
 description: Take a browser-based game to app stores through three approaches in order of effort (PWA, wrappers like Capacitor, and engine export). Learn registration, review, and testing requirements for App Store and Google Play from official sources.
 sidebar:
   order: 4
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-12
 ---
 
 ## Overview
@@ -310,6 +310,7 @@ Export 5 App Store screenshots into store/.
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-06**: Apple is reported to make iPhone Duo screenshots mandatory for App Store submissions from April 2027. Submissions of compatible builds have been possible since October 5. Apple's primary source has not been confirmed ([Source: Automaton](https://automaton-media.com/articles/newsjp/20261006-472024/) (in Japanese))
 - **2026-09-29**: Initial version.
 <!-- AUTO-UPDATE:END -->
 

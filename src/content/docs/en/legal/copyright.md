@@ -3,7 +3,7 @@ title: Copyright of AI-Generated Assets
 description: Based on Japanese copyright law and the Agency for Cultural Affairs' "Thinking," and the U.S. Copyright Office's position, this article clarifies the rights and risks of using AI-generated assets in games.
 sidebar:
   order: 1
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-12
 ---
 
 ## Overview
@@ -120,6 +120,8 @@ The [Checklist & Guidance](https://www.bunka.go.jp/seisaku/chosakuken/pdf/940977
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-06**: An example of a clone or rebuild of existing IP made with an AI agent being removed. A browser version of "Fallout: New York" made with Claude Opus 5.5 was taken offline on October 2 after ZeniMax Media sent an intellectual property infringement notice (pointing to the use of trademarks and related materials). A video of a project that rebuilt "CoD: MW2" by decompiling it was also removed after a complaint from the copyright holder (Source: [Automaton](https://automaton-media.com/articles/newsjp/20261006-472053/) (in Japanese))
+- **2026-10-07**: VRChat banned world thumbnails that do not match the actual content, regardless of whether generative AI was used. It said that auxiliary uses such as translation and coding assistance are not a problem. It is still considering rules on generative AI use across entire worlds and assets, and on disclosure obligations for AI use (Source: [Automaton](https://automaton-media.com/articles/newsjp/20261007-472238/) (in Japanese))
 - **2026-09-29**: Initial version created.
 <!-- AUTO-UPDATE:END -->
 

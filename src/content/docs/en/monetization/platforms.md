@@ -3,7 +3,7 @@ title: Distribution Platforms
 description: "Comparing Steam, itch.io, App Store, Google Play, and browser-based game portals: platform fees, registration costs, review processes, and tax procedures for developers in Japan."
 sidebar:
   order: 1
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-12
 ---
 
 ## Overview
@@ -106,6 +106,7 @@ Sites that host HTML5 (web browser) games and share ad revenue. **The model is f
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-09**: A Steam developer disclosed that, of total sales of 560,000 USD over five years, after refunds of 134,000 USD (22% refund rate), Steam's 30% fee, a publisher revenue share, and other deductions, the developer's personal take was about 73,000 USD. The figures are self-reported by the developer ([source: Automaton](https://automaton-media.com/articles/newsjp/20261009-472691/) (in Japanese))
 - **2026-10-02**: GOG.com adds Japanese yen pricing. For example, "Transport Fever 3" is priced at 7,900 yen on GOG and 6,990 yen on Steam, according to reports ([source](https://automaton-media.com/articles/newsjp/20261002-471335/) (in Japanese))
 - **2026-09-29**: Initial version created.
 <!-- AUTO-UPDATE:END -->

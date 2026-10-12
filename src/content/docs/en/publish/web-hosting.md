@@ -3,7 +3,7 @@ title: Services for Publishing HTML/CSS/JavaScript Games Easily
 description: Compare GitHub Pages, Cloudflare, Netlify, Vercel, Firebase Hosting, GitLab Pages, and Render by free tier and commercial use terms. Shows steps to deploy a Vite game to GitHub Pages and Cloudflare with configuration files.
 sidebar:
   order: 2
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-12
 ---
 
 ## Overview
@@ -292,6 +292,7 @@ Free-tier concurrency is tight (Firebase 100, Supabase 200), matching your playe
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-07**: Google released Playground, an experimental platform where you can make and share games just by describing them in text. It is open to users aged 18 and over in the United States. Games can be private, shared by link, or listed in a public gallery. Google also announced that a closed beta for integration with Unity Spark is coming ([Source](https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/))
 - **2026-10-02**: Report on deploying the same `Web/` folder to Cloudflare Pages via GitHub Actions and to CrazyGames via ZIP. CrazyGames serves from a subdirectory, breaking absolute path references, and requires a load progress indicator as a quality requirement ([Source](https://zenn.dev/acro_tomo/articles/toilettactics-02-static-web)) (in Japanese)
 - **2026-09-29**: Initial version.
 <!-- AUTO-UPDATE:END -->

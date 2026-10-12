@@ -3,7 +3,7 @@ title: Common Failures and How to Fix Them
 description: 10 common mistakes when building games with coding agents, organized by symptom, cause, and remedy, with sources from official documentation and published case studies.
 sidebar:
   order: 13
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-12
 ---
 
 ## Overview
@@ -210,6 +210,7 @@ Setting up these four things first prevents most of the failures above:
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-08**: A solo developer who let Claude handle a month of Unity development logged 88 mistakes. None stopped with an exception. 76 of them (86%) were "it ran, but we only knew by measuring." One point is that "glue" not written in the design, such as a button that picks an action from the screen, does not get implemented ([Source: Zenn](https://zenn.dev/zadeohajimari/articles/1558fa4b65175a) (in Japanese))
 - **2026-09-29**: Initial version.
 <!-- AUTO-UPDATE:END -->
 

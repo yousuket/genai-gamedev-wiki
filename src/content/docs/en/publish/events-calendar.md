@@ -3,7 +3,7 @@ title: "Game Jams and Contests: Past and Upcoming"
 description: A list of game jams and contests with confirmed schedules as of September 29, 2026, organized by status (in progress, upcoming, past, recurring schedule), AI handling policy, and Japan-based events. Includes Vibe Jam, AI Browser Game Jam, GMTK, Global Game Jam, and more.
 sidebar:
   order: 6
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-12
 ---
 
 ## Overview
@@ -262,6 +262,7 @@ Outside itch.io, check [Ludum Dare](https://ldjam.com/) at [ldjam.com](https://l
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-10**: Generative AI rules for jams. GMTK Game Jam 2027 (Aug 11–15, 2027) bans generative AI for art and audio, including thumbnails. Gamedev.js Jam 2027 (Apr 13–26) allows and encourages AI use. Pixel Forge MEGA JAM (Nov 28–Dec 8) bans generative AI entirely ([GMTK](https://itch.io/jam/gmtk-2027), [Gamedev.js](https://itch.io/jam/gamedevjs-2027), [Pixel Forge](https://itch.io/jam/pixel-forge-mega-jam))
 - **2026-10-03**: AI Browser Game Jam 5 (itch.io) starts Oct 17 for two weeks. 67 registered. AI rules and prize money not yet confirmed on the list page ([source](https://itch.io/jam/ai-jam-5))
 - **2026-10-02**: GitHub's Game Off 2026 starts Nov 1 (21:37 UTC) through Dec 1. Any language and engine OK; source on public GitHub repo, submit via itch.io. Theme announced Nov 1 ([source](https://itch.io/jam/game-off-2026))
 - **2026-10-02**: itch.io October events include Comfy Jam: Autumn (starts 10/2, 14 days), GameDev.tv Halloween Jam 2026 (starts 10/2, 10 days), Cookie Jam #5 (starts 10/3, 7 days), Godot Wild Jam #98 (starts 10/9), and more ([source](https://itch.io/jams/upcoming))

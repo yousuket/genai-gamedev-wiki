@@ -4,7 +4,7 @@ description: A collection of weekly reports summarizing the latest trends in gam
 sidebar:
   order: -99999999
   label: Weekly reports
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-12
 ---
 
 ## Weekly Reports
@@ -12,6 +12,7 @@ lastUpdated: 2026-10-05
 Weekly reports are published every Monday.
 
 <!-- AUTO-UPDATE:START -->
+- [2026-10-12 (October 6 – October 12)](/en/news/2026-10-12/) — Google Playground and Unity Spark announced, removals of works that recreate existing IP with AI continue
 - [2026-10-05 (September 29 – October 5)](/en/news/2026-10-05/) — Unity publishes official plugin for Grok Build, Steam discount tab shifts to algorithm-based display
 - [2026-09-29 (September 23 – 29)](/en/news/2026-09-29/) — Claude Sonnet 5.5 released at unchanged pricing
 <!-- AUTO-UPDATE:END -->

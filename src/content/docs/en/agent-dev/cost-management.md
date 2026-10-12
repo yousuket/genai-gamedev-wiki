@@ -3,7 +3,7 @@ title: Managing Costs and Usage Limits
 description: Cost structure for coding agents (input, output, caching), differences between subscription and API billing, model selection per task, why one-shot and parallel approaches increase costs, and cost-saving techniques with published benchmarks.
 sidebar:
   order: 14
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-12
 ---
 
 ## Overview
@@ -231,6 +231,7 @@ Published benchmarks comparing local model quality to Claude are not available. 
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-09**: The demo of *Teach My Little Sister How to Drive*, a game with generative AI-powered NPCs, grew more than 20 times in player count within one month, and its operating costs reached about $1,000 per day. The development team is covering the costs with a bank loan. For games that call an LLM at runtime, distributing a demo directly affects costs ([Source: IGN](https://www.ign.com/articles/ai-driving-game-demo-bank-loan))
 - **2026-09-29**: Initial version.
 <!-- AUTO-UPDATE:END -->
 

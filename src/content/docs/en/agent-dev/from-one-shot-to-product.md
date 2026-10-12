@@ -3,7 +3,7 @@ title: "From One-Shot to Product: How to Move Forward"
 description: Divides development after one-shot generation into phases (direction, vertical slice, spec, iteration, quality, release prep, and operations), showing the goal, human and agent tasks, prompt examples, and completion criteria for each phase.
 sidebar:
   order: 4
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-12
 ---
 
 ## Overview
@@ -217,6 +217,8 @@ mygame/
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-07**: A series on making the SRPG "Der" with Unity and Codex, from planning to release. Part 2 describes the division of roles: ChatGPT Pro for planning and scenario, Codex for implementation and verification, Claude Code for auditing 2D images, rigging, and independent review, and humans deciding what to adopt ([Part 1](https://zenn.dev/gamedev_toollab/articles/ce7e964713a12e) (in Japanese), [Part 2](https://zenn.dev/gamedev_toollab/articles/6d073a2b0db44a) (in Japanese)).
+- **2026-10-06**: A report of handing coding to Codex for about three and a half months, nearly every day (about 400 pull requests, about 99% of the code), and building a Godot poker game using only a smartphone and publishing it on Google Play. The author reviewed the diffs and ran the tests. Self-reported; the store page has not been verified ([source: Reddit](https://www.reddit.com/r/aigamedev/comments/1wzby1i/built_and_shipped_this_godot_game_100_on_android/)).
 - **2026-10-04**: "Crownlands" developer's retrospective on 100% AI development. Define the experience → discuss core rules and exceptions first → make small changes → verify appearance, behavior, and multiplayer → fix and check the release version. Repeat. (Author's report; [source](https://www.reddit.com/r/gamedev/comments/1wxd42m/building_crownlands_100_with_ai_what_ive_learned_along_the_way/))
 - **2026-10-01**: Porting three Cocos2d-x mobile RPGs (around 190,000 lines each, nearly 200,000 all three) to Unreal Engine 5.8 using Claude (Fable 5 / Opus 5) with a compatibility layer. First took 16 days to release, second 5 days, third 3 days. Used automated testing and adb/Appium device control combined. ([source](https://zenn.dev/kiarina/articles/2026-10-01-cocos2dx-to-unreal) (in Japanese), [case study explanation](/en/cases/port-cocos2dx-to-ue5/))
 - **2026-09-29**: Initial version.
