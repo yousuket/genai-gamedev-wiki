@@ -3,7 +3,7 @@ title: Services for Publishing HTML/CSS/JavaScript Games Easily
 description: Compare GitHub Pages, Cloudflare, Netlify, Vercel, Firebase Hosting, GitLab Pages, and Render by free tier and commercial use terms. Shows steps to deploy a Vite game to GitHub Pages and Cloudflare with configuration files.
 sidebar:
   order: 2
-lastUpdated: 2026-10-12
+lastUpdated: 2026-10-19
 ---
 
 ## Overview
@@ -292,6 +292,8 @@ Free-tier concurrency is tight (Firebase 100, Supabase 200), matching your playe
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-15**: A poster reports being unable to pull an HTML5 game listed on CrazyGames and considering an exclusive listing on Poki. They say they asked for removal, got no reply for three days, and there is no withdraw button. This is the poster's account only; CrazyGames' terms and response are unconfirmed. It is a reminder to check the withdrawal procedure and exclusivity terms before listing ([source: Reddit](https://www.reddit.com/r/gamedev/comments/1x6wnwu/crazygames_wont_let_me_pull_my_game_and_im/))
+- **2026-10-15**: The operator of "Dead Simple," a swipe feed of tiny games, reports building a production CLI that agents can drive. Every command answers with `--json`, so an agent can scaffold, build, run contract tests, and prepare an upload without terminal interaction. A game is a single HTML file, and libraries such as Three.js load from the operator's mirror, so they do not count toward the 5 MB limit ([source: Reddit](https://www.reddit.com/r/aigamedev/comments/1x6xlx8/we_ship_our_tiny_phone_games_with_claude_code_and/))
 - **2026-10-07**: Google released Playground, an experimental platform where you can make and share games just by describing them in text. It is open to users aged 18 and over in the United States. Games can be private, shared by link, or listed in a public gallery. Google also announced that a closed beta for integration with Unity Spark is coming ([Source](https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/))
 - **2026-10-02**: Report on deploying the same `Web/` folder to Cloudflare Pages via GitHub Actions and to CrazyGames via ZIP. CrazyGames serves from a subdirectory, breaking absolute path references, and requires a load progress indicator as a quality requirement ([Source](https://zenn.dev/acro_tomo/articles/toilettactics-02-static-web)) (in Japanese)
 - **2026-09-29**: Initial version.

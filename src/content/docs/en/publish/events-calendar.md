@@ -3,7 +3,7 @@ title: "Game Jams and Contests: Past and Upcoming"
 description: A list of game jams and contests with confirmed schedules as of September 29, 2026, organized by status (in progress, upcoming, past, recurring schedule), AI handling policy, and Japan-based events. Includes Vibe Jam, AI Browser Game Jam, GMTK, Global Game Jam, and more.
 sidebar:
   order: 6
-lastUpdated: 2026-10-12
+lastUpdated: 2026-10-19
 ---
 
 ## Overview
@@ -262,6 +262,11 @@ Outside itch.io, check [Ludum Dare](https://ldjam.com/) at [ldjam.com](https://l
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-19**: Slapjam #2 (itch.io) runs for 48 hours, from 15:00 UTC on October 29 to 15:00 UTC on October 31. You make a portrait-orientation mobile browser game with AI tools and publish it. There is no restriction on the tools for code, art, music, voice, or 3D. The first jam had 312 participants and 145 submissions ([source](https://itch.io/jam/slapjam-ai-2))
+- **2026-10-17**: The submission deadline for Game Gauntlet – SIM Jam (itch.io, simulation, $1,500 cash prize) is November 4 (14:00 US Eastern). Art, code, music, and text made with AI are allowed if disclosed in line with Steam's requirements ([source](https://itch.io/jam/game-gauntlet-sim-jam))
+- **2026-10-15**: Zoud GameLab (itch.io, themed on financial literacy, up to $140,000 in prizes and development support) runs from October 15 to November 15. The theme and judging criteria are to be announced in a live stream on October 15. No AI usage rules were found on the page ([source](https://itch.io/jam/zoud-gamelab))
+- **2026-10-14**: SQUARE ENIX GAME CONTEST 2026. Total prize money is 1 billion yen (300 million yen for the grand prize, and more). Entries are accepted from December 15, 2026 to 23:59 on March 15, 2027, and results will be announced on June 30, 2027. Individuals can enter. AI is covered by a separate "AI usage guideline" (in beta until just before entries open), apart from the entry rules. Its contents are not yet public, so whether AI use is allowed is unconfirmed ([source: Automaton (in Japanese)](https://automaton-media.com/articles/interviewsjp/square-enix-game-contest-20261014-473272/))
+- **2026-10-13**: AI Browser Game Jam 5 (itch.io) starts on October 17 and runs for two weeks. The upcoming-jams list shows 141 participants. The AI usage rules and prizes could not be checked on the jam's own page. The same list includes Solo Dev jam 13 (starts 10/23) and Solovember 2026 (starts 10/31) ([source](https://itch.io/jams/upcoming))
 - **2026-10-10**: Generative AI rules for jams. GMTK Game Jam 2027 (Aug 11–15, 2027) bans generative AI for art and audio, including thumbnails. Gamedev.js Jam 2027 (Apr 13–26) allows and encourages AI use. Pixel Forge MEGA JAM (Nov 28–Dec 8) bans generative AI entirely ([GMTK](https://itch.io/jam/gmtk-2027), [Gamedev.js](https://itch.io/jam/gamedevjs-2027), [Pixel Forge](https://itch.io/jam/pixel-forge-mega-jam))
 - **2026-10-03**: AI Browser Game Jam 5 (itch.io) starts Oct 17 for two weeks. 67 registered. AI rules and prize money not yet confirmed on the list page ([source](https://itch.io/jam/ai-jam-5))
 - **2026-10-02**: GitHub's Game Off 2026 starts Nov 1 (21:37 UTC) through Dec 1. Any language and engine OK; source on public GitHub repo, submit via itch.io. Theme announced Nov 1 ([source](https://itch.io/jam/game-off-2026))

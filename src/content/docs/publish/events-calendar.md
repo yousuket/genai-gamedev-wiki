@@ -3,7 +3,7 @@ title: ゲームジャム・コンテスト一覧：開催済みと、これか�
 description: 2026年9月29日時点で日程を確認できたゲームジャム・コンテストを、開催中・これから・開催済み・例年の時期・AIの扱い・日本のイベントに分けて一覧にします。Vibe Jam、AI Browser Game Jam、GMTK、Global Game Jam、unity1week などを掲載しています。
 sidebar:
   order: 6
-lastUpdated: 2026-10-12
+lastUpdated: 2026-10-19
 ---
 
 ## 概要
@@ -262,6 +262,11 @@ itch.io 以外では、[Ludum Dare](https://ldjam.com/) は [ldjam.com](https://
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-19**: Slapjam #2（itch.io）が10月29日 15:00 UTC から31日 15:00 UTC までの48時間で開催。AIツールで、スマホ縦画面のブラウザゲームを作って公開する。コード・アート・音楽・音声・3D とも、使うツールに制限はない。第1回は312人が参加し145本が提出された（[出典](https://itch.io/jam/slapjam-ai-2)）
+- **2026-10-17**: Game Gauntlet – SIM Jam（itch.io、シミュレーション、現金賞金$1,500）の提出期限は11月4日（米東部 14:00）。AIで作ったアート・コード・音楽・テキストは、Steam の要件に沿って開示すれば可（[出典](https://itch.io/jam/game-gauntlet-sim-jam)）
+- **2026-10-15**: Zoud GameLab（itch.io、金融リテラシーがテーマ、最大14万ドルの賞金・開発支援）が10月15日〜11月15日に開催。テーマと採点基準は10月15日のライブ配信で発表予定で、ページにAI利用ルールの記載は見つからなかった（[出典](https://itch.io/jam/zoud-gamelab)）
+- **2026-10-14**: SQUARE ENIX GAME CONTEST 2026。賞金総額10億円（最優秀1作品3億円ほか）。応募受付は2026年12月15日〜2027年3月15日23時59分、結果発表は2027年6月30日。個人も応募でき、AIについては応募規約とは別の「AI利用ガイドライン」（応募開始直前までベータ版）で定める。内容は未公開のため、AI利用の可否は未確認（[出典: Automaton](https://automaton-media.com/articles/interviewsjp/square-enix-game-contest-20261014-473272/)）
+- **2026-10-13**: AI Browser Game Jam 5（itch.io）は10月17日開始の2週間。開催予定一覧上の参加者は141人。AI利用ルールと賞は個別ページを確認できていない。同じ一覧には Solo Dev jam 13（10/23開始）、Solovember 2026（10/31開始）がある（[出典](https://itch.io/jams/upcoming)）
 - **2026-10-10**: ジャムの生成AIルール。GMTK Game Jam 2027（2027年8月11〜15日）はアート・音声（サムネイル含む）の生成AI利用を禁止、Gamedev.js Jam 2027（4月13〜26日）はAI利用を許可・推奨、Pixel Forge MEGA JAM（11月28日〜12月8日）は生成AI全面禁止（[GMTK](https://itch.io/jam/gmtk-2027)、[Gamedev.js](https://itch.io/jam/gamedevjs-2027)、[Pixel Forge](https://itch.io/jam/pixel-forge-mega-jam)）
 - **2026-10-03**: AI Browser Game Jam 5（itch.io）が10月17日から2週間開催。参加者67人。AI利用ルールと賞金は一覧ページから確認できていない（[出典](https://itch.io/jam/ai-jam-5)）
 - **2026-10-02**: GitHub 主催の Game Off 2026 が11月1日（21:37 UTC）から12月1日まで開催。言語・エンジンは自由で、ソースを GitHub の公開リポジトリに置き itch.io で提出する。テーマは11月1日に発表（[出典](https://itch.io/jam/game-off-2026)）

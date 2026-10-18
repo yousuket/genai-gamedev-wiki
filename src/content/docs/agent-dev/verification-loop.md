@@ -3,7 +3,7 @@ title: 検証ループ：エージェントに動作確認をさせる
 description: ヘッドレス実行、Playwright のスクリーンショット、window.__game による状態の公開、seed 固定、ボット、FPS計測、批評役のループまで、エージェントが自分で確認できる仕組みの作り方を、動くコード例つきで説明します。
 sidebar:
   order: 9
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-19
 ---
 
 ## 概要
@@ -422,6 +422,7 @@ func _physics_process(_delta: float) -> void:
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-10**: ゲーム開発向けの「AIハーネス」設計の解説。乱数シードの固定とセーブ/ロード、スクリーンショットと画像差分ツール odiff での確認、数値のコード外への分離、シミュレーションとエンジンの分離、プロファイラ出力のテキスト化（samply）を挙げ、エージェントが数秒で試行を回せるようにする。著者は、小規模な出荷中のプロジェクトではほぼ使っておらず、大規模なゲーム向けの手法だと述べている（[出典](https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code)）
 - **2026-09-30**: 論文 RSIGame は、LLM が生成したゲームを「探索→診断→改善」のループで繰り返し直し、最良のチェックポイントを保持する枠組みを提案。GameCraft-Bench 140課題（Godot と Phaser）で、同じ開発予算なら品質が一貫して上がると報告している（[出典](https://arxiv.org/abs/2609.39045)）
 - **2026-10-01**: 個人開発者が Claude Code と Codex を夜間に回し、朝にスクリーンショットとテスト結果を確認して次の指示を出す運用を1か月続けたと報告。別のモデル用のプロンプトを別のモデルに書かせると不要な前提が入るため、使うモデルに直接書くほうがよいとしている（[出典](https://www.reddit.com/r/aigamedev/comments/1wv7t29/i_spent_months_using_ai_coding_agents_almost_247/)）
 - **2026-09-29**: 初版作成。

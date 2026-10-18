@@ -3,7 +3,7 @@ title: Copyright of AI-Generated Assets
 description: Based on Japanese copyright law and the Agency for Cultural Affairs' "Thinking," and the U.S. Copyright Office's position, this article clarifies the rights and risks of using AI-generated assets in games.
 sidebar:
   order: 1
-lastUpdated: 2026-10-12
+lastUpdated: 2026-10-19
 ---
 
 ## Overview
@@ -120,6 +120,8 @@ The [Checklist & Guidance](https://www.bunka.go.jp/seisaku/chosakuken/pdf/940977
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-15**: decomp.dev, a community for decompiling and modding games, announced its shutdown because AI had made the work too easy (404 Media). Kotaku reported that browser ports and decompile/recompile projects have surged since Claude Opus 5.5, and that many of the DMCA takedown notices published on GitHub involve game companies. The rights risk of porting or modding existing games with AI is rising ([404 Media](https://www.404media.co/video-game-reverse-engineering-community-shuts-down-because-ai-has-made-it-too-easy/), [Kotaku](https://kotaku.com/ai-vibe-coding-just-hit-the-video-game-industry-like-an-avalanche-2000746366))
+- **2026-10-13**: The Verge reported that Microsoft created "Xbox Labs," a small team that experiments with decompiling and recompiling games. Ports and mods made with AI help are increasing, and the Xbox CEO said they will "build in the open." How terms and rights are handled is unconfirmed from the excerpt ([source: The Verge](https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration))
 - **2026-10-06**: An example of a clone or rebuild of existing IP made with an AI agent being removed. A browser version of "Fallout: New York" made with Claude Opus 5.5 was taken offline on October 2 after ZeniMax Media sent an intellectual property infringement notice (pointing to the use of trademarks and related materials). A video of a project that rebuilt "CoD: MW2" by decompiling it was also removed after a complaint from the copyright holder (Source: [Automaton](https://automaton-media.com/articles/newsjp/20261006-472053/) (in Japanese))
 - **2026-10-07**: VRChat banned world thumbnails that do not match the actual content, regardless of whether generative AI was used. It said that auxiliary uses such as translation and coding assistance are not a problem. It is still considering rules on generative AI use across entire worlds and assets, and on disclosure obligations for AI use (Source: [Automaton](https://automaton-media.com/articles/newsjp/20261007-472238/) (in Japanese))
 - **2026-09-29**: Initial version created.

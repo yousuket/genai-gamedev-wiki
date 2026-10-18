@@ -3,7 +3,7 @@ title: "Verification Loop: Making Agents Verify Their Work"
 description: Headless execution, Playwright screenshots, exposing game state via window.__game, fixed seeds, bots, FPS measurement, and critic loops — how to build a framework for agents to verify their own work, with working code examples.
 sidebar:
   order: 9
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-19
 ---
 
 ## Overview
@@ -423,6 +423,7 @@ func _physics_process(_delta: float) -> void:
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-10**: An article on designing an "AI harness" for game development. It lists fixed random seeds with save/load, checking screenshots with the image-diff tool odiff, moving numbers out of code, separating the simulation from the engine, and turning profiler output into text (samply), so that an agent can run a trial in a few seconds. The author says they hardly use it in the small projects they are shipping now, and that it is meant for larger games ([source](https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code))
 - **2026-09-30**: Paper RSIGame proposes a loop: agents generate a game, explore it, diagnose, and improve, keeping the best checkpoint. On 140 GameCraft-Bench tasks (Godot and Phaser), quality is consistently higher for the same agent budget ([source](https://arxiv.org/abs/2609.39045))
 - **2026-10-01**: A solo developer ran Claude Code and Codex overnight, reviewing screenshots and test results each morning for a month. Writing prompts for one model in another model adds unwanted assumptions; write directly for the model you will use ([source](https://www.reddit.com/r/aigamedev/comments/1wv7t29/i_spent_months_using_ai_coding_agents_almost_247/))
 - **2026-09-29**: Initial version.

@@ -3,7 +3,7 @@ title: What can you build with one-shot generation?
 description: Explore what games can be built from a single prompt and their limitations, using public examples like Claude of Duty, and learn how to determine when one-shot generation is enough for your project.
 sidebar:
   order: 2
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-19
 ---
 
 ## Overview
@@ -158,6 +158,7 @@ The time limit is included to prevent endless iteration. The longer it runs, the
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-11**: A record of the author asking Claude Opus 5.5 to build a 3D browser game themed on the AI industry. The prompt specified the theme, required elements, permission to proceed without waiting for confirmation, automatic deployment to GitHub Pages with a public repository, and even an image feature for sharing. The result is published at picksandshovels.org. The state of the repository is unconfirmed ([source](https://blog.fsck.com/2026/10/11/picks-and-shovels/))
 - **2026-10-04**: According to a Reddit user's report, Claude Code (Opus 5.5, Ultracode mode) was given a single prompt "Create a hyper-realistic AAA Olympic speed skating game" and completed it in 72 minutes. The quality of the result is unconfirmed ([source](https://www.reddit.com/r/aigamedev/comments/1wxlbt2/opus_55_oneshot_an_entire_olympic_speed_skating_game_in_72_min/))
 - **2026-10-02**: GamesByAI, a catalog of 528 AI-made browser games, reports model usage: Claude 45%, GPT 20%, Gemini 6%; tools: Claude Code 38%, Cursor 20%; engines: Three.js 58% ([source](https://gamesbyai.win/stats/))
 - **2026-09-28**: PacBench, a site comparing output from different models and harnesses (Claude Code, Codex, Cursor Cloud, etc.) for the single prompt "Create a Pac-Man game in a single html page," measuring score, cost, time, and token count, was published ([source](https://jonclegg.github.io/pacman-bakeoff/))

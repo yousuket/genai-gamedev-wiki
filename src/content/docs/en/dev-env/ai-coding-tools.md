@@ -3,7 +3,7 @@ title: AI Coding Tools
 description: Compare features, pricing, and game engine integration for Claude Code, Cursor, GitHub Copilot, OpenAI Codex, Gemini CLI, and Antigravity CLI.
 sidebar:
   order: 2
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-19
 ---
 
 ## Overview
@@ -65,6 +65,7 @@ Community-made MCP servers have the powerful ability to execute code inside the 
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-13**: Google released Gemini 4 Argon. It is available in AI Studio and the Gemini API, and Google AI Ultra subscribers can also use it in Antigravity. The introductory price is $2 per million input tokens and $10 per million output tokens until November 30, 2026. After that, it will be $4 for input and $20 for output. The official blog shows demos of 3D games rendered in the browser without external libraries, but it has no performance comparison for game development ([source](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/))
 - **2026-10-01**: Unity releases official plugin for Grok Build. Includes 30+ skills written by Unity engineers (UI Toolkit, Shader Graph, physics, IAP, multiplayer, and more); targets Unity 6 and later. Third agent to support (after Claude Code and Codex) ([source](https://unity.com/blog/unity-plugin-grok))
 - **2026-09-28**: Claude Sonnet 5.5 released. 30% faster output and up to 30% lower cost per task vs. Sonnet 5. API pricing remains USD 2/input, USD 10/output (per million tokens) ([source](https://www.anthropic.com/claude-sonnet-5-5))
 - **2026-09-29**: Initial version.

@@ -3,7 +3,7 @@ title: "Making Games with Coding Agents: The Big Picture"
 description: How coding agents differ from pasting code in chat, the flow from one-shot to shipping, the division of labor between humans and agents, and an example of a day's work in an agent-driven workflow.
 sidebar:
   order: 1
-lastUpdated: 2026-09-29
+lastUpdated: 2026-10-19
 ---
 
 ## Overview
@@ -167,6 +167,7 @@ When running work during the lunch break, write the end conditions first. Claude
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-14**: Epic Games reportedly described its new Epic Games Store (in testing) as "vibe coded" entirely with AI coding agents. Epic claims that first launch loads about twice as fast as Steam (third-party verification is unconfirmed). It is also reported to have told developers of an unannounced game to stop writing code by hand (the original Bloomberg article is unconfirmed) ([Destructoid](https://www.destructoid.com/epic-games-store-ai-vibe-coded/), [VGC](https://www.videogameschronicle.com/news/epic-games-reportedly-orders-staff-to-implement-ai-first-development/))
 - **2026-09-29**: First version.
 <!-- AUTO-UPDATE:END -->
 
