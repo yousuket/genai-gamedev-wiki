@@ -3,7 +3,7 @@ title: "Game Jams and Contests: Past and Upcoming"
 description: A list of game jams and contests with confirmed schedules as of September 29, 2026, organized by status (in progress, upcoming, past, recurring schedule), AI handling policy, and Japan-based events. Includes Vibe Jam, AI Browser Game Jam, GMTK, Global Game Jam, and more.
 sidebar:
   order: 6
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## Overview
@@ -262,6 +262,9 @@ Outside itch.io, check [Ludum Dare](https://ldjam.com/) at [ldjam.com](https://l
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-25**: The Official 2026 Unity Game Jam (hosted by Unity, on itch.io) announces its theme in a live stream at 17:00 UTC on November 5 and runs for seven days (submissions close at 12:00 UTC on November 14). Generative AI may be used for any part of the game if you disclose how you used it on the submission page. Entries without disclosure are not eligible for prizes. 335 participants have registered ([source](https://itch.io/jam/official-unity-game-jam-2026))
+- **2026-10-25**: AI Browser Game Jam 5 (itch.io, hosted by Focaccai) accepts submissions until 03:00 UTC on October 31. AI may be used for any purpose, but most of the game must be made with AI. The judging categories include Overall, Fun, Graphics, Audio, Theme, and AI Usage. In contrast, Pixel Forge MEGA JAM (November 28 – December 8) bans all generative AI. Whether AI is allowed differs by jam, so check the rules before you join ([source: AI Browser Game Jam 5](https://itch.io/jam/ai-jam-5), [source: Pixel Forge MEGA JAM](https://itch.io/jam/pixel-forge-mega-jam))
+- **2026-10-24**: The 2026 Epic AI MegaJam (hosted by Epic Games) runs from November 12 to 15 (submissions close at 1:59 on November 16). It is a four-day jam for making a game in Unreal Engine or UEFN, and you may use as many AI agents as you want. You can enter solo or in a team of up to five. Prizes include $65,000 in cash and a Development Continuation Grant of up to $50,000 per team. You must be 18 or older and have an Epic Games account ([source](https://itch.io/jam/2026-epic-ai-megajam))
 - **2026-10-19**: Slapjam #2 (itch.io) runs for 48 hours, from 15:00 UTC on October 29 to 15:00 UTC on October 31. You make a portrait-orientation mobile browser game with AI tools and publish it. There is no restriction on the tools for code, art, music, voice, or 3D. The first jam had 312 participants and 145 submissions ([source](https://itch.io/jam/slapjam-ai-2))
 - **2026-10-17**: The submission deadline for Game Gauntlet – SIM Jam (itch.io, simulation, $1,500 cash prize) is November 4 (14:00 US Eastern). Art, code, music, and text made with AI are allowed if disclosed in line with Steam's requirements ([source](https://itch.io/jam/game-gauntlet-sim-jam))
 - **2026-10-15**: Zoud GameLab (itch.io, themed on financial literacy, up to $140,000 in prizes and development support) runs from October 15 to November 15. The theme and judging criteria are to be announced in a live stream on October 15. No AI usage rules were found on the page ([source](https://itch.io/jam/zoud-gamelab))

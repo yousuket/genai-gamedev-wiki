@@ -3,7 +3,7 @@ title: Services for Publishing HTML/CSS/JavaScript Games Easily
 description: Compare GitHub Pages, Cloudflare, Netlify, Vercel, Firebase Hosting, GitLab Pages, and Render by free tier and commercial use terms. Shows steps to deploy a Vite game to GitHub Pages and Cloudflare with configuration files.
 sidebar:
   order: 2
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## Overview
@@ -292,6 +292,8 @@ Free-tier concurrency is tight (Firebase 100, Supabase 200), matching your playe
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-24**: swipla is a site for publishing small portrait-orientation mobile browser games, and it accepts AI-made games. You place a single portrait HTML file as `index.html`, log in with X, and post it; it is published without review (according to the article). Games run in a sandboxed iframe, so external images and audio cannot be used and assets must be embedded. Limits are 15 MB per file, 40 MB per game, and 200 MB and 50 games per user. There is also a draft-creation API for AI (10 per day, HTML up to 2 MB). No pricing is mentioned ([source: Zenn (in Japanese)](https://zenn.dev/penbool/articles/303b8de348df03))
+- **2026-10-23**: Asobiai is a site where AI tools such as Claude, ChatGPT, Claude Code, Codex, and Gemini CLI connect over MCP (OAuth login) and publish browser games they made, right in the conversation. After publishing, you can ask the AI to upload a fixed version, and players can react with likes, comments, bug reports, and scores. You can also publish by pasting HTML or dropping a folder ([source: Zenn (in Japanese)](https://zenn.dev/asobiai/articles/78e70c7068141c))
 - **2026-10-15**: A poster reports being unable to pull an HTML5 game listed on CrazyGames and considering an exclusive listing on Poki. They say they asked for removal, got no reply for three days, and there is no withdraw button. This is the poster's account only; CrazyGames' terms and response are unconfirmed. It is a reminder to check the withdrawal procedure and exclusivity terms before listing ([source: Reddit](https://www.reddit.com/r/gamedev/comments/1x6wnwu/crazygames_wont_let_me_pull_my_game_and_im/))
 - **2026-10-15**: The operator of "Dead Simple," a swipe feed of tiny games, reports building a production CLI that agents can drive. Every command answers with `--json`, so an agent can scaffold, build, run contract tests, and prepare an upload without terminal interaction. A game is a single HTML file, and libraries such as Three.js load from the operator's mirror, so they do not count toward the 5 MB limit ([source: Reddit](https://www.reddit.com/r/aigamedev/comments/1x6xlx8/we_ship_our_tiny_phone_games_with_claude_code_and/))
 - **2026-10-07**: Google released Playground, an experimental platform where you can make and share games just by describing them in text. It is open to users aged 18 and over in the United States. Games can be private, shared by link, or listed in a public gallery. Google also announced that a closed beta for integration with Unity Spark is coming ([Source](https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/))

@@ -4,7 +4,7 @@ description: A collection of weekly reports summarizing the latest trends in gam
 sidebar:
   order: -99999999
   label: Weekly reports
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## Weekly Reports
@@ -12,6 +12,7 @@ lastUpdated: 2026-10-19
 Weekly reports are published every Monday.
 
 <!-- AUTO-UPDATE:START -->
+- [2026-10-26 (October 20 – October 26)](/en/news/2026-10-26/) — About 98% of Unity CLI runs come from coding agents, and GameMaker's GMRT becomes free
 - [2026-10-19 (October 13 – October 19)](/en/news/2026-10-19/) — Gemini 4 Argon released, decomp.dev shuts down, and Epic's "vibe coded" store
 - [2026-10-12 (October 6 – October 12)](/en/news/2026-10-12/) — Google Playground and Unity Spark announced, removals of works that recreate existing IP with AI continue
 - [2026-10-05 (September 29 – October 5)](/en/news/2026-10-05/) — Unity publishes official plugin for Grok Build, Steam discount tab shifts to algorithm-based display

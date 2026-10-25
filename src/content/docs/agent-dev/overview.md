@@ -3,7 +3,7 @@ title: コーディングエージェントでゲームを作る：全体像
 description: チャットでコードを貼る方法との違い、ポン出しから出荷までの流れ、人とエージェントの役割分担、1日の作業例を、コーディングエージェント前提で整理します。
 sidebar:
   order: 1
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## 概要
@@ -175,6 +175,8 @@ Claude of Duty では、この2つの間を「批評家役のサブエージェ�
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-24**: Claude に archive.org の zip を渡し、2000年代初期のオランダ製教育ゲーム『Virtueel Zoetermeer』を逆コンパイルしてブラウザで遊べるようにした記録。最初の試行はクラッシュしたが、「自分でプレイして直して」と追加で指示すると解消した。元のバイナリと一致するかで成否を確かめられ、作業を並列に分けられるため、LLM に向くと著者は書いている。一方、『Age of Mythology: Gold Edition』の試行は約1か月で60%付近で止まったという（[出典](https://bou.ke/blog/zoetermeer/)）
+- **2026-10-22**: Anthropic が、Agent Skills の標準と、その名称・ロゴ、GitHub 組織、agentskills.io ドメインを、Linux Foundation 傘下の Agentic AI Foundation（AAIF）に寄贈した。AAIF に参加しなくても標準の利用・貢献ができ、今後はバージョン管理されたリリース、提案プロセス、セキュリティガイダンスが整備される予定（[出典](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)）
 - **2026-10-14**: Epic Games が、新しい Epic Games Store（テスト提供中）を AI コーディングエージェントだけで作った「vibe coded」だと説明したと報じられた。Epic は初回起動の読み込みが Steam の約2倍速いと主張している（第三者の検証は未確認）。同社は未発表作の開発でも「手書きコードをやめる」方針を伝えたとされる（Bloomberg の元記事は未確認）（[Destructoid](https://www.destructoid.com/epic-games-store-ai-vibe-coded/)、[VGC](https://www.videogameschronicle.com/news/epic-games-reportedly-orders-staff-to-implement-ai-first-development/)）
 - **2026-09-29**: 初版作成。
 <!-- AUTO-UPDATE:END -->

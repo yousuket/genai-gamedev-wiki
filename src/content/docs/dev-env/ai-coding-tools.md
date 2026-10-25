@@ -3,7 +3,7 @@ title: AIコーディングツール
 description: Claude Code・Cursor・GitHub Copilot・OpenAI Codex・Gemini CLI/Antigravity CLIの特徴と料金、ゲームエンジンとの連携方法を比較します。
 sidebar:
   order: 2
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## 概要
@@ -66,6 +66,8 @@ MCP（Model Context Protocol）は、AIツールと外部のアプリやデー�
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-22**: Unity が Unity CLI の利用データを公開。7月以降ログイン済みユーザー22万6,000人以上が使い、2026年7月20日〜10月13日の実行の約98%がコーディングエージェントなどの自動化で、人の直接実行は0.2%。公式プラグインは Claude Code・Codex・Grok の3つで、`unity setup claude` で Claude Code 用を導入できる。Cursor や Cline もプラグインなしで CLI 経由で操作できる（[出典](https://unity.com/blog/unity-cli-usage-data-ai-coding-agents)）
+- **2026-10-22**: 国産ノーコード制作ツール4社（RPGツクール・ウディタ・Bakin・SRPG Studio）の開発者座談会（後編）。ウディタは試験的にAIテストプレイ機能を搭載し、MCPサーバーの導入も検討中。RPGツクールの開発者は、AIにプラグインを作らせたところ数回のやり取りで思いどおりになったと述べた（[出典: Automaton（日本語）](https://automaton-media.com/articles/interviewsjp/twbs-20261022-474670/)）
 - **2026-10-13**: Google が Gemini 4 Argon を公開。AI Studio と Gemini API で使え、Google AI Ultra 加入者は Antigravity でも使える。導入価格は入力100万トークンあたり$2、出力$10で、2026年11月30日まで。その後は入力$4、出力$20になる。公式ブログには、ブラウザ上で外部ライブラリなしに描画する3Dゲームのデモが載っているが、ゲーム制作向けの性能比較は本文にない（[出典](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/)）
 - **2026-10-01**: Unity が Grok Build 向けの公式プラグインを公開。Unity のエンジニアが書いた30以上のスキル（UI Toolkit、Shader Graph、物理、IAP、マルチプレイヤーなど）を含み、Unity 6 以上が対象。Claude Code・Codex に続く3つ目の対応エージェント（[出典](https://unity.com/blog/unity-plugin-grok)）
 - **2026-09-28**: Claude Sonnet 5.5 が公開。Sonnet 5 比で出力30%以上高速、タスク当たりコストは最大30%減。API料金は入力$2／出力$10（100万トークン）で据え置き（[出典](https://www.anthropic.com/claude-sonnet-5-5)）

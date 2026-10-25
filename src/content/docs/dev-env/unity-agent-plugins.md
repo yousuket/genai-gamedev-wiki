@@ -3,7 +3,7 @@ title: Unity の公式エージェント連携（CLI・プラグイン・エデ�
 description: Unity が公式に出している、コーディングエージェント向けの仕組み（Unity CLI、Claude Code・Codex・Grok Build 向けの公式プラグイン、エディター内のAIアシスタント）の中身と入れ方、費用、個人制作者の使い方と選び方を整理します。
 sidebar:
   order: 5
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-26
 ---
 
 ## 概要
@@ -208,6 +208,7 @@ CLAUDE.md に書くべき項目（Unity のバージョン、レンダーパイ�
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-22**: Unity が Unity CLI の利用データを公開。7月以降ログイン済みユーザー22万6,000人以上が使い、2026年7月20日〜10月13日の実行の約98%がコーディングエージェントなどの自動化。公式プラグインは Claude Code・Codex・Grok の3つで、`unity setup claude` で Claude Code 用を導入できる（[出典](https://unity.com/blog/unity-cli-usage-data-ai-coding-agents)）
 - **2026-10-05**: 初版作成。
 <!-- AUTO-UPDATE:END -->
 

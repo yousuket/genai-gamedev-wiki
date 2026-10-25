@@ -3,7 +3,7 @@ title: ゲームエンジンの比較
 description: Godot・Unity・Unreal・Phaserなど主要ゲームエンジンを、料金・言語・得意ジャンル・AIコーディングとの相性で比較します。
 sidebar:
   order: 1
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## 概要
@@ -67,6 +67,7 @@ AIエージェント（Claude Code など、ファイルを読み書きしコマ
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-23**: GameMaker（Opera 傘下）が、新ランタイム GMRT を2027年1月1日から全開発者に無料にすると報じられた。これまで PC・モバイル・ブラウザ・GX Games へ出すにも Professional ライセンスが必要だった。GMRT には Claude Code を使うAI開発のワークフロー向けのツール群が含まれると記事は書いている。PS5・Xbox Series X|S・Switch 2 向けは引き続き Enterprise ライセンスが必要（[出典: Game Developer](https://www.gamedeveloper.com/programming/gamemaker-s-gmrt-runtime-will-soon-be-free-for-all-commercial-devs)）
 - **2026-10-15**: Godot 4.8 beta 1 が公開され、機能凍結に入った。エディタのメイン画面のドック化、プロジェクト全体のシンボル名変更（実験的）、Trail3D ノード、描画の強化、Android SDK 設定の自動化が入る。.NET 版は .NET 10 以上が必須。プレリリース版なので、試す場合はプロジェクトのバックアップを取る（[出典](https://godotengine.org/article/dev-snapshot-godot-4-8-beta-1/)）
 - **2026-10-07**: Unity が、Google と共同でブラウザ上でゲームを作って共有できる「Unity Spark」を発表。Unity の経験が不要で、Asset Store のアセットに直接つながる。ウェイトリスト受付中で、提供時期・料金は記載なし（[出典](https://unity.com/blog/why-we-built-unity-spark)）
 - **2026-10-02**: カプコンが、RE エンジンを段階的に次世代化する「REX」の基盤技術として、.NET 向けの構造化データエンジン「RE:Dox」を Apache-2.0 で公開。同社は RE Engine を長期的に「AI生成ゲームエンジン」へ進化させる方針も説明している（[出典](https://automaton-media.com/articles/newsjp/20261002-471537/)、[IGN](https://www.ign.com/articles/capcom-announces-plans-to-transform-the-re-engine-into-an-ai-generation-game-engine-our-goal-is-a-future-where-we-create-games-together-with-ai)）

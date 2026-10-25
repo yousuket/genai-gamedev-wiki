@@ -3,7 +3,7 @@ title: How Steam Discovery Works and the Shift to Algorithm-Driven Discounts
 description: In early 2027, Steam is moving from manual curation to algorithm-driven displays in the "Discounts & Events" tab. This article explains the changes, discovery paths on Steam, what you can control, how the algorithm shift may affect visibility, and what to set up on your store page now.
 sidebar:
   order: 6
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-26
 ---
 
 ## Overview
@@ -152,6 +152,7 @@ The "Store & Steam Platform Traffic Breakdown" section under "Marketing & Visibi
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-23**: Steam's "Personal Calendar" graduated from Steam Labs and is now an official feature. Based on games you have played for a long time, it recommends, in an 8-week calendar, games that users with similar play habits have wishlisted or are playing. The recommendations are retrained every day ([source](https://store.steampowered.com/news/app/593110/view/710037059469839718))
 - **2026-10-05**: Initial version.
 <!-- AUTO-UPDATE:END -->
 

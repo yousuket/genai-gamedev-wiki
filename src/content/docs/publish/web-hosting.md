@@ -3,7 +3,7 @@ title: HTML/CSS/JavaScript のゲームを手軽に公開できるサービス
 description: GitHub Pages、Cloudflare、Netlify、Vercel、Firebase Hosting、GitLab Pages、Renderなどを無料枠と商用利用の規約で比較し、ViteのゲームをGitHub PagesとCloudflareに出す手順を示します。
 sidebar:
   order: 2
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## 概要
@@ -292,6 +292,8 @@ Cross-Origin-Embedder-Policy: require-corp
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-24**: swipla は、縦長スマホ向けの小さなブラウザゲームを公開するサイトで、AI製のゲームも受け付ける。縦画面向けの単一 HTML を `index.html` として置き、X でログインして投稿すると、審査なしで公開される（記事の記載）。ゲームはサンドボックスの iframe で動くため、外部の画像・音声は使えず、アセットは埋め込む。1ファイル15MB、1ゲーム40MB、1ユーザー200MB・50ゲームまで。AI向けの下書き作成APIもある（1日10回、HTML は2MBまで）。料金の記載はない（[出典: Zenn（日本語）](https://zenn.dev/penbool/articles/303b8de348df03)）
+- **2026-10-23**: Asobiai は、Claude・ChatGPT・Claude Code・Codex・Gemini CLI などから MCP（OAuth ログイン）でつなぎ、AIが作ったブラウザゲームを会話の中で公開できるサイト。公開後はAIに頼んで修正版を上げられ、遊んだ人はいいね・コメント・バグ報告・スコアで反応できる。HTML の貼り付けやフォルダのドロップでも公開できる（[出典: Zenn（日本語）](https://zenn.dev/asobiai/articles/78e70c7068141c)）
 - **2026-10-15**: CrazyGames に掲載した HTML5 ゲームを取り下げられず、Poki への独占掲載を検討している、という投稿者の報告。取り下げを依頼して3日間返信がなく、取り下げボタンもないという。投稿者側の報告のみで、CrazyGames 側の規約や回答は未確認。掲載前に、取り下げ手順と独占条件を確認する材料になる（[出典: Reddit](https://www.reddit.com/r/gamedev/comments/1x6wnwu/crazygames_wont_let_me_pull_my_game_and_im/)）
 - **2026-10-15**: 小さなゲームのスワイプフィード「Dead Simple」の運営者が、エージェントから操作できる制作用 CLI を作ったと報告。すべてのコマンドが `--json` で答え、雛形作成、ビルド、契約テスト、アップロード準備を端末操作なしで進められる。ゲームは単一の HTML ファイルで、Three.js などは運営のミラーから読み込むため 5 MB の上限に数えない（[出典: Reddit](https://www.reddit.com/r/aigamedev/comments/1x6xlx8/we_ship_our_tiny_phone_games_with_claude_code_and/)）
 - **2026-10-07**: Google が、テキストで指示するだけでゲームを作って共有できる実験的プラットフォーム「Playground」を公開。米国の18歳以上が対象で、ゲームは非公開・リンク共有・公開ギャラリーから選べる。Unity Spark との連携はクローズドベータを予告（[出典](https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/)）

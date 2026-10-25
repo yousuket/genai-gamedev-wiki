@@ -3,7 +3,7 @@ title: "Making Games with Coding Agents: The Big Picture"
 description: How coding agents differ from pasting code in chat, the flow from one-shot to shipping, the division of labor between humans and agents, and an example of a day's work in an agent-driven workflow.
 sidebar:
   order: 1
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## Overview
@@ -167,6 +167,8 @@ When running work during the lunch break, write the end conditions first. Claude
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-24**: A write-up of giving Claude a zip from archive.org and having it decompile an early-2000s Dutch educational game, Virtueel Zoetermeer, so it plays in the browser. The first attempt crashed, and a follow-up instruction to play it and fix it itself resolved the crash. The author writes that LLMs suit this work because success can be checked by matching the original binary and the work can be split in parallel. A separate attempt on Age of Mythology: Gold Edition stalled at about 60% after about a month ([source](https://bou.ke/blog/zoetermeer/))
+- **2026-10-22**: Anthropic donated the Agent Skills standard, along with its name, logo, GitHub organization, and the agentskills.io domain, to the Agentic AI Foundation (AAIF) under the Linux Foundation. You can use and contribute to the standard without joining AAIF, and versioned releases, a proposal process, and security guidance are planned ([source](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation))
 - **2026-10-14**: Epic Games reportedly described its new Epic Games Store (in testing) as "vibe coded" entirely with AI coding agents. Epic claims that first launch loads about twice as fast as Steam (third-party verification is unconfirmed). It is also reported to have told developers of an unannounced game to stop writing code by hand (the original Bloomberg article is unconfirmed) ([Destructoid](https://www.destructoid.com/epic-games-store-ai-vibe-coded/), [VGC](https://www.videogameschronicle.com/news/epic-games-reportedly-orders-staff-to-implement-ai-first-development/))
 - **2026-09-29**: First version.
 <!-- AUTO-UPDATE:END -->

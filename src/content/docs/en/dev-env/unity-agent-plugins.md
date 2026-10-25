@@ -3,7 +3,7 @@ title: Unity's official agent integrations (CLI, plugins, and in-editor AI)
 description: An overview of the official tools Unity provides for coding agents (Unity CLI, official plugins for Claude Code, Codex, and Grok Build, and in-editor AI assistant) — their capabilities, how to install them, costs, and how solo developers should use and choose among them.
 sidebar:
   order: 5
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-26
 ---
 
 ## Overview
@@ -208,6 +208,7 @@ in use).
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-22**: Unity published usage data for Unity CLI. More than 226,000 logged-in users have used it since July, and about 98% of runs between July 20 and October 13, 2026 came from automation such as coding agents. There are three official plugins: Claude Code, Codex, and Grok. You can set up the Claude Code one with `unity setup claude` ([source](https://unity.com/blog/unity-cli-usage-data-ai-coding-agents))
 - **2026-10-05**: Initial version.
 <!-- AUTO-UPDATE:END -->
 

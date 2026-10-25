@@ -3,7 +3,7 @@ title: Game Engine Comparison
 description: Compare major game engines like Godot, Unity, Unreal, and Phaser by pricing, language, strengths, and compatibility with AI coding.
 sidebar:
   order: 1
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## Overview
@@ -65,6 +65,7 @@ For guidance on project scope, see [How to decide on scope](/en/getting-started/
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-23**: Game Developer reported that GameMaker (owned by Opera) will make its new GMRT runtime free for all developers from January 1, 2027. Until now, you needed a Professional license even to publish to PC, mobile, browser, or GX Games. The article says GMRT includes tools for AI development workflows with Claude Code. Publishing to PS5, Xbox Series X|S, and Switch 2 still requires an Enterprise license ([source: Game Developer](https://www.gamedeveloper.com/programming/gamemaker-s-gmrt-runtime-will-soon-be-free-for-all-commercial-devs))
 - **2026-10-15**: Godot 4.8 beta 1 was released, and the feature freeze has started. It adds dockable main screens in the editor, project-wide symbol renaming (experimental), a Trail3D node, rendering improvements, and automated Android SDK setup. The .NET version requires .NET 10 or later. It is a pre-release, so back up your project before trying it ([source](https://godotengine.org/article/dev-snapshot-godot-4-8-beta-1/))
 - **2026-10-07**: Unity announced "Unity Spark," developed with Google, for creating and sharing games in the browser. No Unity experience is required, and it connects directly to assets on the Asset Store. A waitlist is open. No release date or pricing is listed ([source](https://unity.com/blog/why-we-built-unity-spark)).
 - **2026-10-02**: Capcom publicly released "RE:Dox," a structured data engine for .NET under Apache-2.0, as the foundation for "REX," which will incrementally modernize the RE Engine. Capcom also explained its plan to evolve the RE Engine long-term into an "AI-generative game engine" ([source](https://automaton-media.com/articles/newsjp/20261002-471537/) (in Japanese), [IGN](https://www.ign.com/articles/capcom-announces-plans-to-transform-the-re-engine-into-an-ai-generation-game-engine-our-goal-is-a-future-where-we-create-games-together-with-ai)).

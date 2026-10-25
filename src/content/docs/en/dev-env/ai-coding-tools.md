@@ -3,7 +3,7 @@ title: AI Coding Tools
 description: Compare features, pricing, and game engine integration for Claude Code, Cursor, GitHub Copilot, OpenAI Codex, Gemini CLI, and Antigravity CLI.
 sidebar:
   order: 2
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## Overview
@@ -65,6 +65,8 @@ Community-made MCP servers have the powerful ability to execute code inside the 
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-22**: Unity published usage data for Unity CLI. More than 226,000 logged-in users have used it since July, and about 98% of runs between July 20 and October 13, 2026 came from automation such as coding agents, with only 0.2% run directly by people. There are three official plugins: Claude Code, Codex, and Grok. You can set up the Claude Code one with `unity setup claude`. Cursor and Cline can also drive the CLI without a plugin ([source](https://unity.com/blog/unity-cli-usage-data-ai-coding-agents))
+- **2026-10-22**: A roundtable (part 2) with developers of four Japanese no-code game tools (RPG Maker, WOLF RPG Editor, Bakin, and SRPG Studio). WOLF RPG Editor has an experimental AI playtest feature and is considering adding an MCP server. The RPG Maker developer said that when they had AI write a plugin, it came out as intended after a few exchanges ([source: Automaton (in Japanese)](https://automaton-media.com/articles/interviewsjp/twbs-20261022-474670/))
 - **2026-10-13**: Google released Gemini 4 Argon. It is available in AI Studio and the Gemini API, and Google AI Ultra subscribers can also use it in Antigravity. The introductory price is $2 per million input tokens and $10 per million output tokens until November 30, 2026. After that, it will be $4 for input and $20 for output. The official blog shows demos of 3D games rendered in the browser without external libraries, but it has no performance comparison for game development ([source](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/))
 - **2026-10-01**: Unity releases official plugin for Grok Build. Includes 30+ skills written by Unity engineers (UI Toolkit, Shader Graph, physics, IAP, multiplayer, and more); targets Unity 6 and later. Third agent to support (after Claude Code and Codex) ([source](https://unity.com/blog/unity-plugin-grok))
 - **2026-09-28**: Claude Sonnet 5.5 released. 30% faster output and up to 30% lower cost per task vs. Sonnet 5. API pricing remains USD 2/input, USD 10/output (per million tokens) ([source](https://www.anthropic.com/claude-sonnet-5-5))

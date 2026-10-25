@@ -3,7 +3,7 @@ title: 生成AI素材の著作権
 description: 日本の著作権法と文化庁の「考え方」、米国著作権局の見解をもとに、AI生成素材をゲームで使うときの権利とリスクを整理します。
 sidebar:
   order: 1
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## 概要
@@ -120,6 +120,8 @@ AI企業と権利者の訴訟も続いています。たとえば、Disney・Uni
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-23**: The Verge が、AIツールで古いゲームの逆コンパイル・再コンパイルによる移植が急増していると報じた。Halo のブラウザ版、Wind Waker の iPhone 版などが話題になり、ゲーム保存コミュニティが割れているという。Xbox は「Xbox Labs」でこの分野を探索している（[出典](https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port)）
+- **2026-10-19**: 『Daggerfall Unity』の派生プロジェクト『DFO Online』が、Patreon の有料メンバーシップ（月5ドル〜）で85人・月約1,253ドルを集め、批判を受けていると Automaton が報じた。GitHub のコミットは Claude 名義が大半と記事は指摘している。既存作品の二次創作・非公式移植で収益を得て、権利者から削除対応を受けた例（Cyberpunk 2077 の非公式 VR Mod への DMCA など）もあるという（[出典: Automaton（日本語）](https://automaton-media.com/articles/newsjp/20261019-474335/)）
 - **2026-10-15**: ゲームの逆コンパイル・改造を扱う decomp.dev が、AIで簡単になりすぎたとして閉鎖を発表（404 Media）。Kotaku は、Claude Opus 5.5 以降にブラウザ移植や逆コンパイル・再コンパイルが急増し、GitHub に公開される DMCA 削除通知にゲーム会社の件が多いと報じた。既存ゲームをAIで移植・改造する場合の権利リスクが高まっている（[404 Media](https://www.404media.co/video-game-reverse-engineering-community-shuts-down-because-ai-has-made-it-too-easy/)、[Kotaku](https://kotaku.com/ai-vibe-coding-just-hit-the-video-game-industry-like-an-avalanche-2000746366)）
 - **2026-10-13**: Microsoft が、ゲームの逆コンパイル・再コンパイルを試す小さなチーム「Xbox Labs」を新設したと The Verge が報じた。AIの助けで移植や改造をする事例が増えており、Xbox CEO は「オープンに作る」と述べている。規約・権利の扱いは抜粋からは未確認（[出典: The Verge](https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration)）
 - **2026-10-06**: AIエージェントで作った既存IPのクローン・再構築が削除された例。Claude Opus 5.5 で作ったブラウザ版「Fallout: New York」は、10月2日に ZeniMax Media から知的財産権侵害の通知を受けて公開停止（商標・関連素材の使用を指摘）。『CoD: MW2』を逆コンパイルして再構築したプロジェクトも、動画が著作権者の申し立てで削除された（[出典: Automaton](https://automaton-media.com/articles/newsjp/20261006-472053/)）

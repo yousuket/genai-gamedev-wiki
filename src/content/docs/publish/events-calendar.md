@@ -3,7 +3,7 @@ title: ゲームジャム・コンテスト一覧：開催済みと、これか�
 description: 2026年9月29日時点で日程を確認できたゲームジャム・コンテストを、開催中・これから・開催済み・例年の時期・AIの扱い・日本のイベントに分けて一覧にします。Vibe Jam、AI Browser Game Jam、GMTK、Global Game Jam、unity1week などを掲載しています。
 sidebar:
   order: 6
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## 概要
@@ -262,6 +262,9 @@ itch.io 以外では、[Ludum Dare](https://ldjam.com/) は [ldjam.com](https://
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-25**: Official 2026 Unity Game Jam（Unity 主催、itch.io）は11月5日 17:00 UTC のライブ配信でお題を発表し、7日間で開催（投稿締め切りは11月14日 12:00 UTC）。生成AIは、投稿ページに使い方を開示すれば、どの部分にも使ってよい。開示しないと賞の対象外になる。参加登録は335人（[出典](https://itch.io/jam/official-unity-game-jam-2026)）
+- **2026-10-25**: AI Browser Game Jam 5（itch.io、主催 Focaccai）は10月31日 03:00 UTC までの投稿期間で、AIは何をどの目的で使ってもよいが、ゲームの大半をAIで作ることが条件。評価部門に Overall・Fun・Graphics・Audio・Theme・AI Usage がある。対照的に Pixel Forge MEGA JAM（11月28日〜12月8日）は生成AIをすべて禁止している。AIの使用可否はジャムごとに逆なので、参加前に規約を確認する（[出典: AI Browser Game Jam 5](https://itch.io/jam/ai-jam-5)、[出典: Pixel Forge MEGA JAM](https://itch.io/jam/pixel-forge-mega-jam)）
+- **2026-10-24**: 2026 Epic AI MegaJam（Epic Games 主催）が11月12〜15日に開催（提出締め切りは11月16日 1:59）。Unreal Engine または UEFN でゲームを作る4日間のジャムで、AIエージェントは何体使ってもよい。ソロまたは最大5人。賞金は現金$65,000と、チームごとに最大$50,000の Development Continuation Grant など。18歳以上で Epic Games アカウントが必要（[出典](https://itch.io/jam/2026-epic-ai-megajam)）
 - **2026-10-19**: Slapjam #2（itch.io）が10月29日 15:00 UTC から31日 15:00 UTC までの48時間で開催。AIツールで、スマホ縦画面のブラウザゲームを作って公開する。コード・アート・音楽・音声・3D とも、使うツールに制限はない。第1回は312人が参加し145本が提出された（[出典](https://itch.io/jam/slapjam-ai-2)）
 - **2026-10-17**: Game Gauntlet – SIM Jam（itch.io、シミュレーション、現金賞金$1,500）の提出期限は11月4日（米東部 14:00）。AIで作ったアート・コード・音楽・テキストは、Steam の要件に沿って開示すれば可（[出典](https://itch.io/jam/game-gauntlet-sim-jam)）
 - **2026-10-15**: Zoud GameLab（itch.io、金融リテラシーがテーマ、最大14万ドルの賞金・開発支援）が10月15日〜11月15日に開催。テーマと採点基準は10月15日のライブ配信で発表予定で、ページにAI利用ルールの記載は見つからなかった（[出典](https://itch.io/jam/zoud-gamelab)）

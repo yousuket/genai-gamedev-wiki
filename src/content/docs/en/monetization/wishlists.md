@@ -3,7 +3,7 @@ title: How to Build a Wishlist
 description: Learn how to grow your Steam wishlist through early store page launch, Steam Next Fest, demos, social media, and streamer outreach, with benchmarks based on public data.
 sidebar:
   order: 4
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## Overview
@@ -115,6 +115,8 @@ Instead of worrying about hitting a specific number, track which tactics increas
 ## Latest updates
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-20**: According to Automaton, the October Steam Next Fest had about 7,200 published demos, about 1.7 times the June 2026 event (about 4,300; citing GameDiscoverCo's estimate). SteamDB counts show games that disclosed AI use at about 2,200 in 2024, about 4,700 in 2025, and about 10,700 in 2026 ([source: Automaton (in Japanese)](https://automaton-media.com/articles/newsjp/20261020-474386/))
+- **2026-10-19**: Citing concern that a new game could be cloned with AI and released before the original, Digital Sun Games (Moonlighter) canceled the public playtest of its new game ReVamp and announced a small, Discord-only test from October 29. Alliance Arts and Who's You were also reported to have pulled their Next Fest demos. Solo developers also need to think about when to release a demo and how much of the build it contains ([source: Game Developer](https://www.gamedeveloper.com/programming/moonlighter-developer-delays-public-playtest-of-next-game-over-concerns-of-ai-cloning))
 - **2026-10-13**: Chris Zukowski (How To Market A Game) reported "inflation" in wishlists using sales data from 160 titles. Comparing 34 games released in 2020–2022 with 126 released in 2023–2025, the median ratio of sales to wishlists at launch fell by about half at one month and at six months after release. Estimating sales with the old "wishlists × fixed ratio" rule from a few years ago can overstate them ([source: Automaton (in Japanese)](https://automaton-media.com/articles/newsjp/20261017-474077/))
 - **2026-09-29**: Steam's "Discounts and Events" tab will shift from manual curation to personalized recommendations in early 2027, becoming a new discovery source for niche indie games ([Valve announcement](https://steamcommunity.com/groups/steamworks/announcements/detail/676258795703240952), [Game Developer](https://www.gamedeveloper.com/pc/steam-s-discounts-and-events-tab-will-soon-be-fully-algorithm-driven). See [How Steam Discovery Works](/en/monetization/steam-discovery/) for details.)
 - **2026-09-29**: First version created.

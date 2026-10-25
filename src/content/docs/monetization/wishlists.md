@@ -3,7 +3,7 @@ title: ウィッシュリストの集め方
 description: Steamのウィッシュリストを増やすための、ストアページの早期公開、Steam Next Fest、デモ、SNS、配信者への告知と、公開データに基づく目安をまとめます。
 sidebar:
   order: 4
-lastUpdated: 2026-10-19
+lastUpdated: 2026-10-26
 ---
 
 ## 概要
@@ -115,6 +115,8 @@ Steam Next Festは、発売前のゲームのデモを集めて1週間開催さ�
 ## 最新情報
 
 <!-- AUTO-UPDATE:START -->
+- **2026-10-20**: Automaton によると、10月版 Steam Next フェスの公開済み体験版は約7200本で、2026年6月回（約4300本）の約1.7倍（GameDiscoverCo の推計を引用）。SteamDB の集計では、AI使用を開示したゲームは2024年約2200本、2025年約4700本、2026年約1万700本（[出典: Automaton（日本語）](https://automaton-media.com/articles/newsjp/20261020-474386/)）
+- **2026-10-19**: 新作が AIでクローンされ、元の作品より先に公開されることを懸念して、Digital Sun Games（Moonlighter）は新作『ReVamp』の公開プレイテストを取りやめ、10月29日から Discord 限定の小規模テストにすると発表した。Alliance Arts と Who's You も Next Fest の体験版を取りやめたと報じられている。体験版を公開する時期とビルドの範囲は、個人制作者も考える必要がある（[出典: Game Developer](https://www.gamedeveloper.com/programming/moonlighter-developer-delays-public-playtest-of-next-game-over-concerns-of-ai-cloning)）
 - **2026-10-13**: Chris Zukowski 氏（How To Market A Game）が、160タイトルの販売データでウィッシュリストの「インフレ」を報告。2020〜2022年発売の34本と2023〜2025年発売の126本を比べると、発売時のウィッシュリスト数に対する販売本数の比率（中央値）は、発売1か月・6か月時点で約半分に下がっていた。数年前の「登録数×一定比率」で売上を見積もると過大になりうる（[出典: Automaton](https://automaton-media.com/articles/newsjp/20261017-474077/)）
 - **2026-09-29**: Steam の「割引とイベント」タブが、2027年初めに手動キュレーションからユーザーの好みに合わせたアルゴリズム表示へ全面移行すると報じられた。ニッチなインディーの新しい流入源になりうる（[出典: Valve の発表](https://steamcommunity.com/groups/steamworks/announcements/detail/676258795703240952)、[Game Developer](https://www.gamedeveloper.com/pc/steam-s-discounts-and-events-tab-will-soon-be-fully-algorithm-driven)。詳しくは [Steamの「発見」の仕組み](/monetization/steam-discovery/)）
 - **2026-09-29**: 初版作成。
