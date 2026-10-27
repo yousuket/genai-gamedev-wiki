@@ -20,16 +20,15 @@
 
 ### 動かしている場所
 
-2026年10月、実行を Claude Code のクラウド定期実行（routines）から、Codex（GitHub Actions の `openai/codex-action`）へ移している。**二重に動かさない。** 片方を有効にしたら、もう片方を止める。
+Claude Code のクラウド定期実行（routines）で動かしている。PC の電源が切れていても動く。
 
-| 場所 | 設定 | 有効にする方法 | 止める方法 |
-|---|---|---|---|
-| Codex（GitHub Actions） | `.github/workflows/codex-daily.yml`、`codex-weekly.yml`、プロンプトは `.github/codex/prompts/` | シークレット `OPENAI_API_KEY` を登録し、リポジトリ変数 `CODEX_SCHEDULE` を `true` にする | 変数 `CODEX_SCHEDULE` を `false` にする |
-| Claude Code（routines） | 日次 `trig_015B8Wxcs35w3dhofE6eMhiC`、週次 `trig_011jt2yGEjnPhGB6ETuEwt4E`（環境 `genai-gamedev-wiki`、ネットワーク Full、モデル Sonnet 5.5） | claude.ai の Routines で有効にする | claude.ai の Routines で無効にする |
+| ジョブ | ID |
+|---|---|
+| 日次収集 | `trig_015B8Wxcs35w3dhofE6eMhiC` |
+| 週次更新 | `trig_011jt2yGEjnPhGB6ETuEwt4E` |
 
-Codex の workflow では、Codex 自身は commit、push、Issue 作成をしない（GitHub のトークンを渡していない）。Codex がファイルを書き換え、そのあとの workflow の手順が、チェック、変更範囲の確認、commit、push、デプロイの起動、Issue 作成を行う。変更範囲の外のファイルが変わっていたら、push せずに失敗する。
-
-手動で試すときは、Actions の画面か `gh workflow run codex-daily.yml` で動かす（`CODEX_SCHEDULE` が `false` でも、手動の実行は動く）。
+- 環境は `genai-gamedev-wiki`（ネットワーク Full）、モデルは Sonnet 5.5。止めるときは claude.ai の Routines で無効にする。
+- 新しく作ると、指定していない接続先が自動で付くことがある。付いたら外す。
 
 ## 日次収集のはまりどころ
 

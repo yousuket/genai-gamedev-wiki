@@ -25,6 +25,3 @@ pnpm-debug.log*
 
 # ブラウザ自動操作ツールの作業ファイル（第三者のページの内容を含む）
 .playwright-mcp/
-
-# Codex の週次更新が書き出す報告（GitHub Actions で Issue にする）
-.codex-report.md

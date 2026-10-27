@@ -59,7 +59,7 @@
 
 ## 4. エージェント設計
 
-実行環境: クラウドの定期実行。PCの電源が切れていても動く。2026年10月に、Claude Code の定期実行（routines）から、Codex（GitHub Actions の `openai/codex-action`）へ移行している。現在の状態と切り替え方は `agents/OPERATIONS.md`。
+実行環境: **Claude Code のクラウド定期実行（routines）**。PCの電源が切れていても動く。運用の詳細は `agents/OPERATIONS.md`。
 
 ### 4.1 日次収集エージェント（毎日）
 
