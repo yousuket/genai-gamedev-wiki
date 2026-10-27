@@ -18,6 +18,7 @@ npm run dev
 | `agents/` | 記事スタイルガイドとエージェントの指示書 |
 | `scripts/check-content.mjs` | 公開前チェック（リンク切れ・自動更新マーカー） |
 | `.github/workflows/deploy.yml` | main への push で GitHub Pages にデプロイ |
+| `.github/workflows/codex-*.yml` | Codex による日次収集と週次更新（プロンプトは `.github/codex/prompts/`） |
 
 ## 自動更新
 
@@ -26,7 +27,9 @@ npm run dev
 | 日次収集 | 毎日 06:07 JST | `agents/daily-collect.md` |
 | 週次更新 | 毎週月曜 07:07 JST | `agents/weekly-update.md` |
 
-どちらも Claude Code のクラウド定期実行で動きます。週次更新の結果は `weekly-update` ラベルの Issue で報告されます。
+週次更新の結果は `weekly-update` ラベルの Issue で報告されます。実行している場所（Codex の GitHub Actions、または Claude Code の定期実行）と切り替え方は `agents/OPERATIONS.md` にあります。
+
+エージェント向けの指示は `AGENTS.md` にまとめています（`CLAUDE.md` はそれを読み込むだけ）。
 
 ## 公開
 

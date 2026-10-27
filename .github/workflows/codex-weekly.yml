@@ -1,0 +1,151 @@
+name: Codex weekly update
+
+# 週次の更新を Codex で行う。手順は agents/weekly-update.md、切り替え方は agents/OPERATIONS.md。
+# 定期実行は、リポジトリ変数 CODEX_SCHEDULE が true のときだけ動く（手動の実行は常に動く）。
+
+on:
+  schedule:
+    - cron: '7 22 * * 0' # 毎週月曜 07:07 JST
+  workflow_dispatch:
+
+concurrency:
+  group: wiki-content
+  cancel-in-progress: false
+
+jobs:
+  # Codex がファイルを書き換える。このジョブには GitHub への書き込み権限を渡さない
+  codex:
+    if: github.event_name == 'workflow_dispatch' || vars.CODEX_SCHEDULE == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - name: Run Codex
+        uses: openai/codex-action@v1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          prompt-file: .github/codex/prompts/weekly.md
+          # 出典の確認と npm ci にネットワークが要る。使い捨てのランナーなので全権限で動かす（sudo は外される）
+          sandbox: danger-full-access
+          model: ${{ vars.CODEX_MODEL }}
+          effort: ${{ vars.CODEX_EFFORT }}
+          output-file: ${{ runner.temp }}/codex-output.md
+      - name: Save changes
+        run: |
+          # Issue の本文は差分に含めず、別に渡す
+          if [ -f .codex-report.md ]; then mv .codex-report.md "$RUNNER_TEMP/report.md"; fi
+          git add -A
+          git diff --cached --binary > "$RUNNER_TEMP/changes.patch"
+          git diff --cached --stat
+      - uses: actions/upload-artifact@v4
+        with:
+          name: codex-weekly
+          path: |
+            ${{ runner.temp }}/changes.patch
+            ${{ runner.temp }}/report.md
+            ${{ runner.temp }}/codex-output.md
+          if-no-files-found: warn
+          retention-days: 30
+
+  # 変更の範囲とビルドを確かめてから、commit、push、デプロイ、Issue での報告を行う
+  publish:
+    needs: codex
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      issues: write
+      actions: write # GITHUB_TOKEN の push ではデプロイが動かないため、手動実行で起動する
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: codex-weekly
+          path: ${{ runner.temp }}/codex
+      - name: Apply changes
+        id: apply
+        run: |
+          patch="$RUNNER_TEMP/codex/changes.patch"
+          if [ ! -s "$patch" ]; then echo "changed=false" >> "$GITHUB_OUTPUT"; echo "変更なし"; exit 0; fi
+          git apply --index "$patch"
+          # 週次更新が変えてよいのは src/content/docs/ だけ
+          outside=$(git diff --cached --name-only | grep -v '^src/content/docs/' || true)
+          if [ -n "$outside" ]; then
+            echo "::error::src/content/docs/ の外のファイルが変更されています:"; echo "$outside"; exit 1
+          fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v5
+        if: steps.apply.outputs.changed == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - name: Check and build
+        if: steps.apply.outputs.changed == 'true'
+        run: |
+          npm ci
+          npm run check
+          npm run check:en
+          npm run build
+          npm run check:dist
+      - name: Commit, push and deploy
+        id: push
+        if: steps.apply.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "news: weekly update $(TZ=Asia/Tokyo date +%F)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          gh workflow run deploy.yml --ref main
+      - name: Report
+        if: always()
+        run: |
+          today=$(TZ=Asia/Tokyo date +%F)
+          run_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          {
+            if [ "${{ job.status }}" != "success" ]; then
+              echo "## 結果: 失敗"
+              echo
+              echo "チェック、ビルド、または変更範囲の確認で失敗したため、公開していません。"
+              echo
+            fi
+            echo "- 週次レポート: https://yousuket.github.io/genai-gamedev-wiki/news/${today}/"
+            if [ -n "${{ steps.push.outputs.sha }}" ]; then
+              echo "- コミット: ${{ github.server_url }}/${{ github.repository }}/commit/${{ steps.push.outputs.sha }}"
+            fi
+            echo "- 実行ログ: ${run_url}"
+            echo
+            if [ -f "$RUNNER_TEMP/codex/report.md" ]; then cat "$RUNNER_TEMP/codex/report.md"; else echo "（Codex の報告ファイルがありません）"; fi
+          } > "$RUNNER_TEMP/issue.md"
+          gh label create weekly-update --color 1D76DB --description "週次自動更新の報告" 2>/dev/null || true
+          gh issue create --title "週次更新 ${today}" --label weekly-update --body-file "$RUNNER_TEMP/issue.md"
+
+  # Codex の実行自体が失敗したときも、Issue で知らせる
+  report-failure:
+    needs: [codex, publish]
+    if: failure() && needs.codex.result == 'failure'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - run: |
+          today=$(TZ=Asia/Tokyo date +%F)
+          gh label create weekly-update --repo "${{ github.repository }}" --color 1D76DB --description "週次自動更新の報告" 2>/dev/null || true
+          gh issue create --repo "${{ github.repository }}" --title "週次更新 ${today}（失敗）" --label weekly-update \
+            --body "Codex の実行が失敗したため、更新していません。実行ログ: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
